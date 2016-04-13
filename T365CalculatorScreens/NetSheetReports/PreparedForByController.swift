@@ -61,6 +61,7 @@ extension PreparedForByController {
 
 // implementing textfield delegates
 extension PreparedForByController: UITextFieldDelegate {
+    // navigation on tap of next button
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         let nextTage=textField.tag+1;
