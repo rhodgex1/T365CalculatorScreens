@@ -1,9 +1,14 @@
 import UIKit
 
 // TableViewController mapped to a TableView with static cells
-class PreparedByController: UITableViewController {
+// This view controller is used for both 'Prepared For' and 'Prepared By' screens
+class PreparedForByController: UITableViewController, DeclareReportContent {
+    // var declarations
+    var reportContent: ReportContent!
+    
     // Outlets declarations
-    @IBOutlet weak var includePreparedBySwitch: UISwitch!
+    @IBOutlet weak var preparedForByTitle: UILabel!
+    @IBOutlet weak var includePreparedForBySwitch: UISwitch!
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var companyField: UITextField!
@@ -18,7 +23,8 @@ class PreparedByController: UITableViewController {
         super.viewDidLoad()
 
         //FIXME: shifting title slightly towards left shall be part of parent view controller
-        self.title = "Prepared By"
+        title = reportContent.rawValue
+        preparedForByTitle.text = "Include \(title!)"
     }
 
     override func didReceiveMemoryWarning() {
