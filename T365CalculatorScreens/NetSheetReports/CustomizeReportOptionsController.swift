@@ -29,7 +29,7 @@ class CustomizeReportOptionsController: UITableViewController {
         // combining two optional bindings into one if let statement ^_^
         if let segueIdentifier = segue.identifier, reportContent = ReportContent(rawValue: segueIdentifier) {
             // Making sure that destinationViewController declares reportContent
-            // By using DeclareReportContent we have avoided few lines of codes, otherwise we have to explicity check and typecast to one of the two viewControllers to assign value to reportContent property
+            // By using DeclareReportContent protocol we have avoided few lines of codes, otherwise we have to explicity check and typecast to one of the two viewControllers to assign value to reportContent property
             if var viewControllerDeclaresReportContent = destinationViewController as? DeclareReportContent {
                  viewControllerDeclaresReportContent.reportContent = reportContent
             }

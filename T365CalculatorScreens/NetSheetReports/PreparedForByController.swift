@@ -4,6 +4,7 @@ import UIKit
 // This view controller is used for both 'Prepared For' and 'Prepared By' screens
 class PreparedForByController: UITableViewController, DeclareReportContent {
     // var declarations
+    // reportContent will always be either 'PreparedFor' or 'PreparedBy' since it is pushed by segue with respective identifier
     var reportContent: ReportContent!
     
     // Outlets declarations
@@ -18,6 +19,7 @@ class PreparedForByController: UITableViewController, DeclareReportContent {
     @IBOutlet weak var stateField: UITextField!
     @IBOutlet weak var zipCodeField: UITextField!
     @IBOutlet weak var phoneNumberField: UITextField!
+    @IBOutlet var form: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +27,54 @@ class PreparedForByController: UITableViewController, DeclareReportContent {
         //FIXME: shifting title slightly towards left shall be part of parent view controller
         title = reportContent.rawValue
         preparedForByTitle.text = "Include \(title!)"
+        
+        configureToDismissKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+}
+
+// internal utility methods
+extension PreparedForByController {
+    private func configureToDismissKeyboard() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PreparedForByController.hideKeyboard))
+        tapGesture.cancelsTouchesInView = true
+        form.addGestureRecognizer(tapGesture)
+    }
+    
+    func hideKeyboard() {
+        form.endEditing(true)
+    }
+}
+
+// user actions
+extension PreparedForByController {
+    @IBAction func includeAction(sender: AnyObject) {
+        //TODO: complete implementation
+    }
+    
+}
+
+// implementing textfield delegates
+extension PreparedForByController: UITextFieldDelegate {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        let nextTage=textField.tag+1;
+        // Try to find next responder
+        let nextResponder=textField.superview?.superview?.superview?.viewWithTag(nextTage) as UIResponder!
+        
+        if((textField.returnKeyType == UIReturnKeyType.Next) && (nextResponder != nil)) {
+            nextResponder?.becomeFirstResponder()
+        }
+        else if ((textField.returnKeyType == UIReturnKeyType.Done) || (nextResponder == nil))
+        {
+            // Not found, so remove keyboard
+            textField.resignFirstResponder()
+        }
+        return false // We do not want UITextField to insert line-breaks.
     }
 }
