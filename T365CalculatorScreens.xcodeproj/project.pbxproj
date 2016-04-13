@@ -12,6 +12,7 @@
 		20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C931CBC43AE0058DA02 /* Main.storyboard */; };
 		20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20109C961CBC43AE0058DA02 /* Assets.xcassets */; };
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
+		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
 		3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418A1CBD3AFF00995099 /* CreateNetSheetReportController.swift */; };
 		3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418B1CBD3AFF00995099 /* CustomizeReportOptionsController.swift */; };
 		3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */; };
@@ -27,6 +28,7 @@
 		20109C961CBC43AE0058DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20109C991CBC43AE0058DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
 		3DFB418A1CBD3AFF00995099 /* CreateNetSheetReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNetSheetReportController.swift; sourceTree = "<group>"; };
 		3DFB418B1CBD3AFF00995099 /* CustomizeReportOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeReportOptionsController.swift; sourceTree = "<group>"; };
 		3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparedForByController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */,
 				3DFB41891CBD3AD400995099 /* NetSheetReports */,
 				20109C8F1CBC43AE0058DA02 /* AppDelegate.swift */,
 				20109C911CBC43AE0058DA02 /* ViewController.swift */,
@@ -73,6 +76,14 @@
 				20109C9B1CBC43AE0058DA02 /* Info.plist */,
 			);
 			path = T365CalculatorScreens;
+			sourceTree = "<group>";
+		};
+		3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */,
+			);
+			path = SellerNetSheet;
 			sourceTree = "<group>";
 		};
 		3DFB41891CBD3AD400995099 /* NetSheetReports */ = {
@@ -147,6 +158,7 @@
 			files = (
 				3DFB41951CBD3B1400995099 /* NetSheetReport.storyboard in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
+				3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */,
 				20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */,
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
 			);
@@ -185,6 +197,14 @@
 				20109C991CBC43AE0058DA02 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DEF63431CBE6EC400C7CFA1 /* Base */,
+			);
+			name = SellerNetSheet.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
