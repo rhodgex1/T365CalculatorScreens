@@ -12,8 +12,6 @@ class CreateProfileReportFormController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Create Profile Report"
     }
 
     override func didReceiveMemoryWarning() {
