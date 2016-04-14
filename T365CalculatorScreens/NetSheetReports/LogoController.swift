@@ -3,6 +3,8 @@ import UIKit
 class LogoController: UIViewController, DeclareReportContent {
     // var declarations
     var reportContent: ReportContent!
+    
+    //TODO: a log might have many attributes associated with it, in that case kind of array will change
     var logos: [String]?
     
     // constants declarations
