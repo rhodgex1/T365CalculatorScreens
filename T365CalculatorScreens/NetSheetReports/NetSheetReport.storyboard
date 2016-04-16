@@ -547,7 +547,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69o-Rk-gnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432" y="-1426"/>
+            <point key="canvasLocation" x="2576" y="-1108"/>
         </scene>
         <!--Options - CreateNetSheetReport-->
         <scene sceneID="eQ8-Zq-aOc">
@@ -1174,19 +1174,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxn-qe-Ca9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2051" y="589"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="2bZ-Ec-tp0">
-            <objects>
-                <viewController id="Azg-ey-AhP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m4C-CJ-Tez">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Oib-tL-1Wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

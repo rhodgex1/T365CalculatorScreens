@@ -1,6 +1,6 @@
 import UIKit
 
-class CreateProfileReportFormController: UITableViewController {
+class SellerNewNetSheetForm: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -11,4 +11,10 @@ class CreateProfileReportFormController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension SellerNewNetSheetForm {
+    
+    @IBAction func selectionLocation(sender: AnyObject) {
+    }
 }

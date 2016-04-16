@@ -12,6 +12,8 @@
 		20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C931CBC43AE0058DA02 /* Main.storyboard */; };
 		20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20109C961CBC43AE0058DA02 /* Assets.xcassets */; };
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
+		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
+		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
 		3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */; };
 		3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */; };
@@ -30,6 +32,8 @@
 		20109C961CBC43AE0058DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20109C991CBC43AE0058DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
+		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
 		3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportController.swift; sourceTree = "<group>"; };
 		3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportFormController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */,
+				3D5D90561CC211E300293486 /* SellerNetSheetController.swift */,
+				3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
+				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
 				3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */,
+				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
