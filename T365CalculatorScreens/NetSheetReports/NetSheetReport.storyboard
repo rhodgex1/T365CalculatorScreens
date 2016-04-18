@@ -222,20 +222,24 @@
                                                         <constraint firstAttribute="height" constant="1" id="hm5-mk-Egx"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbf-aW-T87">
-                                                    <rect key="frame" x="557" y="10" width="30" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="3Zb-I5-gRm"/>
-                                                        <constraint firstAttribute="width" constant="30" id="yHE-DD-2JC"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8a-CN-eIK">
                                                     <rect key="frame" x="15" y="15.5" width="109" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbf-aW-T87">
+                                                    <rect key="frame" x="557" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="3Zb-I5-gRm"/>
+                                                        <constraint firstAttribute="width" constant="30" id="yHE-DD-2JC"/>
+                                                    </constraints>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="vTY-Sz-EXp"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Q8a-CN-eIK" firstAttribute="centerY" secondItem="nlb-5g-GXz" secondAttribute="centerY" id="23o-b7-Gbf"/>
@@ -262,13 +266,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="ezS-ab-cFF"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-fJ-YVj">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-fJ-YVj">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="2ES-pa-gHN"/>
                                                         <constraint firstAttribute="width" constant="30" id="HDE-Up-NLr"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="nl6-fC-Gue"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map of Property" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJC-fA-bGc">
                                                     <rect key="frame" x="15" y="15.5" width="118" height="19.5"/>
@@ -302,13 +310,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="fRT-KH-aNm"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7Q-HP-vtz">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7Q-HP-vtz">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="fa6-Mt-XnJ"/>
                                                         <constraint firstAttribute="height" constant="30" id="sQQ-Si-Sxg"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="Fzn-X9-NPn"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Valuation Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4a-Du-8So">
                                                     <rect key="frame" x="15" y="15.5" width="183" height="19.5"/>
@@ -342,13 +354,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="ZFX-5B-Dft"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHn-bd-Pp3">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHn-bd-Pp3">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="1as-6o-Uri"/>
                                                         <constraint firstAttribute="height" constant="30" id="aCK-4h-1fX"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="WP4-RA-8eY"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Comparables - Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ng-mc-5Rr">
                                                     <rect key="frame" x="15" y="15.5" width="224" height="19.5"/>
@@ -382,13 +398,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="6D8-gm-Eey"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLD-Re-bfr">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLD-Re-bfr">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="81d-Xd-UZb"/>
                                                         <constraint firstAttribute="height" constant="30" id="Uhz-b5-PoH"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="o3n-Sw-6um"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Comparables - Detailed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFK-rU-b4e">
                                                     <rect key="frame" x="15" y="15.5" width="215" height="19.5"/>
@@ -422,13 +442,17 @@
                                                         <constraint firstAttribute="height" constant="1" id="HqD-dn-gUs"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="une-RO-mIV">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="une-RO-mIV">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="FuN-94-t70"/>
                                                         <constraint firstAttribute="height" constant="30" id="U1F-uj-UV2"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="GU8-cP-SKM"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Comparables Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCL-ts-ZkA">
                                                     <rect key="frame" x="15" y="15.5" width="175.5" height="19.5"/>
@@ -455,13 +479,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-7T-DWF">
+                                                <button opaque="NO" tag="301" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-7T-DWF">
                                                     <rect key="frame" x="557" y="10" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="ET6-Y0-B9W"/>
                                                         <constraint firstAttribute="height" constant="30" id="yep-MJ-Aml"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button" image="circularCheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
+                                                    <connections>
+                                                        <action selector="selectContent:" destination="H6B-Fv-Owv" eventType="touchUpInside" id="PfP-RD-TzY"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parcel Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uac-G6-kty">
                                                     <rect key="frame" x="15" y="15.5" width="81" height="19.5"/>
@@ -547,7 +575,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69o-Rk-gnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2576" y="-1108"/>
+            <point key="canvasLocation" x="2382" y="-1122"/>
         </scene>
         <!--Options - CreateNetSheetReport-->
         <scene sceneID="eQ8-Zq-aOc">
@@ -1178,7 +1206,8 @@
     </scenes>
     <resources>
         <image name="addItem" width="30" height="30"/>
-        <image name="circularCheck" width="54" height="54"/>
+        <image name="circularCheck" width="22" height="22"/>
+        <image name="circularUncheck" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xPY-tj-uDQ"/>

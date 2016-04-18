@@ -12,3 +12,12 @@ class CreateProfileReportFormController: UITableViewController {
     }
 
 }
+
+// User actions
+extension CreateProfileReportFormController {
+    
+    @IBAction func selectContent(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
+    
+}
