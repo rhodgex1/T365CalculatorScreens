@@ -2,10 +2,11 @@ import UIKit
 
 // TableViewController mapped to a TableView with static cells
 // This view controller is used for both 'Prepared For' and 'Prepared By' screens
-class PreparedForByController: UITableViewController, DeclareReportContent {
+class PreparedForByController: UITableViewController, DeclareReportContent, DismissKeyboardOnOutsideTap {
     // var declarations
     // reportContent will always be either 'PreparedFor' or 'PreparedBy' since it is pushed by segue with respective identifier
     var reportContent: ReportContent!
+    var backgroundView: UIView!
     
     // Outlets declarations
     @IBOutlet weak var preparedForByTitle: UILabel!
@@ -28,6 +29,7 @@ class PreparedForByController: UITableViewController, DeclareReportContent {
         title = reportContent.rawValue
         preparedForByTitle.text = "Include \(title!)"
         
+        backgroundView = form
         configureToDismissKeyboard()
     }
 
@@ -36,20 +38,12 @@ class PreparedForByController: UITableViewController, DeclareReportContent {
         // Dispose of any resources that can be recreated.
     }
     
-}
-
-// internal utility methods
-extension PreparedForByController {
-    private func configureToDismissKeyboard() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(PreparedForByController.hideKeyboard))
-        tapGesture.cancelsTouchesInView = true
-        form.addGestureRecognizer(tapGesture)
+    func hideKeyboard() {
+        backgroundView.endEditing(true)
     }
     
-    func hideKeyboard() {
-        form.endEditing(true)
-    }
 }
+
 
 // user actions
 extension PreparedForByController {

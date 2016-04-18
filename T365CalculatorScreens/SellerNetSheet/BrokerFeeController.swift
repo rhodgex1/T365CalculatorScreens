@@ -1,12 +1,12 @@
 import UIKit
 
-class SellerNetSheetController: UIViewController {
+class BrokerFeeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Seller's Net Sheet"
+        title = "Broker Fee"
     }
 
     override func didReceiveMemoryWarning() {

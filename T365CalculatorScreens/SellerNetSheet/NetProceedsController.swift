@@ -1,12 +1,12 @@
 import UIKit
 
-class SellerNetSheetController: UIViewController {
+class NetProceedsController: UIViewController {
 
+    @IBOutlet weak var netProceedsAmount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "Seller's Net Sheet"
     }
 
     override func didReceiveMemoryWarning() {
