@@ -14,6 +14,8 @@
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
+		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
+		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
 		3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */; };
 		3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */; };
@@ -40,6 +42,8 @@
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
+		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
+		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
 		3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportController.swift; sourceTree = "<group>"; };
 		3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportFormController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				3DFE08E01CC4FBAC00101EE3 /* BrokerFeeForm.swift */,
 				3DFE08E21CC5002000101EE3 /* TaxesForm.swift */,
 				3DFE08E41CC5004100101EE3 /* TaxesController.swift */,
+				3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */,
+				3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -216,9 +222,11 @@
 				3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */,
 				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
+				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
+				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
