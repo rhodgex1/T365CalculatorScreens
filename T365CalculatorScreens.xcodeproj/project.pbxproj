@@ -20,6 +20,8 @@
 		3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */; };
 		3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EE1CC6425A00937E2C /* TitleController.swift */; };
 		3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F01CC6426800937E2C /* TitleForm.swift */; };
+		3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F21CC6463600937E2C /* EscrowForm.swift */; };
+		3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F41CC6464B00937E2C /* EscrowController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
@@ -54,6 +56,8 @@
 		3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsController.swift; sourceTree = "<group>"; };
 		3D9052EE1CC6425A00937E2C /* TitleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleController.swift; sourceTree = "<group>"; };
 		3D9052F01CC6426800937E2C /* TitleForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleForm.swift; sourceTree = "<group>"; };
+		3D9052F21CC6463600937E2C /* EscrowForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscrowForm.swift; sourceTree = "<group>"; };
+		3D9052F41CC6464B00937E2C /* EscrowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscrowController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
@@ -134,6 +138,8 @@
 				3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */,
 				3D9052EE1CC6425A00937E2C /* TitleController.swift */,
 				3D9052F01CC6426800937E2C /* TitleForm.swift */,
+				3D9052F21CC6463600937E2C /* EscrowForm.swift */,
+				3D9052F41CC6464B00937E2C /* EscrowController.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -251,12 +257,14 @@
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
+				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
 				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
+				3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
