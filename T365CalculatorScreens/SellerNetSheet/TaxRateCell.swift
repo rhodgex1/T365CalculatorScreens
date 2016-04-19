@@ -33,4 +33,13 @@ class TaxRateCell: UITableViewCell {
         propertyRateSelection.selected = propertyTaxRate.isSelected
     }
 
+    // below method is added to support check uncheck functionality on tap of circular button
+    @IBAction func selectionAction(sender: AnyObject) {
+        if let tableView = superview?.superview as? UITableView, tableViewDelegate = tableView.delegate {
+            let indexPath = tableView.indexPathForCell(self)
+            tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
+            tableViewDelegate.tableView!(tableView, didSelectRowAtIndexPath: indexPath!)
+        }
+    }
+
 }
