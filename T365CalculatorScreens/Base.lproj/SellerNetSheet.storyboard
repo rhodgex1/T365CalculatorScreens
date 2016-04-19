@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dzV-3C-x5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="1176"/>
+            <point key="canvasLocation" x="1605" y="916"/>
         </scene>
         <!--Property Tax Rate Controller-->
         <scene sceneID="wfp-yv-R6L">
@@ -170,7 +170,7 @@
                                     <segue destination="FHh-u3-K0e" kind="embed" id="XQR-KG-gm1"/>
                                 </connections>
                             </containerView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-wH-E54">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-wH-E54">
                                 <rect key="frame" x="0.0" y="228" width="600" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -187,11 +187,11 @@
                                                         <constraint firstAttribute="width" constant="25" id="Lsl-f4-dWi"/>
                                                         <constraint firstAttribute="height" constant="25" id="bNn-At-1NL"/>
                                                     </constraints>
-                                                    <state key="normal" image="circularCheck"/>
-                                                    <state key="selected" image="circularUncheck"/>
+                                                    <state key="normal" image="circularUncheck"/>
+                                                    <state key="selected" image="circularCheck"/>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faa-1a-oxh" userLabel="TaxRateUnderline">
-                                                    <rect key="frame" x="445" y="39" width="90" height="1"/>
+                                                    <rect key="frame" x="445" y="40.5" width="90" height="1"/>
                                                     <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="90" id="LYi-GJ-XU5"/>
@@ -199,26 +199,26 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOJ-Z3-yfa">
-                                                    <rect key="frame" x="445" y="16" width="13" height="20.5"/>
+                                                    <rect key="frame" x="445" y="17.5" width="13" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.17901" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3w-MB-uUF">
-                                                    <rect key="frame" x="466" y="15" width="69" height="21"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.17901" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3w-MB-uUF">
+                                                    <rect key="frame" x="466" y="16.5" width="69" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THG-Ms-opf" userLabel="NameUnderline">
-                                                    <rect key="frame" x="15" y="39" width="412" height="1"/>
+                                                    <rect key="frame" x="15" y="40.5" width="412" height="1"/>
                                                     <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="MaL-rG-jgU"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="San Diego, CA" placeholder="Enter Country Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-NT-Ybg">
-                                                    <rect key="frame" x="15" y="15" width="412" height="21"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="San Diego, CA" placeholder="Enter Country Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XiY-NT-Ybg">
+                                                    <rect key="frame" x="15" y="16.5" width="412" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -244,12 +244,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cityStateName" destination="XiY-NT-Ybg" id="pAe-n6-rLW"/>
+                                            <outlet property="propertyRateSelection" destination="a8L-Pk-erG" id="csq-Fg-QX8"/>
                                             <outlet property="taxRate" destination="k3w-MB-uUF" id="Vha-FI-KC2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="QSn-OO-mAe" id="5CK-87-5AB"/>
+                                    <outlet property="delegate" destination="QSn-OO-mAe" id="FCp-BR-r7c"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmt-43-sJn">
@@ -293,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6j3-Tw-DSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594" y="675"/>
+            <point key="canvasLocation" x="2310" y="871"/>
         </scene>
         <!--Taxes Form-->
         <scene sceneID="eF3-iN-M9Q">
@@ -841,10 +843,22 @@
                             <outlet property="delegate" destination="k87-E6-42B" id="TKg-ni-3aE"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="annualPropertyTaxes" destination="f1d-Hh-SYw" id="YJe-Lf-CHi"/>
+                        <outlet property="cityTransferTaxRate" destination="wmO-eQ-bKl" id="yMb-J8-u8f"/>
+                        <outlet property="cityTransferTaxes" destination="LpQ-wg-n6h" id="Xb3-zM-NMK"/>
+                        <outlet property="cityTransferTaxesPaidBy" destination="cqu-QA-ZZu" id="2Q9-fw-nkM"/>
+                        <outlet property="countyTransferPaidBy" destination="Ipc-QU-Ngp" id="LBX-7v-HvF"/>
+                        <outlet property="countyTransferTaxRate" destination="i5Y-dE-Yxa" id="dVR-G3-qHx"/>
+                        <outlet property="countyTransferTaxes" destination="ZJl-r7-RN5" id="OR5-hd-5wZ"/>
+                        <outlet property="currentYearProratedPropertyTaxes" destination="4NA-ek-geA" id="JFJ-Mm-MOx"/>
+                        <outlet property="propertyTaxRate" destination="001-qw-Xkn" id="eXq-yo-79q"/>
+                        <outlet property="taxablePropertyValue" destination="x4f-ww-Qhf" id="iZI-i3-gAn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xB-xs-mSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="1684"/>
+            <point key="canvasLocation" x="1530" y="1724"/>
         </scene>
         <!--Broker Fee Form-->
         <scene sceneID="l3Y-UU-0wR">
@@ -1105,6 +1119,14 @@
                             <outlet property="delegate" destination="EPC-PL-TTn" id="C0E-xy-mk1"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="buyerBrokerFeeAmount" destination="DqU-ZI-MkF" id="Ucs-87-7wv"/>
+                        <outlet property="buyerBrokerFeePercentage" destination="syg-nB-kRS" id="mfc-Yl-hJl"/>
+                        <outlet property="listingBrokerFeeAmount" destination="b6O-Wo-DK6" id="Y1Q-Xt-BhZ"/>
+                        <outlet property="listingBrokerFeePercentage" destination="c4g-do-3XN" id="X0b-CX-ZUT"/>
+                        <outlet property="totalBrokerFeeAmount" destination="aYP-uK-aiC" id="wNP-Nu-kSg"/>
+                        <outlet property="totalBrokerFeePercentage" destination="bRZ-md-9eN" id="4dG-kv-jYB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="paX-1u-bO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1582,10 +1604,22 @@
                             <outlet property="delegate" destination="Adi-gg-6SL" id="90M-I3-COf"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="closingCosts" destination="pf4-Om-bI4" id="8JG-Zg-EU7"/>
+                        <outlet property="closingDate" destination="MQf-Fq-KuQ" id="wSm-wA-9jL"/>
+                        <outlet property="financing" destination="2d0-yH-mkZ" id="bT6-LL-xxJ"/>
+                        <outlet property="loanPayoffs" destination="ALt-qH-lYe" id="CtU-s2-iEZ"/>
+                        <outlet property="salesPrice" destination="bvo-rL-0UR" id="Vvh-eU-dk7"/>
+                        <outlet property="sellerCreditsToBuyer" destination="tq7-q0-fZ8" id="7sd-Qf-SCN"/>
+                        <outlet property="taxes" destination="NZ2-r4-3jv" id="7nC-3b-mRG"/>
+                        <outlet property="totalBrokerFee" destination="P8C-i7-ZIR" id="Fxv-LZ-hZ0"/>
+                        <outlet property="totalBrokerFeePercentage" destination="HI7-if-8fH" id="rB5-pP-rj5"/>
+                        <outlet property="zipCodeCityState" destination="mAT-i6-hXj" id="bPS-zf-YWW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWa-fW-POQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1562" y="116"/>
+            <point key="canvasLocation" x="1476" y="86"/>
         </scene>
         <!--NetProceedsController-->
         <scene sceneID="5CW-Qg-A30">
@@ -1621,6 +1655,9 @@
                                             <constraint firstAttribute="height" constant="15" id="vhb-f5-gdj"/>
                                         </constraints>
                                         <state key="normal" image="infoIcon"/>
+                                        <connections>
+                                            <action selector="infoAction:" destination="FHh-u3-K0e" eventType="touchUpInside" id="7KB-qW-Ghr"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="217,876.34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-H6-AAC">
                                         <rect key="frame" x="324" y="58" width="233.5" height="56.5"/>

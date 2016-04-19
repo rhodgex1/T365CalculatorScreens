@@ -9,8 +9,10 @@
 import UIKit
 
 class TaxRateCell: UITableViewCell {
+    // declaring outlets
     @IBOutlet weak var taxRate: UITextField!
     @IBOutlet weak var cityStateName: UITextField!
+    @IBOutlet weak var propertyRateSelection: UIButton!
     
     static let cellIdentifier = "TaxRateCell"
     
@@ -23,6 +25,12 @@ class TaxRateCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func populateWithData(propertyTaxRate: PropertyTaxRate) {
+        taxRate.text = "\(propertyTaxRate.taxRate)"
+        cityStateName.text = "\(propertyTaxRate.city), \(propertyTaxRate.state)"
+        propertyRateSelection.selected = propertyTaxRate.isSelected
     }
 
 }

@@ -12,6 +12,14 @@ class BrokerFeeForm: UITableViewController, DismissKeyboardOnOutsideTap {
 
     var backgroundView: UIView!
     
+    // declaring outlets
+    @IBOutlet weak var totalBrokerFeeAmount: UITextField!
+    @IBOutlet weak var totalBrokerFeePercentage: UITextField!
+    @IBOutlet weak var listingBrokerFeeAmount: UITextField!
+    @IBOutlet weak var listingBrokerFeePercentage: UITextField!
+    @IBOutlet weak var buyerBrokerFeeAmount: UITextField!
+    @IBOutlet weak var buyerBrokerFeePercentage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -15,3 +15,10 @@ class NetProceedsController: UIViewController {
     }
 
 }
+
+// user actions
+extension NetProceedsController {
+    
+    @IBAction func infoAction(sender: AnyObject) {
+    }
+}

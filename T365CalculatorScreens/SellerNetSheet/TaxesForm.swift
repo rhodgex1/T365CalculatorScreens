@@ -9,7 +9,19 @@
 import UIKit
 
 class TaxesForm: UITableViewController {
-
+    // declaring outlets
+    @IBOutlet weak var taxablePropertyValue: UITextField!
+    @IBOutlet weak var propertyTaxRate: UITextField!
+    @IBOutlet weak var annualPropertyTaxes: UITextField!
+    @IBOutlet weak var currentYearProratedPropertyTaxes: UITextField!
+    @IBOutlet weak var countyTransferPaidBy: UISegmentedControl!
+    @IBOutlet weak var countyTransferTaxRate: UITextField!
+    @IBOutlet weak var countyTransferTaxes: UITextField!
+    @IBOutlet weak var cityTransferTaxesPaidBy: UISegmentedControl!
+    @IBOutlet weak var cityTransferTaxRate: UITextField!
+    @IBOutlet weak var cityTransferTaxes: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
