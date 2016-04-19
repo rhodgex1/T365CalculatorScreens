@@ -149,6 +149,224 @@
             </objects>
             <point key="canvasLocation" x="1605" y="916"/>
         </scene>
+        <!--Payoffs Controller-->
+        <scene sceneID="kRn-lI-juf">
+            <objects>
+                <viewController id="IcD-ta-iOP" customClass="PayoffsController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GTx-DQ-mFx"/>
+                        <viewControllerLayoutGuide type="bottom" id="aof-ga-DBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GGN-jx-jgM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="474"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-6O-7RA" userLabel="Body View">
+                                <rect key="frame" x="0.0" y="126" width="600" height="348"/>
+                                <connections>
+                                    <segue destination="n8m-cb-6Ad" kind="embed" id="jan-TX-LqQ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-Hr-ugR" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="64" width="600" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="6ej-Zg-YdO"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="FHh-u3-K0e" kind="embed" id="Pfb-Zg-Pbb"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aof-ga-DBQ" firstAttribute="top" secondItem="4bs-6O-7RA" secondAttribute="bottom" id="4UC-NI-rJA"/>
+                            <constraint firstItem="4bs-6O-7RA" firstAttribute="top" secondItem="r4Y-Hr-ugR" secondAttribute="bottom" constant="-65" id="6tz-Do-geO"/>
+                            <constraint firstAttribute="trailing" secondItem="4bs-6O-7RA" secondAttribute="trailing" id="7YQ-8N-7GR"/>
+                            <constraint firstAttribute="trailing" secondItem="r4Y-Hr-ugR" secondAttribute="trailing" id="RKL-0q-sSv"/>
+                            <constraint firstItem="r4Y-Hr-ugR" firstAttribute="leading" secondItem="GGN-jx-jgM" secondAttribute="leading" id="XwG-Ja-MS3"/>
+                            <constraint firstItem="r4Y-Hr-ugR" firstAttribute="top" secondItem="GGN-jx-jgM" secondAttribute="top" constant="64" id="b5p-3k-zIb"/>
+                            <constraint firstItem="4bs-6O-7RA" firstAttribute="leading" secondItem="GGN-jx-jgM" secondAttribute="leading" id="dPT-Ig-rz5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5fU-xd-DUS">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rWh-c3-Dv0"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jX-CJ-p2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031" y="979"/>
+        </scene>
+        <!--Payoffs Form-->
+        <scene sceneID="rAR-bY-hAx">
+            <objects>
+                <tableViewController id="n8m-cb-6Ad" customClass="PayoffsForm" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sam-7K-50x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="348"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ubk-eh-nfU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="ti0-PD-Tsg" userLabel="Payoff1 Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ti0-PD-Tsg" id="352-wo-n7O">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhT-tv-MSQ" userLabel="bottom edge indicator">
+                                                    <rect key="frame" x="15" y="65.5" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Saq-mI-N3y"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-fo-wGC">
+                                                    <rect key="frame" x="34" y="42.5" width="551" height="21"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-oc-1MO">
+                                                    <rect key="frame" x="15" y="18.5" width="51.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-nU-Vfg">
+                                                    <rect key="frame" x="15" y="42.5" width="11" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="xhT-tv-MSQ" secondAttribute="bottom" constant="8" id="A7z-hA-JzV"/>
+                                                <constraint firstItem="G0E-nU-Vfg" firstAttribute="leading" secondItem="ccS-oc-1MO" secondAttribute="leading" id="FjH-TC-hqD"/>
+                                                <constraint firstItem="xhT-tv-MSQ" firstAttribute="top" secondItem="4N3-fo-wGC" secondAttribute="bottom" constant="2" id="G03-xq-uoj"/>
+                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="top" secondItem="ccS-oc-1MO" secondAttribute="bottom" constant="7" id="OCz-QW-8cM"/>
+                                                <constraint firstItem="xhT-tv-MSQ" firstAttribute="leading" secondItem="352-wo-n7O" secondAttribute="leading" constant="15" id="VXC-Ax-cYY"/>
+                                                <constraint firstItem="G0E-nU-Vfg" firstAttribute="centerY" secondItem="4N3-fo-wGC" secondAttribute="centerY" id="bjb-RO-I5y"/>
+                                                <constraint firstItem="ccS-oc-1MO" firstAttribute="leading" secondItem="xhT-tv-MSQ" secondAttribute="leading" id="lSp-fv-UDL"/>
+                                                <constraint firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" constant="15" id="nNs-qW-FPL"/>
+                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="leading" secondItem="G0E-nU-Vfg" secondAttribute="trailing" constant="8" id="w04-Pu-91V"/>
+                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" id="wPG-Sr-y7Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="3Xd-IY-kxI" userLabel="Payoff2 Cell">
+                                        <rect key="frame" x="0.0" y="75" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Xd-IY-kxI" id="yQm-hE-zcN">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uH-lz-kft" userLabel="bottom edge indicator">
+                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="nXv-NS-m39"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-ip-dVH">
+                                                    <rect key="frame" x="34" y="43" width="551" height="21"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDb-Ag-gNa">
+                                                    <rect key="frame" x="15" y="19.5" width="53.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZj-5G-1KI">
+                                                    <rect key="frame" x="15" y="43" width="11" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2uH-lz-kft" firstAttribute="leading" secondItem="yQm-hE-zcN" secondAttribute="leading" constant="15" id="DPx-9I-Lv0"/>
+                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="leading" secondItem="dZj-5G-1KI" secondAttribute="trailing" constant="8" id="SnQ-M5-n7Z"/>
+                                                <constraint firstItem="xDb-Ag-gNa" firstAttribute="leading" secondItem="2uH-lz-kft" secondAttribute="leading" id="gvg-AB-jEN"/>
+                                                <constraint firstAttribute="bottom" secondItem="2uH-lz-kft" secondAttribute="bottom" constant="8" id="h44-Wi-RLk"/>
+                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="top" secondItem="xDb-Ag-gNa" secondAttribute="bottom" constant="7" id="hnJ-BL-gb5"/>
+                                                <constraint firstItem="dZj-5G-1KI" firstAttribute="centerY" secondItem="EG4-ip-dVH" secondAttribute="centerY" id="kMQ-cu-wEz"/>
+                                                <constraint firstItem="dZj-5G-1KI" firstAttribute="leading" secondItem="xDb-Ag-gNa" secondAttribute="leading" id="lNR-jz-yGU"/>
+                                                <constraint firstItem="2uH-lz-kft" firstAttribute="top" secondItem="EG4-ip-dVH" secondAttribute="bottom" constant="2" id="oT4-vs-aHc"/>
+                                                <constraint firstAttribute="trailing" secondItem="2uH-lz-kft" secondAttribute="trailing" constant="15" id="vZz-DV-RUu"/>
+                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="trailing" secondItem="2uH-lz-kft" secondAttribute="trailing" id="wZR-T6-Igp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="y8b-uX-bGG" userLabel="Payoff3 Cell">
+                                        <rect key="frame" x="0.0" y="150" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8b-uX-bGG" id="pgc-36-5oh">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDy-EA-yBM" userLabel="bottom edge indicator">
+                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Ayq-6d-W6d"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kr4-ng-kXK">
+                                                    <rect key="frame" x="34" y="43" width="551" height="21"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyy-r0-zFO">
+                                                    <rect key="frame" x="15" y="19.5" width="53.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-rG-9Ze">
+                                                    <rect key="frame" x="15" y="43" width="11" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b8e-rG-9Ze" firstAttribute="leading" secondItem="iyy-r0-zFO" secondAttribute="leading" id="EPQ-3a-hsj"/>
+                                                <constraint firstItem="b8e-rG-9Ze" firstAttribute="centerY" secondItem="Kr4-ng-kXK" secondAttribute="centerY" id="JPO-5M-VUY"/>
+                                                <constraint firstItem="tDy-EA-yBM" firstAttribute="leading" secondItem="pgc-36-5oh" secondAttribute="leading" constant="15" id="VzJ-x2-BIa"/>
+                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="leading" secondItem="b8e-rG-9Ze" secondAttribute="trailing" constant="8" id="WSi-6Z-drw"/>
+                                                <constraint firstItem="tDy-EA-yBM" firstAttribute="top" secondItem="Kr4-ng-kXK" secondAttribute="bottom" constant="2" id="e4N-Dd-eUs"/>
+                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="top" secondItem="iyy-r0-zFO" secondAttribute="bottom" constant="7" id="fP6-1T-BHT"/>
+                                                <constraint firstItem="iyy-r0-zFO" firstAttribute="leading" secondItem="tDy-EA-yBM" secondAttribute="leading" id="gWJ-Qs-ZEu"/>
+                                                <constraint firstAttribute="trailing" secondItem="tDy-EA-yBM" secondAttribute="trailing" constant="15" id="iQZ-cM-7EO"/>
+                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="trailing" secondItem="tDy-EA-yBM" secondAttribute="trailing" id="lLz-8O-kes"/>
+                                                <constraint firstAttribute="bottom" secondItem="tDy-EA-yBM" secondAttribute="bottom" constant="8" id="wfW-8m-Pcp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="n8m-cb-6Ad" id="Dsf-1G-A8a"/>
+                            <outlet property="delegate" destination="n8m-cb-6Ad" id="BHI-GA-xdF"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="payoff1" destination="4N3-fo-wGC" id="eBU-gj-lyd"/>
+                        <outlet property="payoff2" destination="EG4-ip-dVH" id="vQK-vt-Djp"/>
+                        <outlet property="payoff3" destination="Kr4-ng-kXK" id="bsx-UK-uoc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nd7-rJ-we1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031" y="1544"/>
+        </scene>
         <!--Property Tax Rate Controller-->
         <scene sceneID="wfp-yv-R6L">
             <objects>
@@ -295,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6j3-Tw-DSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2310" y="871"/>
+            <point key="canvasLocation" x="2221" y="1491"/>
         </scene>
         <!--Taxes Form-->
         <scene sceneID="eF3-iN-M9Q">
@@ -858,7 +1076,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xB-xs-mSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="1724"/>
+            <point key="canvasLocation" x="1537" y="1478"/>
         </scene>
         <!--Broker Fee Form-->
         <scene sceneID="l3Y-UU-0wR">
@@ -1229,7 +1447,7 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvo-rL-0UR">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bvo-rL-0UR">
                                                     <rect key="frame" x="34" y="26" width="551" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1277,7 +1495,7 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8C-i7-ZIR">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P8C-i7-ZIR">
                                                     <rect key="frame" x="34" y="26" width="417" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1462,6 +1680,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="jp5-oF-M1e" secondAttribute="trailing" id="v7k-QM-xFs"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IcD-ta-iOP" kind="show" id="0Fa-bk-JJ5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="75" id="5ea-vc-zoA" userLabel="Closing Costs Cell">
                                         <rect key="frame" x="0.0" y="470" width="600" height="75"/>

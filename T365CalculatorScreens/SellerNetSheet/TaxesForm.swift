@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TaxesForm: UITableViewController {
+class TaxesForm: UITableViewController, DismissKeyboardOnOutsideTap {
+    var backgroundView: UIView!
+    
     // declaring outlets
     @IBOutlet weak var taxablePropertyValue: UITextField!
     @IBOutlet weak var propertyTaxRate: UITextField!
@@ -24,10 +26,17 @@ class TaxesForm: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundView = view
+        configureToDismissKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func hideKeyboard() {
+        backgroundView.endEditing(true)
     }
 }

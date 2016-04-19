@@ -15,8 +15,4 @@ extension DismissKeyboardOnOutsideTap {
         }
         
     }
-    
-    func hideKeyboard() {
-        backgroundView.endEditing(true)
-    }
 }
