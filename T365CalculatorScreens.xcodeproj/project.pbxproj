@@ -24,6 +24,8 @@
 		3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F41CC6464B00937E2C /* EscrowController.swift */; };
 		3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */; };
 		3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */; };
+		3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FA1CC64E3500937E2C /* FinancingForm.swift */; };
+		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
@@ -62,6 +64,8 @@
 		3D9052F41CC6464B00937E2C /* EscrowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscrowController.swift; sourceTree = "<group>"; };
 		3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerController.swift; sourceTree = "<group>"; };
 		3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerForm.swift; sourceTree = "<group>"; };
+		3D9052FA1CC64E3500937E2C /* FinancingForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingForm.swift; sourceTree = "<group>"; };
+		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
@@ -146,6 +150,8 @@
 				3D9052F41CC6464B00937E2C /* EscrowController.swift */,
 				3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */,
 				3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */,
+				3D9052FA1CC64E3500937E2C /* FinancingForm.swift */,
+				3D9052FC1CC64E4400937E2C /* FinancingController.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
 				3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */,
 				3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */,
+				3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */,
 				3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */,
 				3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */,
 				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
@@ -261,6 +268,7 @@
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
+				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
