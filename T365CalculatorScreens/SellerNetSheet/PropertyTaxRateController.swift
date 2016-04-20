@@ -8,8 +8,17 @@
 
 import UIKit
 
+struct PropertyTaxRate {
+    var city: String
+    var state: String
+    var taxRate: Double
+    var isSelected: Bool
+}
+
 //TODO: Define data structure to populate tableview
-class PropertyTaxRateController: UIViewController {
+class PropertyTaxRateController: UIViewController, HasHeaderContainer {
+     var netProceedsController: NetProceedsController!
+    
     // data array declarations
     var propertyTaxRates: [PropertyTaxRate]!
     
@@ -29,6 +38,14 @@ class PropertyTaxRateController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier {
+            if segueIdentifier == "EmbedHeader" {
+                netProceedsController = segue.destinationViewController as! NetProceedsController
+            }
+        }
     }
 }
 
@@ -58,9 +75,3 @@ extension PropertyTaxRateController: UITableViewDelegate {
     }
 }
 
-struct PropertyTaxRate {
-    var city: String
-    var state: String
-    var taxRate: Double
-    var isSelected: Bool
-}

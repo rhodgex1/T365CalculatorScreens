@@ -8,13 +8,17 @@
 
 import UIKit
 
-class PayoffsController: UIViewController {
+class PayoffsController: SellerNetSheetWithContainersBaseController {
+    var payoffsFormController : PayoffsForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Payoff(s)"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        payoffsFormController = bodyContentController as! PayoffsForm
     }
 
     override func didReceiveMemoryWarning() {

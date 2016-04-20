@@ -1,12 +1,16 @@
 import UIKit
 
-class SellerNetSheetController: UIViewController {
+class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
+    var sellerNewNetSheetFormController : SellerNewNetSheetForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Seller's Net Sheet"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        sellerNewNetSheetFormController = bodyContentController as! SellerNewNetSheetForm
     }
 
     override func didReceiveMemoryWarning() {

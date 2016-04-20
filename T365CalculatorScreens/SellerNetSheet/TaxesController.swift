@@ -8,13 +8,17 @@
 
 import UIKit
 
-class TaxesController: UIViewController {
-
+class TaxesController: SellerNetSheetWithContainersBaseController {
+    var taxesFormController : TaxesForm!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Taxes"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        taxesFormController = bodyContentController as! TaxesForm
     }
 
     override func didReceiveMemoryWarning() {

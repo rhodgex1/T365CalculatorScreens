@@ -8,13 +8,17 @@
 
 import UIKit
 
-class TitleController: UIViewController {
+class TitleController: SellerNetSheetWithContainersBaseController {
+    var titleFormController : TitleForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Title"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        titleFormController = bodyContentController as! TitleForm
     }
 
     override func didReceiveMemoryWarning() {

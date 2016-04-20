@@ -8,13 +8,17 @@
 
 import UIKit
 
-class SellerCreditsToBuyerController: UIViewController {
+class SellerCreditsToBuyerController: SellerNetSheetWithContainersBaseController {
+    var sellerCreditsToBuyerFormController: SellerCreditsToBuyerForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Seller Credits to Buyer"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        sellerCreditsToBuyerFormController = bodyContentController as! SellerCreditsToBuyerForm
     }
 
     override func didReceiveMemoryWarning() {

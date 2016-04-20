@@ -499,7 +499,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EnC-Lr-rWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="-848"/>
+            <point key="canvasLocation" x="2615" y="-1526"/>
         </scene>
         <!--CustomizeReportOptionsController-->
         <scene sceneID="E7l-Gt-AY5">
@@ -507,7 +507,7 @@
                 <viewControllerPlaceholder storyboardName="CreateNetSheetReport" referencedIdentifier="CustomizeReportOptionsController" id="L5v-4D-MZY" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCx-eY-RRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237.5" y="-448"/>
+            <point key="canvasLocation" x="2623" y="-1042"/>
         </scene>
     </scenes>
     <resources>

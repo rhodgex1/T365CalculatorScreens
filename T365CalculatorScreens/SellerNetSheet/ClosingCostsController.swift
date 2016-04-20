@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ClosingCostsController: UIViewController {
+class ClosingCostsController: SellerNetSheetWithContainersBaseController {
+    var closingCostsFormController: ClosingCostsForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Closing Costs"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        closingCostsFormController = bodyContentController as! ClosingCostsForm
     }
 
     override func didReceiveMemoryWarning() {

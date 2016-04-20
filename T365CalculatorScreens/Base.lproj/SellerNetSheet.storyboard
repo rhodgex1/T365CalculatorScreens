@@ -21,7 +21,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shm-mZ-75m" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="474"/>
                                 <connections>
-                                    <segue destination="Adi-gg-6SL" kind="embed" id="nDs-vM-MZ4"/>
+                                    <segue destination="Adi-gg-6SL" kind="embed" identifier="EmbedBody" id="nDs-vM-MZ4"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8j2-OQ-kII" userLabel="Header View">
@@ -30,7 +30,7 @@
                                     <constraint firstAttribute="height" constant="127" id="oI0-Fs-rcJ"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="tCa-r2-b9Y"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="tCa-r2-b9Y"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -69,7 +69,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-If-7sh" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="EPC-PL-TTn" kind="embed" id="vRp-xi-Ucr"/>
+                                    <segue destination="EPC-PL-TTn" kind="embed" identifier="EmbedBody" id="vRp-xi-Ucr"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8R1-RE-dKj" userLabel="Header View">
@@ -78,7 +78,7 @@
                                     <constraint firstAttribute="height" constant="127" id="pVy-dp-tcE"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="R7N-MA-0DZ"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="R7N-MA-0DZ"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -117,7 +117,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uF-Pc-Ib1" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="k87-E6-42B" kind="embed" id="yS2-3n-Hr9"/>
+                                    <segue destination="k87-E6-42B" kind="embed" identifier="EmbedBody" id="yS2-3n-Hr9"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iot-BB-dKt" userLabel="Header View">
@@ -126,7 +126,7 @@
                                     <constraint firstAttribute="height" constant="127" id="Yvo-x9-I59"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="bRB-l4-e2l"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="bRB-l4-e2l"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -165,7 +165,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-6O-7RA" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="n8m-cb-6Ad" kind="embed" id="jan-TX-LqQ"/>
+                                    <segue destination="n8m-cb-6Ad" kind="embed" identifier="EmbedBody" id="jan-TX-LqQ"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4Y-Hr-ugR" userLabel="Header View">
@@ -174,7 +174,7 @@
                                     <constraint firstAttribute="height" constant="127" id="6ej-Zg-YdO"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="Pfb-Zg-Pbb"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="Pfb-Zg-Pbb"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -213,7 +213,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-7b-NdT" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="vpo-1Z-rXd" kind="embed" id="a05-QJ-2Uu"/>
+                                    <segue destination="vpo-1Z-rXd" kind="embed" identifier="EmbedBody" id="a05-QJ-2Uu"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-0f-Gv9" userLabel="Header View">
@@ -222,7 +222,7 @@
                                     <constraint firstAttribute="height" constant="127" id="Y4e-es-CeT"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="6iH-YO-5nV"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="6iH-YO-5nV"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -244,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cS-C5-Sar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3701" y="1036"/>
+            <point key="canvasLocation" x="3717" y="972"/>
         </scene>
         <!--Seller Credits To Buyer Controller-->
         <scene sceneID="cLx-mr-Dtb">
@@ -261,7 +261,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDm-d8-n5S" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="hAe-0A-JMs" kind="embed" id="lrq-KM-hF0"/>
+                                    <segue destination="hAe-0A-JMs" kind="embed" identifier="EmbedBody" id="lrq-KM-hF0"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSK-aJ-tfb" userLabel="Header View">
@@ -270,7 +270,7 @@
                                     <constraint firstAttribute="height" constant="127" id="Urb-e2-Emc"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="3Pi-el-KRG"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="3Pi-el-KRG"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UhO-i5-Xfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4542" y="1108"/>
+            <point key="canvasLocation" x="4502" y="1008"/>
         </scene>
         <!--Financing Controller-->
         <scene sceneID="zof-IT-ExB">
@@ -309,7 +309,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z70-v6-tWR" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="348"/>
                                 <connections>
-                                    <segue destination="MiG-Cl-BaI" kind="embed" id="Zws-Op-7Jn"/>
+                                    <segue destination="MiG-Cl-BaI" kind="embed" identifier="EmbedBody" id="Zws-Op-7Jn"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUn-tO-ur3" userLabel="Header View">
@@ -318,7 +318,7 @@
                                     <constraint firstAttribute="height" constant="127" id="ybC-wx-Aue"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="ADE-LY-KMB"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="ADE-LY-KMB"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -340,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FcF-GQ-8kC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5247" y="1159"/>
+            <point key="canvasLocation" x="5247" y="1015"/>
         </scene>
         <!--Title Controller-->
         <scene sceneID="8pE-DA-fXs">
@@ -357,7 +357,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2x-Yg-WEh" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="222"/>
                                 <connections>
-                                    <segue destination="G2v-uX-ubs" kind="embed" id="Sws-Yq-pdi"/>
+                                    <segue destination="G2v-uX-ubs" kind="embed" identifier="EmbedBody" id="Sws-Yq-pdi"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5rB-7K-wgv" userLabel="Header View">
@@ -366,7 +366,7 @@
                                     <constraint firstAttribute="height" constant="127" id="JIv-Q0-FjR"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="kt0-ZR-qSL"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="kt0-ZR-qSL"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -405,7 +405,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZU-FT-2ei" userLabel="Body View">
                                 <rect key="frame" x="0.0" y="126" width="600" height="222"/>
                                 <connections>
-                                    <segue destination="m2D-vb-8XT" kind="embed" id="Zzd-GD-LM8"/>
+                                    <segue destination="m2D-vb-8XT" kind="embed" identifier="EmbedBody" id="Zzd-GD-LM8"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3X-2u-UNC" userLabel="Header View">
@@ -414,7 +414,7 @@
                                     <constraint firstAttribute="height" constant="127" id="clz-3d-rWR"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="TJF-hn-jVK"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="TJF-hn-jVK"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -436,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxW-I6-3Kw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3944" y="2220"/>
+            <point key="canvasLocation" x="4280" y="2220"/>
         </scene>
         <!--Closing Costs Form-->
         <scene sceneID="Kb8-h5-VOj">
@@ -463,7 +463,7 @@
                                                         <constraint firstAttribute="height" constant="1" id="Py8-e6-hvO"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-JZ-yIj">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-JZ-yIj">
                                                     <rect key="frame" x="34" y="42.5" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -513,7 +513,7 @@
                                                         <constraint firstAttribute="height" constant="1" id="WZb-gT-WYo"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-Hf-mHd">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OWq-Hf-mHd">
                                                     <rect key="frame" x="34" y="42.5" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1044,7 +1044,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jof-h6-buc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3675" y="1723"/>
+            <point key="canvasLocation" x="3727" y="1583"/>
         </scene>
         <!--Payoffs Form-->
         <scene sceneID="rAR-bY-hAx">
@@ -1288,7 +1288,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3e-9k-uqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4522" y="1739"/>
+            <point key="canvasLocation" x="4510" y="1635"/>
         </scene>
         <!--Title Form-->
         <scene sceneID="7Jk-qN-LWh">
@@ -1522,7 +1522,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjx-Vy-FAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3769" y="2691"/>
+            <point key="canvasLocation" x="3017" y="2699"/>
         </scene>
         <!--Escrow Form-->
         <scene sceneID="GC2-eU-K48">
@@ -1819,7 +1819,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELQ-fm-wx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4468" y="2870"/>
+            <point key="canvasLocation" x="4288" y="2710"/>
         </scene>
         <!--Property Tax Rate Controller-->
         <scene sceneID="wfp-yv-R6L">
@@ -1839,7 +1839,7 @@
                                     <constraint firstAttribute="height" constant="127" id="Fyi-iz-mCW"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="FHh-u3-K0e" kind="embed" id="XQR-KG-gm1"/>
+                                    <segue destination="FHh-u3-K0e" kind="embed" identifier="EmbedHeader" id="XQR-KG-gm1"/>
                                 </connections>
                             </containerView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOR-wH-E54">
@@ -2088,7 +2088,7 @@
                                                         <constraint firstAttribute="height" constant="1" id="d6r-w1-zB3"/>
                                                     </constraints>
                                                 </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="001-qw-Xkn">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="001-qw-Xkn">
                                                     <rect key="frame" x="34" y="26" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2844,7 +2844,7 @@
                                                     <rect key="frame" x="15" y="26" width="537" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R5Q-H8-Eh5">
                                                     <rect key="frame" x="15" y="2" width="115.5" height="17"/>
@@ -2908,7 +2908,7 @@
                                                     <rect key="frame" x="34" y="26" width="551" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -2944,7 +2944,7 @@
                                                     <rect key="frame" x="488" y="26" width="79" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIy-3c-Q0q">
                                                     <rect key="frame" x="467" y="26" width="13" height="21"/>
@@ -2952,11 +2952,11 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P8C-i7-ZIR">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="P8C-i7-ZIR">
                                                     <rect key="frame" x="34" y="26" width="417" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Broker Fee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlR-bE-jKi">
                                                     <rect key="frame" x="15" y="2" width="105.5" height="17"/>
@@ -3020,7 +3020,7 @@
                                                     <rect key="frame" x="15" y="27" width="570" height="20"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sF-IW-Lcv">
                                                     <rect key="frame" x="15" y="3" width="82.5" height="17"/>
@@ -3059,7 +3059,7 @@
                                                     <rect key="frame" x="34" y="26" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taxes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v7-ot-g6o">
                                                     <rect key="frame" x="15" y="2" width="37.5" height="17"/>
@@ -3109,7 +3109,7 @@
                                                     <rect key="frame" x="34" y="26" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Payoff(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oH9-MO-o32">
                                                     <rect key="frame" x="15" y="2" width="93" height="17"/>
@@ -3159,7 +3159,7 @@
                                                     <rect key="frame" x="34" y="26" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing Costs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxk-ff-NDm">
                                                     <rect key="frame" x="15" y="2" width="89.5" height="17"/>
@@ -3209,7 +3209,7 @@
                                                     <rect key="frame" x="34" y="26" width="533" height="21"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller Credits to Buyer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-N6-IZE">
                                                     <rect key="frame" x="15" y="2" width="144.5" height="17"/>
@@ -3259,7 +3259,7 @@
                                                     <rect key="frame" x="15" y="27" width="552" height="20"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Financing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRY-eM-aX5">
                                                     <rect key="frame" x="15" y="3" width="62.5" height="17"/>
@@ -3306,7 +3306,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWa-fW-POQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3727" y="-78"/>
+            <point key="canvasLocation" x="3491" y="-256"/>
         </scene>
         <!--NetProceedsController-->
         <scene sceneID="5CW-Qg-A30">
@@ -3709,7 +3709,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ebg-6F-eC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5171" y="1778"/>
+            <point key="canvasLocation" x="5263" y="1635"/>
         </scene>
     </scenes>
     <resources>
@@ -3719,6 +3719,6 @@
         <image name="locationArrow" width="15" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ADE-LY-KMB"/>
+        <segue reference="bRB-l4-e2l"/>
     </inferredMetricsTieBreakers>
 </document>

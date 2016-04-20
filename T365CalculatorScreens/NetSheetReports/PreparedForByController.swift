@@ -52,24 +52,3 @@ extension PreparedForByController {
     }
     
 }
-
-// implementing textfield delegates
-extension PreparedForByController: UITextFieldDelegate {
-    // navigation on tap of next button
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        
-        let nextTage=textField.tag+1;
-        // Try to find next responder
-        let nextResponder=textField.superview?.superview?.superview?.viewWithTag(nextTage) as UIResponder!
-        
-        if((textField.returnKeyType == UIReturnKeyType.Next) && (nextResponder != nil)) {
-            nextResponder?.becomeFirstResponder()
-        }
-        else if ((textField.returnKeyType == UIReturnKeyType.Done) || (nextResponder == nil))
-        {
-            // Not found, so remove keyboard
-            textField.resignFirstResponder()
-        }
-        return false // We do not want UITextField to insert line-breaks.
-    }
-}

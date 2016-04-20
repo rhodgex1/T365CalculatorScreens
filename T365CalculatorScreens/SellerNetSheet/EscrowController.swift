@@ -8,13 +8,17 @@
 
 import UIKit
 
-class EscrowController: UIViewController {
+class EscrowController: SellerNetSheetWithContainersBaseController {
+    var escrowFormController : EscrowForm!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         title = "Escrow"
+        
+        // Note: header controller (netProceedsController) is being set in its super class
+        escrowFormController = bodyContentController as! EscrowForm
     }
 
     override func didReceiveMemoryWarning() {
