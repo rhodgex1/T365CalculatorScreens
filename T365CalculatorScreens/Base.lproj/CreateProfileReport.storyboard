@@ -85,11 +85,49 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="footerView" destination="Lgr-xQ-U65" id="Evr-dq-aJx"/>
+                        <segue destination="Inp-mo-0BD" kind="show" identifier="Preview" id="WNE-Lb-ZKd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mMr-dy-gUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1818" y="-1526"/>
+        </scene>
+        <!--Preview Controller-->
+        <scene sceneID="xtD-cL-IFk">
+            <objects>
+                <viewController storyboardIdentifier="PreviewController" id="Inp-mo-0BD" customClass="PreviewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hio-mV-LVW"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIg-an-O1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ieA-o3-5RV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eap-Rg-b7P">
+                                <rect key="frame" x="0.0" y="65" width="600" height="535"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eap-Rg-b7P" secondAttribute="trailing" id="0cj-f0-EL4"/>
+                            <constraint firstItem="eap-Rg-b7P" firstAttribute="top" secondItem="ieA-o3-5RV" secondAttribute="top" constant="65" id="Hqf-T5-bHK"/>
+                            <constraint firstItem="PIg-an-O1c" firstAttribute="top" secondItem="eap-Rg-b7P" secondAttribute="bottom" id="I3r-se-TGb"/>
+                            <constraint firstItem="eap-Rg-b7P" firstAttribute="leading" secondItem="ieA-o3-5RV" secondAttribute="leading" id="uG8-zP-zSX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="91K-s9-0mG">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ECG-1Z-9EC"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="previewWebView" destination="eap-Rg-b7P" id="69X-C5-4rb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDo-4o-Spw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="-827"/>
         </scene>
         <!--Create Profile Report-->
         <scene sceneID="xf3-LJ-wws">

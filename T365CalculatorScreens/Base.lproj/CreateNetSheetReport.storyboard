@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djo-If-otW">
-                                        <rect key="frame" x="273" y="10" width="54" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                         <state key="normal" title="Preview"/>
                                         <connections>
                                             <action selector="previewAction:" destination="11q-hA-7f4" eventType="touchUpInside" id="tPP-6t-0eg"/>
@@ -31,13 +31,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="djo-If-otW" firstAttribute="centerY" secondItem="77q-Jb-ZI6" secondAttribute="centerY" id="10i-xK-7CD"/>
-                                    <constraint firstItem="djo-If-otW" firstAttribute="centerX" secondItem="77q-Jb-ZI6" secondAttribute="centerX" id="1gF-46-WQ3"/>
+                                    <constraint firstAttribute="bottom" secondItem="djo-If-otW" secondAttribute="bottom" id="90R-lN-Jp1"/>
                                     <constraint firstAttribute="height" constant="50" id="EA2-a6-eb0"/>
+                                    <constraint firstItem="djo-If-otW" firstAttribute="leading" secondItem="77q-Jb-ZI6" secondAttribute="leading" id="XA4-Z9-3Od"/>
+                                    <constraint firstAttribute="trailing" secondItem="djo-If-otW" secondAttribute="trailing" id="hkO-0c-4cq"/>
+                                    <constraint firstItem="djo-If-otW" firstAttribute="top" secondItem="77q-Jb-ZI6" secondAttribute="top" id="moX-fT-jID"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the content of report before you print or share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-Cu-S4V">
-                                <rect key="frame" x="15" y="107.5" width="301" height="14.5"/>
+                                <rect key="frame" x="15" y="107" width="301" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -77,10 +79,21 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="muc-Hh-blI"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="WWp-rL-AQS" kind="show" identifier="Preview" id="Dtt-Jq-whM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bO8-6D-Ccd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095" y="-334"/>
+        </scene>
+        <!--PreviewController-->
+        <scene sceneID="22p-Z5-EdW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateProfileReport" referencedIdentifier="PreviewController" id="WWp-rL-AQS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0P-P3-Qp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250.5" y="156"/>
         </scene>
         <!--Options - CreateNetSheetReport-->
         <scene sceneID="eQ8-Zq-aOc">

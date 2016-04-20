@@ -29,6 +29,7 @@
 		3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */; };
 		3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */; };
 		3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A21CC7793E00BEE96D /* PayoffCell.swift */; };
+		3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A41CC79B9D00BEE96D /* PreviewController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
@@ -72,6 +73,7 @@
 		3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateNetSheetReport.storyboard; path = ../Base.lproj/CreateNetSheetReport.storyboard; sourceTree = "<group>"; };
 		3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetWithContainersBaseController.swift; sourceTree = "<group>"; };
 		3DD530A21CC7793E00BEE96D /* PayoffCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffCell.swift; sourceTree = "<group>"; };
+		3DD530A41CC79B9D00BEE96D /* PreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
@@ -167,6 +169,7 @@
 		3DFB41891CBD3AD400995099 /* NetSheetReports */ = {
 			isa = PBXGroup;
 			children = (
+				3DD530A41CC79B9D00BEE96D /* PreviewController.swift */,
 				3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */,
 				3DFB41941CBD3B1400995099 /* CreateProfileReport.storyboard */,
 				3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */,
@@ -264,6 +267,7 @@
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
+				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
 				3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */,
 				3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */,
 				3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */,

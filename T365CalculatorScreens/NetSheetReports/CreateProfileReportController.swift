@@ -46,5 +46,6 @@ extension CreateProfileReportController {
 
     @IBAction func previewAction(sender: AnyObject) {
         //TODO: complete implementation
+        performSegueWithIdentifier("Preview", sender: self)
     }
 }

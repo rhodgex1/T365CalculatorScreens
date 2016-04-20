@@ -31,6 +31,7 @@ extension CreateNetSheetReportController {
     
     //TODO: complete the implementation
     @IBAction func previewAction(sender: AnyObject) {
+        performSegueWithIdentifier("Preview", sender: self)
     }
 
 }
