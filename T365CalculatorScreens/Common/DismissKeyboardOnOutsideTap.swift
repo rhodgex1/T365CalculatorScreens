@@ -13,6 +13,5 @@ extension DismissKeyboardOnOutsideTap {
             tapGesture.cancelsTouchesInView = false
             backgroundView.addGestureRecognizer(tapGesture)
         }
-        
     }
 }

@@ -28,6 +28,7 @@
 		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
 		3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */; };
 		3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */; };
+		3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A21CC7793E00BEE96D /* PayoffCell.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
@@ -70,6 +71,7 @@
 		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
 		3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateNetSheetReport.storyboard; path = ../Base.lproj/CreateNetSheetReport.storyboard; sourceTree = "<group>"; };
 		3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetWithContainersBaseController.swift; sourceTree = "<group>"; };
+		3DD530A21CC7793E00BEE96D /* PayoffCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffCell.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
@@ -157,6 +159,7 @@
 				3D9052FA1CC64E3500937E2C /* FinancingForm.swift */,
 				3D9052FC1CC64E4400937E2C /* FinancingController.swift */,
 				3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */,
+				3DD530A21CC7793E00BEE96D /* PayoffCell.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
 				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
+				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,

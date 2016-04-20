@@ -1050,166 +1050,71 @@
         <scene sceneID="rAR-bY-hAx">
             <objects>
                 <tableViewController id="n8m-cb-6Ad" customClass="PayoffsForm" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sam-7K-50x">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sam-7K-50x">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="ubk-eh-nfU">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="ti0-PD-Tsg" userLabel="Payoff1 Cell">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ti0-PD-Tsg" id="352-wo-n7O">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhT-tv-MSQ" userLabel="bottom edge indicator">
-                                                    <rect key="frame" x="15" y="65.5" width="570" height="1"/>
-                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="Saq-mI-N3y"/>
-                                                    </constraints>
-                                                </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-fo-wGC">
-                                                    <rect key="frame" x="34" y="42.5" width="551" height="21"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-oc-1MO">
-                                                    <rect key="frame" x="15" y="18.5" width="51.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-nU-Vfg">
-                                                    <rect key="frame" x="15" y="42.5" width="11" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PayoffCell" rowHeight="75" id="ti0-PD-Tsg" userLabel="Payoff1 Cell" customClass="PayoffCell" customModule="T365CalculatorScreens" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ti0-PD-Tsg" id="352-wo-n7O">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhT-tv-MSQ" userLabel="bottom edge indicator">
+                                            <rect key="frame" x="15" y="65.5" width="570" height="1"/>
+                                            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="xhT-tv-MSQ" secondAttribute="bottom" constant="8" id="A7z-hA-JzV"/>
-                                                <constraint firstItem="G0E-nU-Vfg" firstAttribute="leading" secondItem="ccS-oc-1MO" secondAttribute="leading" id="FjH-TC-hqD"/>
-                                                <constraint firstItem="xhT-tv-MSQ" firstAttribute="top" secondItem="4N3-fo-wGC" secondAttribute="bottom" constant="2" id="G03-xq-uoj"/>
-                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="top" secondItem="ccS-oc-1MO" secondAttribute="bottom" constant="7" id="OCz-QW-8cM"/>
-                                                <constraint firstItem="xhT-tv-MSQ" firstAttribute="leading" secondItem="352-wo-n7O" secondAttribute="leading" constant="15" id="VXC-Ax-cYY"/>
-                                                <constraint firstItem="G0E-nU-Vfg" firstAttribute="centerY" secondItem="4N3-fo-wGC" secondAttribute="centerY" id="bjb-RO-I5y"/>
-                                                <constraint firstItem="ccS-oc-1MO" firstAttribute="leading" secondItem="xhT-tv-MSQ" secondAttribute="leading" id="lSp-fv-UDL"/>
-                                                <constraint firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" constant="15" id="nNs-qW-FPL"/>
-                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="leading" secondItem="G0E-nU-Vfg" secondAttribute="trailing" constant="8" id="w04-Pu-91V"/>
-                                                <constraint firstItem="4N3-fo-wGC" firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" id="wPG-Sr-y7Z"/>
+                                                <constraint firstAttribute="height" constant="1" id="Saq-mI-N3y"/>
                                             </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="3Xd-IY-kxI" userLabel="Payoff2 Cell">
-                                        <rect key="frame" x="0.0" y="75" width="600" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Xd-IY-kxI" id="yQm-hE-zcN">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uH-lz-kft" userLabel="bottom edge indicator">
-                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
-                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="nXv-NS-m39"/>
-                                                    </constraints>
-                                                </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EG4-ip-dVH">
-                                                    <rect key="frame" x="34" y="43" width="551" height="21"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDb-Ag-gNa">
-                                                    <rect key="frame" x="15" y="19.5" width="53.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZj-5G-1KI">
-                                                    <rect key="frame" x="15" y="43" width="11" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="2uH-lz-kft" firstAttribute="leading" secondItem="yQm-hE-zcN" secondAttribute="leading" constant="15" id="DPx-9I-Lv0"/>
-                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="leading" secondItem="dZj-5G-1KI" secondAttribute="trailing" constant="8" id="SnQ-M5-n7Z"/>
-                                                <constraint firstItem="xDb-Ag-gNa" firstAttribute="leading" secondItem="2uH-lz-kft" secondAttribute="leading" id="gvg-AB-jEN"/>
-                                                <constraint firstAttribute="bottom" secondItem="2uH-lz-kft" secondAttribute="bottom" constant="8" id="h44-Wi-RLk"/>
-                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="top" secondItem="xDb-Ag-gNa" secondAttribute="bottom" constant="7" id="hnJ-BL-gb5"/>
-                                                <constraint firstItem="dZj-5G-1KI" firstAttribute="centerY" secondItem="EG4-ip-dVH" secondAttribute="centerY" id="kMQ-cu-wEz"/>
-                                                <constraint firstItem="dZj-5G-1KI" firstAttribute="leading" secondItem="xDb-Ag-gNa" secondAttribute="leading" id="lNR-jz-yGU"/>
-                                                <constraint firstItem="2uH-lz-kft" firstAttribute="top" secondItem="EG4-ip-dVH" secondAttribute="bottom" constant="2" id="oT4-vs-aHc"/>
-                                                <constraint firstAttribute="trailing" secondItem="2uH-lz-kft" secondAttribute="trailing" constant="15" id="vZz-DV-RUu"/>
-                                                <constraint firstItem="EG4-ip-dVH" firstAttribute="trailing" secondItem="2uH-lz-kft" secondAttribute="trailing" id="wZR-T6-Igp"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="y8b-uX-bGG" userLabel="Payoff3 Cell">
-                                        <rect key="frame" x="0.0" y="150" width="600" height="75"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y8b-uX-bGG" id="pgc-36-5oh">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDy-EA-yBM" userLabel="bottom edge indicator">
-                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
-                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="Ayq-6d-W6d"/>
-                                                    </constraints>
-                                                </view>
-                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Kr4-ng-kXK">
-                                                    <rect key="frame" x="34" y="43" width="551" height="21"/>
-                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
-                                                </textField>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyy-r0-zFO">
-                                                    <rect key="frame" x="15" y="19.5" width="53.5" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-rG-9Ze">
-                                                    <rect key="frame" x="15" y="43" width="11" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="b8e-rG-9Ze" firstAttribute="leading" secondItem="iyy-r0-zFO" secondAttribute="leading" id="EPQ-3a-hsj"/>
-                                                <constraint firstItem="b8e-rG-9Ze" firstAttribute="centerY" secondItem="Kr4-ng-kXK" secondAttribute="centerY" id="JPO-5M-VUY"/>
-                                                <constraint firstItem="tDy-EA-yBM" firstAttribute="leading" secondItem="pgc-36-5oh" secondAttribute="leading" constant="15" id="VzJ-x2-BIa"/>
-                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="leading" secondItem="b8e-rG-9Ze" secondAttribute="trailing" constant="8" id="WSi-6Z-drw"/>
-                                                <constraint firstItem="tDy-EA-yBM" firstAttribute="top" secondItem="Kr4-ng-kXK" secondAttribute="bottom" constant="2" id="e4N-Dd-eUs"/>
-                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="top" secondItem="iyy-r0-zFO" secondAttribute="bottom" constant="7" id="fP6-1T-BHT"/>
-                                                <constraint firstItem="iyy-r0-zFO" firstAttribute="leading" secondItem="tDy-EA-yBM" secondAttribute="leading" id="gWJ-Qs-ZEu"/>
-                                                <constraint firstAttribute="trailing" secondItem="tDy-EA-yBM" secondAttribute="trailing" constant="15" id="iQZ-cM-7EO"/>
-                                                <constraint firstItem="Kr4-ng-kXK" firstAttribute="trailing" secondItem="tDy-EA-yBM" secondAttribute="trailing" id="lLz-8O-kes"/>
-                                                <constraint firstAttribute="bottom" secondItem="tDy-EA-yBM" secondAttribute="bottom" constant="8" id="wfW-8m-Pcp"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                                        </view>
+                                        <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-fo-wGC">
+                                            <rect key="frame" x="34" y="42.5" width="551" height="21"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payoff 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-oc-1MO">
+                                            <rect key="frame" x="15" y="18.5" width="51.5" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0E-nU-Vfg">
+                                            <rect key="frame" x="15" y="42.5" width="11" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="xhT-tv-MSQ" secondAttribute="bottom" constant="8" id="A7z-hA-JzV"/>
+                                        <constraint firstItem="G0E-nU-Vfg" firstAttribute="leading" secondItem="ccS-oc-1MO" secondAttribute="leading" id="FjH-TC-hqD"/>
+                                        <constraint firstItem="xhT-tv-MSQ" firstAttribute="top" secondItem="4N3-fo-wGC" secondAttribute="bottom" constant="2" id="G03-xq-uoj"/>
+                                        <constraint firstItem="4N3-fo-wGC" firstAttribute="top" secondItem="ccS-oc-1MO" secondAttribute="bottom" constant="7" id="OCz-QW-8cM"/>
+                                        <constraint firstItem="xhT-tv-MSQ" firstAttribute="leading" secondItem="352-wo-n7O" secondAttribute="leading" constant="15" id="VXC-Ax-cYY"/>
+                                        <constraint firstItem="G0E-nU-Vfg" firstAttribute="centerY" secondItem="4N3-fo-wGC" secondAttribute="centerY" id="bjb-RO-I5y"/>
+                                        <constraint firstItem="ccS-oc-1MO" firstAttribute="leading" secondItem="xhT-tv-MSQ" secondAttribute="leading" id="lSp-fv-UDL"/>
+                                        <constraint firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" constant="15" id="nNs-qW-FPL"/>
+                                        <constraint firstItem="4N3-fo-wGC" firstAttribute="leading" secondItem="G0E-nU-Vfg" secondAttribute="trailing" constant="8" id="w04-Pu-91V"/>
+                                        <constraint firstItem="4N3-fo-wGC" firstAttribute="trailing" secondItem="xhT-tv-MSQ" secondAttribute="trailing" id="wPG-Sr-y7Z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="payoffAmount" destination="4N3-fo-wGC" id="Kak-VE-wcA"/>
+                                    <outlet property="payoffTitle" destination="ccS-oc-1MO" id="lrD-5g-WsL"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="n8m-cb-6Ad" id="Dsf-1G-A8a"/>
                             <outlet property="delegate" destination="n8m-cb-6Ad" id="BHI-GA-xdF"/>
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="payoff1" destination="4N3-fo-wGC" id="eBU-gj-lyd"/>
-                        <outlet property="payoff2" destination="EG4-ip-dVH" id="vQK-vt-Djp"/>
-                        <outlet property="payoff3" destination="Kr4-ng-kXK" id="bsx-UK-uoc"/>
+                        <outlet property="payoffTableView" destination="Sam-7K-50x" id="HQq-5I-qJK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd7-rJ-we1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3719,6 +3624,6 @@
         <image name="locationArrow" width="15" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bRB-l4-e2l"/>
+        <segue reference="Pfb-Zg-Pbb"/>
     </inferredMetricsTieBreakers>
 </document>
