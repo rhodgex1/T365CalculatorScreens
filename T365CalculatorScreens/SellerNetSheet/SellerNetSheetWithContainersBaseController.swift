@@ -15,7 +15,7 @@ enum ContainerSegueIdentifier : String {
 
 class SellerNetSheetWithContainersBaseController: UIViewController, HasHeaderContainer,  HasBodyContainer{
     // declaring header and body content controllers
-    // both of these can now be used to access respective outlets in containing view controller
+    // both of these can now be used to access respective outlets in parent view controller
     var netProceedsController: NetProceedsController!
     var bodyContentController: UITableViewController!
 

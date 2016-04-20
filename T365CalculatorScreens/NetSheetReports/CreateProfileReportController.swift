@@ -2,7 +2,10 @@ import UIKit
 
 class CreateProfileReportController: UIViewController {
 
+    var createProfileReportFormController : CreateProfileReportFormController!
+    
     @IBOutlet weak var footerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -13,6 +16,14 @@ class CreateProfileReportController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier {
+            if segueIdentifier == "EmbedContent" {
+                createProfileReportFormController = segue.destinationViewController as! CreateProfileReportFormController
+            }
+        }
     }
 
 }

@@ -64,7 +64,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-0c-vzc">
                                 <rect key="frame" x="0.0" y="64" width="600" height="486"/>
                                 <connections>
-                                    <segue destination="6eK-Ie-TTR" kind="embed" id="NS0-JQ-GeB"/>
+                                    <segue destination="6eK-Ie-TTR" kind="embed" identifier="EmbedContent" id="NS0-JQ-GeB"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -470,7 +470,7 @@
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MF9-hg-hLx">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="148"/>
                                                     <connections>
-                                                        <segue destination="L5v-4D-MZY" kind="embed" id="EdL-0R-2Ys"/>
+                                                        <segue destination="L5v-4D-MZY" kind="embed" identifier="EmbedContent" id="EdL-0R-2Ys"/>
                                                     </connections>
                                                 </containerView>
                                             </subviews>

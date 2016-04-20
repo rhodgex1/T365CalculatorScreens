@@ -11,6 +11,8 @@ enum ReportContentSelectionButtonTag : Int {
 }
 class CreateProfileReportFormController: UITableViewController {
 
+    var customizeReportOptionsController: CustomizeReportOptionsController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -18,6 +20,14 @@ class CreateProfileReportFormController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier {
+            if segueIdentifier == "EmbedContent" {
+                customizeReportOptionsController = segue.destinationViewController as! CustomizeReportOptionsController
+            }
+        }
     }
 
 }
