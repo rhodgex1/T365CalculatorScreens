@@ -5,6 +5,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Proxima Nova Medium.otf">
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Seller Net Sheet Controller-->
         <scene sceneID="7pB-z2-Itc">
@@ -239,6 +248,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yy6-fQ-tVW">
                         <barButtonItem key="backBarButtonItem" title=" " id="rgK-r8-Alc"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="30b-1y-IDz">
+                            <connections>
+                                <segue destination="Ldp-3i-WM1" kind="show" id="uMG-A2-EiO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -1194,6 +1208,128 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j3e-9k-uqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4510" y="1635"/>
+        </scene>
+        <!--Add Closing Cost Form-->
+        <scene sceneID="Z3q-UU-HVv">
+            <objects>
+                <tableViewController id="Ldp-3i-WM1" customClass="AddClosingCostForm" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="L4w-xg-zzD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="474"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="JH5-N2-GuC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="20" id="Fux-vU-PCn">
+                                        <rect key="frame" x="0.0" y="44" width="600" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fux-vU-PCn" id="6Zi-eo-Iz3">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="2ar-4K-ghE" userLabel="Miscellaneous Credit Cell">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2ar-4K-ghE" id="51n-xt-pqn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-Z2-9QR" userLabel="bottom edge indicator">
+                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="mRK-xa-P3g"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ2-aY-Vwa">
+                                                    <rect key="frame" x="15" y="23.5" width="37" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="g4f-6L-Prm">
+                                                    <rect key="frame" x="15" y="45" width="570" height="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g4f-6L-Prm" firstAttribute="top" secondItem="iQ2-aY-Vwa" secondAttribute="bottom" constant="7" id="2Z0-zO-1US"/>
+                                                <constraint firstItem="g4f-6L-Prm" firstAttribute="trailing" secondItem="4TA-Z2-9QR" secondAttribute="trailing" id="5vH-l5-Ovv"/>
+                                                <constraint firstAttribute="bottom" secondItem="4TA-Z2-9QR" secondAttribute="bottom" constant="8" id="HVE-ZY-ods"/>
+                                                <constraint firstItem="iQ2-aY-Vwa" firstAttribute="leading" secondItem="4TA-Z2-9QR" secondAttribute="leading" id="Iew-Xz-rgO"/>
+                                                <constraint firstItem="4TA-Z2-9QR" firstAttribute="top" secondItem="g4f-6L-Prm" secondAttribute="bottom" constant="2" id="JKv-Ij-vHX"/>
+                                                <constraint firstAttribute="trailing" secondItem="4TA-Z2-9QR" secondAttribute="trailing" constant="15" id="Z3E-6h-hsV"/>
+                                                <constraint firstItem="4TA-Z2-9QR" firstAttribute="leading" secondItem="51n-xt-pqn" secondAttribute="leading" constant="15" id="bqb-iK-Xml"/>
+                                                <constraint firstItem="g4f-6L-Prm" firstAttribute="leading" secondItem="iQ2-aY-Vwa" secondAttribute="leading" id="q09-j7-UBK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="1uj-Na-M4m" userLabel="Miscellaneous Credit Cell">
+                                        <rect key="frame" x="0.0" y="139" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1uj-Na-M4m" id="XGZ-gI-2qI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELR-n0-bbg" userLabel="bottom edge indicator">
+                                                    <rect key="frame" x="15" y="66" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="GfY-Sg-7RP"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vLO-Au-De3">
+                                                    <rect key="frame" x="34" y="45" width="551" height="19"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4In-sW-rQv">
+                                                    <rect key="frame" x="15" y="24.5" width="35" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNv-fD-9CW">
+                                                    <rect key="frame" x="15" y="46" width="11" height="17"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FNv-fD-9CW" firstAttribute="leading" secondItem="4In-sW-rQv" secondAttribute="leading" id="28I-1B-Nst"/>
+                                                <constraint firstItem="vLO-Au-De3" firstAttribute="leading" secondItem="FNv-fD-9CW" secondAttribute="trailing" constant="8" id="Ex4-0G-ZeG"/>
+                                                <constraint firstItem="vLO-Au-De3" firstAttribute="trailing" secondItem="ELR-n0-bbg" secondAttribute="trailing" id="H3O-Gw-dm2"/>
+                                                <constraint firstItem="vLO-Au-De3" firstAttribute="top" secondItem="4In-sW-rQv" secondAttribute="bottom" constant="7" id="KPe-i0-XVV"/>
+                                                <constraint firstItem="ELR-n0-bbg" firstAttribute="top" secondItem="vLO-Au-De3" secondAttribute="bottom" constant="2" id="c7q-6L-eFR"/>
+                                                <constraint firstItem="ELR-n0-bbg" firstAttribute="leading" secondItem="XGZ-gI-2qI" secondAttribute="leading" constant="15" id="ihk-aK-Mmc"/>
+                                                <constraint firstItem="FNv-fD-9CW" firstAttribute="centerY" secondItem="vLO-Au-De3" secondAttribute="centerY" id="kJR-5k-8zv"/>
+                                                <constraint firstAttribute="bottom" secondItem="ELR-n0-bbg" secondAttribute="bottom" constant="8" id="mok-gd-Bn2"/>
+                                                <constraint firstAttribute="trailing" secondItem="ELR-n0-bbg" secondAttribute="trailing" constant="15" id="naG-ei-YmI"/>
+                                                <constraint firstItem="4In-sW-rQv" firstAttribute="leading" secondItem="ELR-n0-bbg" secondAttribute="leading" id="u06-7i-rSm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Ldp-3i-WM1" id="DbB-nh-yg8"/>
+                            <outlet property="delegate" destination="Ldp-3i-WM1" id="kIk-w2-Q5F"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="newClosingCostName" destination="g4f-6L-Prm" id="Wr3-Jo-VRV"/>
+                        <outlet property="newClosingCostValue" destination="vLO-Au-De3" id="9qo-E2-Fcd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Re9-ff-4tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4750" y="23"/>
         </scene>
         <!--Title Form-->
         <scene sceneID="7Jk-qN-LWh">
@@ -3624,6 +3760,6 @@
         <image name="locationArrow" width="15" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pfb-Zg-Pbb"/>
+        <segue reference="6iH-YO-5nV"/>
     </inferredMetricsTieBreakers>
 </document>
