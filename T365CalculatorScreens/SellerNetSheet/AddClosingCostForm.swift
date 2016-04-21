@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class AddClosingCostForm: UITableViewController , DismissKeyboardOnOutsideTap {
     var backgroundView: UIView!
 
@@ -22,7 +23,8 @@ class AddClosingCostForm: UITableViewController , DismissKeyboardOnOutsideTap {
         
         title = "Add Closting Cost"
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
