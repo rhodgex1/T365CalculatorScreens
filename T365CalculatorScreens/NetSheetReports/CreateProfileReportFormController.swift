@@ -32,7 +32,7 @@ class CreateProfileReportFormController: UITableViewController {
 
 }
 
-// User actions
+//MARK:- User actions
 extension CreateProfileReportFormController {
     
     @IBAction func selectContent(sender: UIButton) {

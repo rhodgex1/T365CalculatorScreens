@@ -35,7 +35,7 @@ class SellerNewNetSheetForm: UITableViewController, DismissKeyboardOnOutsideTap 
     }
 }
 
-// user actions
+//MARK:- user actions
 extension SellerNewNetSheetForm {
     
     @IBAction func selectionLocation(sender: AnyObject) {

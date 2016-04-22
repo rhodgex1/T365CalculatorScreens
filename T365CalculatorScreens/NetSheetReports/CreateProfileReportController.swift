@@ -28,7 +28,7 @@ class CreateProfileReportController: UIViewController {
 
 }
 
-// private methods
+//MARK:- private methods
 extension CreateProfileReportController {
     private func configureFooterView() {
         footerView.layer.borderWidth = 1.0
@@ -37,7 +37,7 @@ extension CreateProfileReportController {
 }
 
 
-// User actions
+//MARK:- User actions
 extension CreateProfileReportController {
     
     @IBAction func resetAction(sender: AnyObject) {

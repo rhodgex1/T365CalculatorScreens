@@ -16,7 +16,7 @@ class NetProceedsController: UIViewController {
 
 }
 
-// user actions
+//MARK:- user actions
 extension NetProceedsController {
     
     @IBAction func infoAction(sender: AnyObject) {

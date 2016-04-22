@@ -80,7 +80,7 @@ class ClosingCostsForm: UITableViewController, DismissKeyboardOnOutsideTap {
 
 }
 
-// Implementing table view data source and delegates
+//MARK:- Implementing table view data source and delegates
 extension ClosingCostsForm {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return closingCosts.count
@@ -114,7 +114,7 @@ extension ClosingCostsForm {
     }
 }
 
-// text field delegate to populate form data structure
+//MARK:- text field delegate to populate form data structure
 extension ClosingCostsForm : UITextFieldDelegate {
     func textFieldDidEndEditing(textField: UITextField){
         if let closingCostFormBaseCell = textField.superview?.superview as? ClosingCostFormBaseCell, indexPath = closingCostTableView.indexPathForCell(closingCostFormBaseCell), textFieldText = textField.text  {

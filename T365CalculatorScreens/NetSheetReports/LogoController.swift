@@ -44,7 +44,7 @@ class LogoController: UIViewController, DeclareReportContent {
     }
 }
 
-// implementing collection view related data source methods
+//MARK:- implementing collection view related data source methods
 extension LogoController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let logosArray = logos {
@@ -68,14 +68,14 @@ extension LogoController: UICollectionViewDataSource {
     }
 }
 
-// implementing collection view related delegate methods
+//MARK:- implementing collection view related delegate methods
 extension LogoController: UICollectionViewDelegate {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         //TODO: Implement action based on user's selection
     }
 }
 
-// user actions
+//MARK:- user actions
 extension LogoController {
     
     @IBAction func includeLogoAction(sender: AnyObject) {

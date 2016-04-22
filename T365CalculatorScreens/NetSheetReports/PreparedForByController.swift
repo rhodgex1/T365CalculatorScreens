@@ -45,7 +45,7 @@ class PreparedForByController: UITableViewController, DeclareReportContent, Dism
 }
 
 
-// user actions
+//MARK:- user actions
 extension PreparedForByController {
     @IBAction func includeAction(sender: AnyObject) {
         //TODO: complete implementation

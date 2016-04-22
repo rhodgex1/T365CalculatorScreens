@@ -26,7 +26,7 @@ class CreateNetSheetReportController: UIViewController {
 
 }
 
-// user actions
+//MARK:- user actions
 extension CreateNetSheetReportController {
     
     //TODO: complete the implementation

@@ -39,7 +39,7 @@ class FinancingForm: UITableViewController , DismissKeyboardOnOutsideTap {
     }
 }
 
-// user actions
+//MARK:- user actions
 extension FinancingForm {
     
     @IBAction func selectContent(sender: UIButton) {

@@ -37,7 +37,7 @@ class CustomizeReportOptionsController: UITableViewController {
     }
 }
 
-// this is a protocol which makes sure that destination view controller exposes ReportContent property
+//MARK:- this is a protocol which makes sure that destination view controller exposes ReportContent property
 protocol DeclareReportContent {
     var reportContent: ReportContent! {get set}
 }

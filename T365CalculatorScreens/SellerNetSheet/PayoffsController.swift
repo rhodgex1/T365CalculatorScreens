@@ -28,7 +28,7 @@ class PayoffsController: SellerNetSheetWithContainersBaseController {
 
 }
 
-//MARK:-
+//MARK:- User actions
 extension PayoffsController {
     
     @IBAction func addFormRow(sender: AnyObject) {

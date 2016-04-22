@@ -36,7 +36,7 @@ class EscrowForm: UITableViewController , DismissKeyboardOnOutsideTap {
     }
 }
 
-// user actions
+//MARK:- user actions
 extension EscrowForm {
     
     @IBAction func subEscrowInfoAction(sender: AnyObject) {
