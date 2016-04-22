@@ -8,18 +8,29 @@
 
 import UIKit
 
+struct MiscellaneousCredit {
+    var title: String
+    var amount: Double?
+    
+    init(title: String) {
+        self.title = title
+    }
+}
+
 class SellerCreditsToBuyerForm: UITableViewController, DismissKeyboardOnOutsideTap {
     var backgroundView: UIView!
-
-    // declaring IBoutlets
-    @IBOutlet weak var miscellaneousCredit: UITextField!
+    var miscellaneousCredits: [MiscellaneousCredit]!
     
+    // declaring IBOutlets
+    @IBOutlet var miscellaneousTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backgroundView = view
         configureToDismissKeyboard()
+        
+        addDummyData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,3 +43,45 @@ class SellerCreditsToBuyerForm: UITableViewController, DismissKeyboardOnOutsideT
     }
 
 }
+
+//MARK:- Utility methods
+extension SellerCreditsToBuyerForm {
+    private func addDummyData() {
+        let miscellaneousCredit1 = MiscellaneousCredit(title: "Miscellaneous Credit")
+        miscellaneousCredits = [miscellaneousCredit1];
+    }
+    
+    func addNewRow() {
+        let miscellaneousCredit = MiscellaneousCredit(title: "Miscellaneous Credit")
+        miscellaneousCredits.append(miscellaneousCredit)
+        miscellaneousTableView.reloadData()
+    }
+}
+
+//MARK:- TableView data source
+extension SellerCreditsToBuyerForm {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return miscellaneousCredits.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(MiscellaneousCreditCell.cellIdentifier, forIndexPath: indexPath) as! MiscellaneousCreditCell
+        let aMiscellaneousCredit = miscellaneousCredits[indexPath.row]
+        cell.populateWithData(aMiscellaneousCredit)
+        return cell
+    }
+}
+
+// text field delegate to populate form data structure
+extension SellerCreditsToBuyerForm : UITextFieldDelegate {
+    func textFieldDidEndEditing(textField: UITextField){
+        if let closingCostFormBaseCell = textField.superview?.superview as? MiscellaneousCreditCell, indexPath = miscellaneousTableView.indexPathForCell(closingCostFormBaseCell), textFieldText = textField.text  {
+            let row = indexPath.row
+            var aMiscellaneousCredit = miscellaneousCredits[row]
+            aMiscellaneousCredit.amount = Double(textFieldText)
+            miscellaneousCredits[row] = aMiscellaneousCredit
+        }
+    }
+}
+
+

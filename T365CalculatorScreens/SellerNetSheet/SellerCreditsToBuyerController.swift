@@ -27,3 +27,11 @@ class SellerCreditsToBuyerController: SellerNetSheetWithContainersBaseController
     }
 
 }
+
+// User actions
+extension SellerCreditsToBuyerController {
+    
+    @IBAction func addFormRow(sender: AnyObject) {
+        sellerCreditsToBuyerFormController.addNewRow()
+    }
+}

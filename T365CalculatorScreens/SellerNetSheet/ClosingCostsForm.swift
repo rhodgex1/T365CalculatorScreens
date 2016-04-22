@@ -42,18 +42,6 @@ class ClosingCostsForm: UITableViewController, DismissKeyboardOnOutsideTap {
     var closingCosts: [ClosingCost]!
     
     // declaring IBOutlets
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var escrow: UITextField!
-    @IBOutlet weak var recording: UITextField!
-    @IBOutlet weak var notary: UITextField!
-    @IBOutlet weak var homeWarranty: UITextField!
-    @IBOutlet weak var termiteReport: UITextField!
-    @IBOutlet weak var naturalHazardDisclosureReport: UITextField!
-    @IBOutlet weak var hoaTransfer: UITextField!
-    @IBOutlet weak var hoaProratedDues: UITextField!
-    @IBOutlet weak var reconveyance: UITextField!
-    @IBOutlet weak var taxCertificate: UITextField!
-    @IBOutlet weak var repairs: UITextField!
     @IBOutlet var closingCostTableView: UITableView!
     
     override func viewDidLoad() {

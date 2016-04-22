@@ -19,6 +19,7 @@
 		3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */; };
 		3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872881CC8F1450058FA6C /* RGPageViewController.swift */; };
 		322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3228728F1CC8F1720058FA6C /* SellerBuyerOther.storyboard */; };
+		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
 		3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */; };
 		3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */; };
 		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
@@ -90,6 +91,7 @@
 		322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateEmptyViewController.swift; sourceTree = "<group>"; };
 		322872881CC8F1450058FA6C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
 		322872901CC8F1720058FA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SellerBuyerOther.storyboard; sourceTree = "<group>"; };
+		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
 		3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClosingCostForm.swift; sourceTree = "<group>"; };
 		3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormCell.swift; sourceTree = "<group>"; };
 		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */,
 				3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */,
 				3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */,
+				3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */,
 			);
 			path = SellerNetSheet;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
+				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,

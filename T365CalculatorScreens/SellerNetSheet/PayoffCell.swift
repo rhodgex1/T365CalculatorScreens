@@ -11,6 +11,7 @@ import UIKit
 class PayoffCell: UITableViewCell {
     static let cellIdentifier = "PayoffCell"
 
+    // declaration of IBOutlets
     @IBOutlet weak var payoffAmount: UITextField!
     @IBOutlet weak var payoffTitle: UILabel!
     
@@ -26,7 +27,10 @@ class PayoffCell: UITableViewCell {
     }
 
     func populateWithData(payoff: Payoff) {
-        payoffAmount.text = "\(payoff.amount)"
+        if let amount = payoff.amount {
+            payoffAmount.text = "\(amount)"
+        }
+        
         payoffTitle.text = payoff.title
     }
 }

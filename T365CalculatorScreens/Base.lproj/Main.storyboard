@@ -21,15 +21,15 @@
             </objects>
             <point key="canvasLocation" x="-268" y="508"/>
         </scene>
-        <!--SellerBuyerOther-->
+        <!--SellerCreditsToBuyerController-->
         <scene sceneID="DOo-Eg-dBt">
             <objects>
-                <viewControllerPlaceholder storyboardName="SellerBuyerOther" id="dPP-h0-T2q" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SellerNetSheet" referencedIdentifier="SellerCreditsToBuyerController" id="dPP-h0-T2q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTL-GS-3Wb"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIJ-bD-PhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="698.5" y="496"/>
+            <point key="canvasLocation" x="288.5" y="230"/>
         </scene>
     </scenes>
 </document>
