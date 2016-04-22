@@ -11,8 +11,10 @@ import UIKit
 class TaxRateCell: UITableViewCell {
     // declaring outlets
     @IBOutlet weak var taxRate: UITextField!
-    @IBOutlet weak var cityStateName: UITextField!
+    @IBOutlet weak var taxRateName: UITextField!
     @IBOutlet weak var propertyRateSelection: UIButton!
+    
+    weak var parentViewController: PropertyTaxRateController!
     
     static let cellIdentifier = "TaxRateCell"
     
@@ -28,18 +30,17 @@ class TaxRateCell: UITableViewCell {
     }
     
     func populateWithData(propertyTaxRate: PropertyTaxRate) {
-        taxRate.text = "\(propertyTaxRate.taxRate)"
-        cityStateName.text = "\(propertyTaxRate.city), \(propertyTaxRate.state)"
+        if let aTaxRate = propertyTaxRate.taxRate {
+            taxRate.text = "\(aTaxRate)"
+        }
+        
+        taxRateName.text = propertyTaxRate.taxRateName
         propertyRateSelection.selected = propertyTaxRate.isSelected
     }
 
     // below method is added to support check uncheck functionality on tap of circular button
     @IBAction func selectionAction(sender: AnyObject) {
-        if let tableView = superview?.superview as? UITableView, tableViewDelegate = tableView.delegate {
-            let indexPath = tableView.indexPathForCell(self)
-            tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
-            tableViewDelegate.tableView!(tableView, didSelectRowAtIndexPath: indexPath!)
-        }
+        parentViewController.updateSelectionForCell(self)
     }
 
 }
