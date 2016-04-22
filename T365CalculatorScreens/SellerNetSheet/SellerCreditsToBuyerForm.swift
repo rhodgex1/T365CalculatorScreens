@@ -72,10 +72,10 @@ extension SellerCreditsToBuyerForm {
     }
 }
 
-// text field delegate to populate form data structure
+//MARK:- text field delegate to populate form data structure
 extension SellerCreditsToBuyerForm : UITextFieldDelegate {
     func textFieldDidEndEditing(textField: UITextField){
-        if let closingCostFormBaseCell = textField.superview?.superview as? MiscellaneousCreditCell, indexPath = miscellaneousTableView.indexPathForCell(closingCostFormBaseCell), textFieldText = textField.text  {
+        if let aMiscellaneousCreditCell = textField.superview?.superview as? MiscellaneousCreditCell, indexPath = miscellaneousTableView.indexPathForCell(aMiscellaneousCreditCell), textFieldText = textField.text  {
             let row = indexPath.row
             var aMiscellaneousCredit = miscellaneousCredits[row]
             aMiscellaneousCredit.amount = Double(textFieldText)
