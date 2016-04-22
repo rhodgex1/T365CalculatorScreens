@@ -19,6 +19,6 @@ class EstimateCell: UITableViewCell {
     
     func populateWithData(estimate: Estimate) {
         estimateTitle.text = estimate.title
-        estimateDate.text = estimate.savedDate
+        estimateDate.text = "Saved on \(estimate.savedDate)"
     }
 }

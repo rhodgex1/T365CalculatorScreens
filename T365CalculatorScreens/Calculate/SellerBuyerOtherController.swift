@@ -1,11 +1,12 @@
 import UIKit
 
-/* structure is:-
+/* Flow/ Structure defined -
  
  SellerBuyerOtherController -> RGPageViewController
     |- SellerBuyerOtherContainerController -> UIViewController
- 
- 
+         |- CalculateDataViewController -> UIViewController
+                    OR
+         |- CalculateEmptyViewController -> UIViewController
  */
 
 enum UserType : Int {
@@ -22,12 +23,11 @@ class SellerBuyerOtherController: RGPageViewController {
     // declaring constants
     static let kStoryBoardSellerBuyerOther = "SellerBuyerOther"
     let kSellerBuyerOtherContainerController = "SellerBuyerOtherContainerController"
-    let kPageTitle = "Calculate"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = kPageTitle
+        title = "Calculate"
         
         tabBarTitles = ["Seller", "Buyer", "Other"]
         
@@ -39,6 +39,7 @@ class SellerBuyerOtherController: RGPageViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        //Below reloadData statement is added to resolve the issue: on first time view load it is showing wrong y ordinate
         reloadData()
     }
 }
@@ -52,8 +53,8 @@ extension SellerBuyerOtherController : RGPageViewControllerDataSource {
     func tabViewForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIView {
         var tabView: UIView!
         
+        // configuring tabView
         tabView = UILabel()
-        
         (tabView as! UILabel).font = UIFont(name:"ProximaNova-Medium", size:16)
         (tabView as! UILabel).text = tabBarTitles[index]
         (tabView as! UILabel).sizeToFit()
@@ -64,22 +65,16 @@ extension SellerBuyerOtherController : RGPageViewControllerDataSource {
     func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
         let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerBuyerOther, bundle: nil)
-        var sellerBuyerOtherContainerController:SellerBuyerOtherContainerController! = nil
+        let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
+        
         if let userType = UserType(rawValue:index) {
-            
             switch userType {
-            case .Seller:
-                sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
-                sellerBuyerOtherContainerController.userType = .Seller
-                
-            case .Buyer:
-                sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
-                sellerBuyerOtherContainerController.userType = .Buyer
-                
-            case .Other:
-                sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
-                sellerBuyerOtherContainerController.userType = .Other
-                
+                case .Seller:
+                    sellerBuyerOtherContainerController.userType = .Seller
+                case .Buyer:
+                    sellerBuyerOtherContainerController.userType = .Buyer
+                case .Other:
+                    sellerBuyerOtherContainerController.userType = .Other
             }
         }
         
