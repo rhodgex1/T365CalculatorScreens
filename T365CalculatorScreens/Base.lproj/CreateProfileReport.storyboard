@@ -26,7 +26,7 @@
         <!--Create Profile Report Controller-->
         <scene sceneID="hA1-LL-t7D">
             <objects>
-                <viewController id="jM5-rL-fRc" customClass="CreateProfileReportController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateProfileReportController" id="jM5-rL-fRc" customClass="CreateProfileReportController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iDC-1v-w2n"/>
                         <viewControllerLayoutGuide type="bottom" id="Q8C-EH-QAZ"/>

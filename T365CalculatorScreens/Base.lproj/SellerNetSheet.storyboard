@@ -145,7 +145,7 @@
         <!--Seller Net Sheet Controller-->
         <scene sceneID="7pB-z2-Itc">
             <objects>
-                <viewController id="bUh-YD-gVj" customClass="SellerNetSheetController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellerNetSheetController" id="bUh-YD-gVj" customClass="SellerNetSheetController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aBA-JV-FBc"/>
                         <viewControllerLayoutGuide type="bottom" id="EvM-aA-FaX"/>
@@ -3447,6 +3447,6 @@
         <image name="locationArrow" width="15" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XQR-KG-gm1"/>
+        <segue reference="tCa-r2-b9Y"/>
     </inferredMetricsTieBreakers>
 </document>
