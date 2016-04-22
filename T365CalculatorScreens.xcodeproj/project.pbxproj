@@ -12,12 +12,68 @@
 		20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C931CBC43AE0058DA02 /* Main.storyboard */; };
 		20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20109C961CBC43AE0058DA02 /* Assets.xcassets */; };
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
+		322872891CC8F1450058FA6C /* CalculateDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872831CC8F1450058FA6C /* CalculateDataViewController.swift */; };
+		3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */; };
+		3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */; };
+		3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872861CC8F1450058FA6C /* EstimateCell.swift */; };
+		3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */; };
+		3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872881CC8F1450058FA6C /* RGPageViewController.swift */; };
+		322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3228728F1CC8F1720058FA6C /* SellerBuyerOther.storyboard */; };
+		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
+		3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */; };
+		3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */; };
+		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
+		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
+		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
+		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
+		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
+		3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E81CC6119900937E2C /* PayoffsForm.swift */; };
+		3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */; };
+		3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */; };
+		3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EE1CC6425A00937E2C /* TitleController.swift */; };
+		3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F01CC6426800937E2C /* TitleForm.swift */; };
+		3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F21CC6463600937E2C /* EscrowForm.swift */; };
+		3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F41CC6464B00937E2C /* EscrowController.swift */; };
+		3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */; };
+		3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */; };
+		3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FA1CC64E3500937E2C /* FinancingForm.swift */; };
+		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
+		3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */; };
+		3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */; };
+		3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A21CC7793E00BEE96D /* PayoffCell.swift */; };
+		3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A41CC79B9D00BEE96D /* PreviewController.swift */; };
+		3DD530B71CC7ABC800BEE96D /* Proxima Nova Black It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530A71CC7ABC800BEE96D /* Proxima Nova Black It.otf */; };
+		3DD530B81CC7ABC800BEE96D /* Proxima Nova Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530A81CC7ABC800BEE96D /* Proxima Nova Black.otf */; };
+		3DD530B91CC7ABC800BEE96D /* Proxima Nova Bold It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530A91CC7ABC800BEE96D /* Proxima Nova Bold It.otf */; };
+		3DD530BA1CC7ABC800BEE96D /* Proxima Nova Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AA1CC7ABC800BEE96D /* Proxima Nova Bold.otf */; };
+		3DD530BB1CC7ABC800BEE96D /* Proxima Nova Light It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AB1CC7ABC800BEE96D /* Proxima Nova Light It.otf */; };
+		3DD530BC1CC7ABC800BEE96D /* Proxima Nova Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AC1CC7ABC800BEE96D /* Proxima Nova Light.otf */; };
+		3DD530BD1CC7ABC800BEE96D /* Proxima Nova Medium It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AD1CC7ABC800BEE96D /* Proxima Nova Medium It.otf */; };
+		3DD530BE1CC7ABC800BEE96D /* Proxima Nova Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AE1CC7ABC800BEE96D /* Proxima Nova Medium.otf */; };
+		3DD530BF1CC7ABC800BEE96D /* Proxima Nova Reg It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530AF1CC7ABC800BEE96D /* Proxima Nova Reg It.otf */; };
+		3DD530C01CC7ABC800BEE96D /* Proxima Nova Reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B01CC7ABC800BEE96D /* Proxima Nova Reg.otf */; };
+		3DD530C11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf */; };
+		3DD530C21CC7ABC800BEE96D /* Proxima Nova Sbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B21CC7ABC800BEE96D /* Proxima Nova Sbold.otf */; };
+		3DD530C31CC7ABC800BEE96D /* Proxima Nova Thin It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B31CC7ABC800BEE96D /* Proxima Nova Thin It.otf */; };
+		3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */; };
+		3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */; };
+		3DD530C61CC7ABC800BEE96D /* Proxima Nova Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */; };
+		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
+		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
+		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
+		3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */; };
+		3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */; };
 		3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418A1CBD3AFF00995099 /* CreateNetSheetReportController.swift */; };
 		3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418B1CBD3AFF00995099 /* CustomizeReportOptionsController.swift */; };
-		3DFB41911CBD3B0500995099 /* PreparedForController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418E1CBD3B0500995099 /* PreparedForController.swift */; };
-		3DFB41921CBD3B0500995099 /* PreparedByController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418F1CBD3B0500995099 /* PreparedByController.swift */; };
+		3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */; };
 		3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB41901CBD3B0500995099 /* LogoController.swift */; };
-		3DFB41951CBD3B1400995099 /* NetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB41941CBD3B1400995099 /* NetSheetReport.storyboard */; };
+		3DFB41951CBD3B1400995099 /* CreateProfileReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DFB41941CBD3B1400995099 /* CreateProfileReport.storyboard */; };
+		3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08DA1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift */; };
+		3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08DC1CC4F3C300101EE3 /* NetProceedsController.swift */; };
+		3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08DE1CC4F92400101EE3 /* BrokerFeeController.swift */; };
+		3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08E01CC4FBAC00101EE3 /* BrokerFeeForm.swift */; };
+		3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08E21CC5002000101EE3 /* TaxesForm.swift */; };
+		3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE08E41CC5004100101EE3 /* TaxesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +84,68 @@
 		20109C961CBC43AE0058DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20109C991CBC43AE0058DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322872831CC8F1450058FA6C /* CalculateDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateDataViewController.swift; sourceTree = "<group>"; };
+		322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherController.swift; sourceTree = "<group>"; };
+		322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherContainerController.swift; sourceTree = "<group>"; };
+		322872861CC8F1450058FA6C /* EstimateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimateCell.swift; sourceTree = "<group>"; };
+		322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateEmptyViewController.swift; sourceTree = "<group>"; };
+		322872881CC8F1450058FA6C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
+		322872901CC8F1720058FA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SellerBuyerOther.storyboard; sourceTree = "<group>"; };
+		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
+		3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClosingCostForm.swift; sourceTree = "<group>"; };
+		3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormCell.swift; sourceTree = "<group>"; };
+		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
+		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
+		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
+		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
+		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
+		3D9052E81CC6119900937E2C /* PayoffsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsForm.swift; sourceTree = "<group>"; };
+		3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsForm.swift; sourceTree = "<group>"; };
+		3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsController.swift; sourceTree = "<group>"; };
+		3D9052EE1CC6425A00937E2C /* TitleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleController.swift; sourceTree = "<group>"; };
+		3D9052F01CC6426800937E2C /* TitleForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleForm.swift; sourceTree = "<group>"; };
+		3D9052F21CC6463600937E2C /* EscrowForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscrowForm.swift; sourceTree = "<group>"; };
+		3D9052F41CC6464B00937E2C /* EscrowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscrowController.swift; sourceTree = "<group>"; };
+		3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerController.swift; sourceTree = "<group>"; };
+		3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerForm.swift; sourceTree = "<group>"; };
+		3D9052FA1CC64E3500937E2C /* FinancingForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingForm.swift; sourceTree = "<group>"; };
+		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
+		3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateNetSheetReport.storyboard; path = ../Base.lproj/CreateNetSheetReport.storyboard; sourceTree = "<group>"; };
+		3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetWithContainersBaseController.swift; sourceTree = "<group>"; };
+		3DD530A21CC7793E00BEE96D /* PayoffCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffCell.swift; sourceTree = "<group>"; };
+		3DD530A41CC79B9D00BEE96D /* PreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewController.swift; sourceTree = "<group>"; };
+		3DD530A71CC7ABC800BEE96D /* Proxima Nova Black It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black It.otf"; sourceTree = "<group>"; };
+		3DD530A81CC7ABC800BEE96D /* Proxima Nova Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Black.otf"; sourceTree = "<group>"; };
+		3DD530A91CC7ABC800BEE96D /* Proxima Nova Bold It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold It.otf"; sourceTree = "<group>"; };
+		3DD530AA1CC7ABC800BEE96D /* Proxima Nova Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Bold.otf"; sourceTree = "<group>"; };
+		3DD530AB1CC7ABC800BEE96D /* Proxima Nova Light It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Light It.otf"; sourceTree = "<group>"; };
+		3DD530AC1CC7ABC800BEE96D /* Proxima Nova Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Light.otf"; sourceTree = "<group>"; };
+		3DD530AD1CC7ABC800BEE96D /* Proxima Nova Medium It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Medium It.otf"; sourceTree = "<group>"; };
+		3DD530AE1CC7ABC800BEE96D /* Proxima Nova Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Medium.otf"; sourceTree = "<group>"; };
+		3DD530AF1CC7ABC800BEE96D /* Proxima Nova Reg It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Reg It.otf"; sourceTree = "<group>"; };
+		3DD530B01CC7ABC800BEE96D /* Proxima Nova Reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Reg.otf"; sourceTree = "<group>"; };
+		3DD530B11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Sbold It.otf"; sourceTree = "<group>"; };
+		3DD530B21CC7ABC800BEE96D /* Proxima Nova Sbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Sbold.otf"; sourceTree = "<group>"; };
+		3DD530B31CC7ABC800BEE96D /* Proxima Nova Thin It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin It.otf"; sourceTree = "<group>"; };
+		3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold It.otf"; sourceTree = "<group>"; };
+		3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold.otf"; sourceTree = "<group>"; };
+		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
+		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
+		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
+		3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportController.swift; sourceTree = "<group>"; };
+		3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportFormController.swift; sourceTree = "<group>"; };
 		3DFB418A1CBD3AFF00995099 /* CreateNetSheetReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNetSheetReportController.swift; sourceTree = "<group>"; };
 		3DFB418B1CBD3AFF00995099 /* CustomizeReportOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizeReportOptionsController.swift; sourceTree = "<group>"; };
-		3DFB418E1CBD3B0500995099 /* PreparedForController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparedForController.swift; sourceTree = "<group>"; };
-		3DFB418F1CBD3B0500995099 /* PreparedByController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparedByController.swift; sourceTree = "<group>"; };
+		3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreparedForByController.swift; sourceTree = "<group>"; };
 		3DFB41901CBD3B0500995099 /* LogoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoController.swift; sourceTree = "<group>"; };
-		3DFB41941CBD3B1400995099 /* NetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NetSheetReport.storyboard; sourceTree = "<group>"; };
+		3DFB41941CBD3B1400995099 /* CreateProfileReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateProfileReport.storyboard; path = ../Base.lproj/CreateProfileReport.storyboard; sourceTree = "<group>"; };
+		3DFE08DA1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnOutsideTap.swift; sourceTree = "<group>"; };
+		3DFE08DC1CC4F3C300101EE3 /* NetProceedsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetProceedsController.swift; sourceTree = "<group>"; };
+		3DFE08DE1CC4F92400101EE3 /* BrokerFeeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerFeeController.swift; sourceTree = "<group>"; };
+		3DFE08E01CC4FBAC00101EE3 /* BrokerFeeForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrokerFeeForm.swift; sourceTree = "<group>"; };
+		3DFE08E21CC5002000101EE3 /* TaxesForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxesForm.swift; sourceTree = "<group>"; };
+		3DFE08E41CC5004100101EE3 /* TaxesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +178,9 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				322872761CC8F0FB0058FA6C /* Calculate */,
+				3DFE08D91CC4CE2E00101EE3 /* Common */,
+				3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */,
 				3DFB41891CBD3AD400995099 /* NetSheetReports */,
 				20109C8F1CBC43AE0058DA02 /* AppDelegate.swift */,
 				20109C911CBC43AE0058DA02 /* ViewController.swift */,
@@ -77,17 +192,102 @@
 			path = T365CalculatorScreens;
 			sourceTree = "<group>";
 		};
+		322872761CC8F0FB0058FA6C /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				3228728F1CC8F1720058FA6C /* SellerBuyerOther.storyboard */,
+				322872881CC8F1450058FA6C /* RGPageViewController.swift */,
+				322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */,
+				322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */,
+				322872831CC8F1450058FA6C /* CalculateDataViewController.swift */,
+				322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */,
+				322872861CC8F1450058FA6C /* EstimateCell.swift */,
+			);
+			path = Calculate;
+			sourceTree = "<group>";
+		};
+		3DD530A61CC7ABC800BEE96D /* Proxima Nova */ = {
+			isa = PBXGroup;
+			children = (
+				3DD530A71CC7ABC800BEE96D /* Proxima Nova Black It.otf */,
+				3DD530A81CC7ABC800BEE96D /* Proxima Nova Black.otf */,
+				3DD530A91CC7ABC800BEE96D /* Proxima Nova Bold It.otf */,
+				3DD530AA1CC7ABC800BEE96D /* Proxima Nova Bold.otf */,
+				3DD530AB1CC7ABC800BEE96D /* Proxima Nova Light It.otf */,
+				3DD530AC1CC7ABC800BEE96D /* Proxima Nova Light.otf */,
+				3DD530AD1CC7ABC800BEE96D /* Proxima Nova Medium It.otf */,
+				3DD530AE1CC7ABC800BEE96D /* Proxima Nova Medium.otf */,
+				3DD530AF1CC7ABC800BEE96D /* Proxima Nova Reg It.otf */,
+				3DD530B01CC7ABC800BEE96D /* Proxima Nova Reg.otf */,
+				3DD530B11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf */,
+				3DD530B21CC7ABC800BEE96D /* Proxima Nova Sbold.otf */,
+				3DD530B31CC7ABC800BEE96D /* Proxima Nova Thin It.otf */,
+				3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */,
+				3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */,
+				3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */,
+			);
+			path = "Proxima Nova";
+			sourceTree = "<group>";
+		};
+		3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */,
+				3D5D90561CC211E300293486 /* SellerNetSheetController.swift */,
+				3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */,
+				3DFE08DC1CC4F3C300101EE3 /* NetProceedsController.swift */,
+				3DFE08DE1CC4F92400101EE3 /* BrokerFeeController.swift */,
+				3DFE08E01CC4FBAC00101EE3 /* BrokerFeeForm.swift */,
+				3DFE08E21CC5002000101EE3 /* TaxesForm.swift */,
+				3DFE08E41CC5004100101EE3 /* TaxesController.swift */,
+				3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */,
+				3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */,
+				3D9052E61CC610EC00937E2C /* PayoffsController.swift */,
+				3D9052E81CC6119900937E2C /* PayoffsForm.swift */,
+				3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */,
+				3D9052EC1CC6184600937E2C /* ClosingCostsController.swift */,
+				3D9052EE1CC6425A00937E2C /* TitleController.swift */,
+				3D9052F01CC6426800937E2C /* TitleForm.swift */,
+				3D9052F21CC6463600937E2C /* EscrowForm.swift */,
+				3D9052F41CC6464B00937E2C /* EscrowController.swift */,
+				3D9052F61CC64BE200937E2C /* SellerCreditsToBuyerController.swift */,
+				3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */,
+				3D9052FA1CC64E3500937E2C /* FinancingForm.swift */,
+				3D9052FC1CC64E4400937E2C /* FinancingController.swift */,
+				3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */,
+				3DD530A21CC7793E00BEE96D /* PayoffCell.swift */,
+				3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */,
+				3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */,
+				3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */,
+				3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */,
+				3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */,
+			);
+			path = SellerNetSheet;
+			sourceTree = "<group>";
+		};
 		3DFB41891CBD3AD400995099 /* NetSheetReports */ = {
 			isa = PBXGroup;
 			children = (
-				3DFB41941CBD3B1400995099 /* NetSheetReport.storyboard */,
-				3DFB418E1CBD3B0500995099 /* PreparedForController.swift */,
-				3DFB418F1CBD3B0500995099 /* PreparedByController.swift */,
+				3DD530A41CC79B9D00BEE96D /* PreviewController.swift */,
+				3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */,
+				3DFB41941CBD3B1400995099 /* CreateProfileReport.storyboard */,
+				3DFB418F1CBD3B0500995099 /* PreparedForByController.swift */,
 				3DFB41901CBD3B0500995099 /* LogoController.swift */,
 				3DFB418A1CBD3AFF00995099 /* CreateNetSheetReportController.swift */,
 				3DFB418B1CBD3AFF00995099 /* CustomizeReportOptionsController.swift */,
+				3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */,
+				3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */,
 			);
 			path = NetSheetReports;
+			sourceTree = "<group>";
+		};
+		3DFE08D91CC4CE2E00101EE3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3DD530A61CC7ABC800BEE96D /* Proxima Nova */,
+				3DFE08DA1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,10 +348,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFB41951CBD3B1400995099 /* NetSheetReport.storyboard in Resources */,
+				3DD530C61CC7ABC800BEE96D /* Proxima Nova Xbold.otf in Resources */,
+				3DD530BF1CC7ABC800BEE96D /* Proxima Nova Reg It.otf in Resources */,
+				3DFB41951CBD3B1400995099 /* CreateProfileReport.storyboard in Resources */,
+				3DD530C31CC7ABC800BEE96D /* Proxima Nova Thin It.otf in Resources */,
+				3DD530BC1CC7ABC800BEE96D /* Proxima Nova Light.otf in Resources */,
+				3DD530B71CC7ABC800BEE96D /* Proxima Nova Black It.otf in Resources */,
+				3DD530BE1CC7ABC800BEE96D /* Proxima Nova Medium.otf in Resources */,
+				3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
+				3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */,
+				3DD530BB1CC7ABC800BEE96D /* Proxima Nova Light It.otf in Resources */,
+				322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */,
+				3DD530C11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf in Resources */,
+				3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */,
 				20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */,
+				3DD530BD1CC7ABC800BEE96D /* Proxima Nova Medium It.otf in Resources */,
+				3DD530C21CC7ABC800BEE96D /* Proxima Nova Sbold.otf in Resources */,
+				3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */,
+				3DD530B81CC7ABC800BEE96D /* Proxima Nova Black.otf in Resources */,
+				3DD530B91CC7ABC800BEE96D /* Proxima Nova Bold It.otf in Resources */,
+				3DD530C01CC7ABC800BEE96D /* Proxima Nova Reg.otf in Resources */,
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
+				3DD530BA1CC7ABC800BEE96D /* Proxima Nova Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,13 +381,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFB41911CBD3B0500995099 /* PreparedForController.swift in Sources */,
+				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
+				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
+				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
+				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
+				3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */,
+				322872891CC8F1450058FA6C /* CalculateDataViewController.swift in Sources */,
+				3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */,
 				3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */,
+				3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */,
+				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
+				3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */,
+				3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */,
+				3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */,
+				3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */,
+				3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */,
+				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
+				3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */,
+				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
+				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
+				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
+				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
+				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
+				3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */,
+				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
+				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
+				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
+				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
+				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
+				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
+				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
+				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
+				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
+				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
+				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
-				3DFB41921CBD3B0500995099 /* PreparedByController.swift in Sources */,
+				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
+				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
+				3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */,
+				3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */,
+				3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */,
+				3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +445,23 @@
 				20109C991CBC43AE0058DA02 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3228728F1CC8F1720058FA6C /* SellerBuyerOther.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322872901CC8F1720058FA6C /* Base */,
+			);
+			name = SellerBuyerOther.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DEF63431CBE6EC400C7CFA1 /* Base */,
+			);
+			name = SellerNetSheet.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
