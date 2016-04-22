@@ -1,7 +1,7 @@
 import UIKit
 
 class EstimateCell: UITableViewCell {
-    static let cellIdentifier = "sellerSavedTableCell"
+    static let cellIdentifier = "EstimateCell"
     
     @IBOutlet weak var estimateTitle: UILabel!
     @IBOutlet weak var estimateDate: UILabel!

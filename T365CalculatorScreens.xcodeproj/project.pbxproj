@@ -13,8 +13,8 @@
 		20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20109C961CBC43AE0058DA02 /* Assets.xcassets */; };
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
 		322872891CC8F1450058FA6C /* CalculateDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872831CC8F1450058FA6C /* CalculateDataViewController.swift */; };
-		3228728A1CC8F1450058FA6C /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872841CC8F1450058FA6C /* CalculateViewController.swift */; };
-		3228728B1CC8F1450058FA6C /* CalculateSellerBuyerOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872851CC8F1450058FA6C /* CalculateSellerBuyerOtherViewController.swift */; };
+		3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */; };
+		3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */; };
 		3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872861CC8F1450058FA6C /* EstimateCell.swift */; };
 		3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */; };
 		3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872881CC8F1450058FA6C /* RGPageViewController.swift */; };
@@ -84,8 +84,8 @@
 		20109C991CBC43AE0058DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322872831CC8F1450058FA6C /* CalculateDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateDataViewController.swift; sourceTree = "<group>"; };
-		322872841CC8F1450058FA6C /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
-		322872851CC8F1450058FA6C /* CalculateSellerBuyerOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateSellerBuyerOtherViewController.swift; sourceTree = "<group>"; };
+		322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherController.swift; sourceTree = "<group>"; };
+		322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherContainerController.swift; sourceTree = "<group>"; };
 		322872861CC8F1450058FA6C /* EstimateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimateCell.swift; sourceTree = "<group>"; };
 		322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateEmptyViewController.swift; sourceTree = "<group>"; };
 		322872881CC8F1450058FA6C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
@@ -194,12 +194,12 @@
 			isa = PBXGroup;
 			children = (
 				3228728F1CC8F1720058FA6C /* SellerBuyerOther.storyboard */,
-				322872831CC8F1450058FA6C /* CalculateDataViewController.swift */,
-				322872841CC8F1450058FA6C /* CalculateViewController.swift */,
-				322872851CC8F1450058FA6C /* CalculateSellerBuyerOtherViewController.swift */,
-				322872861CC8F1450058FA6C /* EstimateCell.swift */,
-				322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */,
 				322872881CC8F1450058FA6C /* RGPageViewController.swift */,
+				322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */,
+				322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */,
+				322872831CC8F1450058FA6C /* CalculateDataViewController.swift */,
+				322872871CC8F1450058FA6C /* CalculateEmptyViewController.swift */,
+				322872861CC8F1450058FA6C /* EstimateCell.swift */,
 			);
 			path = Calculate;
 			sourceTree = "<group>";
@@ -398,7 +398,7 @@
 				3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */,
 				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
-				3228728A1CC8F1450058FA6C /* CalculateViewController.swift in Sources */,
+				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
 				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
 				3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */,
@@ -418,7 +418,7 @@
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
 				3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */,
-				3228728B1CC8F1450058FA6C /* CalculateSellerBuyerOtherViewController.swift in Sources */,
+				3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */,
 				3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */,
 				3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */,
 			);

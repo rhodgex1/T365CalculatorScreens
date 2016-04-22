@@ -1,14 +1,15 @@
 import UIKit
 
 class CalculateDataViewController : UIViewController {
-    @IBOutlet var theTableView: UITableView!
+
+    @IBOutlet weak var calculateDataTableView: UITableView!
 
     var theDataSource = [Estimate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.theTableView.tableFooterView = UIView()
+        self.calculateDataTableView.tableFooterView = UIView()
         
         let estimate1 = Estimate(title:"estimate 1", savedDate: "Feb 10, 2016")
         let estimate2 = Estimate(title:"estimate 2", savedDate: "Feb 11, 2016")
@@ -24,7 +25,6 @@ class CalculateDataViewController : UIViewController {
 // MARK: UITableView Data Source and Delegate Methods
 extension CalculateDataViewController {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        NSLog("dataSource \(theDataSource)")
         return theDataSource.count
     }
     
@@ -42,7 +42,7 @@ extension CalculateDataViewController {
 // MARK: User Action Listener Methods
 extension CalculateDataViewController {
     @IBAction func savedEstimatesButtonAction(sender: AnyObject) {
-        NSLog("savedEstimatesButtonAction")
+        print("savedEstimatesButtonAction")
     }
 }
 

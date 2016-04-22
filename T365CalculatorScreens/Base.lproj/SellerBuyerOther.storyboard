@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XSd-Z1-NZc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XSd-Z1-NZc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,10 +18,10 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Calculate View Controller-->
+        <!--Seller Buyer Other Controller-->
         <scene sceneID="Byj-WX-FNH">
             <objects>
-                <viewController id="XSd-Z1-NZc" customClass="CalculateViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XSd-Z1-NZc" customClass="SellerBuyerOtherController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Anv-9P-FQc"/>
                         <viewControllerLayoutGuide type="bottom" id="dk3-fb-nua"/>
@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="496" y="376"/>
         </scene>
-        <!--Calculate Seller Buyer Other View Controller-->
+        <!--Seller Buyer Other Container Controller-->
         <scene sceneID="SIx-Kr-aWa">
             <objects>
-                <viewController storyboardIdentifier="CalculateSellerBuyerOtherViewController" id="1B7-TF-Mua" customClass="CalculateSellerBuyerOtherViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellerBuyerOtherContainerController" id="1B7-TF-Mua" customClass="SellerBuyerOtherContainerController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tqG-We-esE"/>
                         <viewControllerLayoutGuide type="bottom" id="MfW-XB-BLV"/>
@@ -116,11 +116,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sellerSavedTableCell" id="d2j-W4-6kC" customClass="EstimateCell" customModule="T365CalculatorScreens" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EstimateCell" id="d2j-W4-6kC" customClass="EstimateCell" customModule="T365CalculatorScreens" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d2j-W4-6kC" id="QyC-Bg-CLg">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zt3-Rv-H0G" userLabel="cellContainerView">
@@ -211,7 +211,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="theTableView" destination="Doh-hO-TQ0" id="qtB-7A-GIb"/>
+                        <outlet property="calculateDataTableView" destination="Doh-hO-TQ0" id="MWb-ca-XFv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKk-ta-CVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
