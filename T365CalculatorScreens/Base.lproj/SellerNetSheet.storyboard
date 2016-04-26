@@ -3058,28 +3058,29 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-uh-zlh">
-                                        <rect key="frame" x="15" y="67.5" width="27.5" height="47"/>
+                                        <rect key="frame" x="15" y="68" width="27.5" height="47"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="47"/>
                                         <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GC-no-tv6">
-                                        <rect key="frame" x="573" y="87" width="15" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="217,876.34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-H6-AAC">
+                                        <rect key="frame" x="342.5" y="68" width="210.5" height="47"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="47"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GC-no-tv6">
+                                        <rect key="frame" x="568" y="82" width="20" height="20"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.84999999999999998" height="1"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="15" id="fyz-SQ-5yN"/>
-                                            <constraint firstAttribute="height" constant="15" id="vhb-f5-gdj"/>
+                                            <constraint firstAttribute="width" constant="20" id="fyz-SQ-5yN"/>
+                                            <constraint firstAttribute="height" constant="20" id="vhb-f5-gdj"/>
                                         </constraints>
                                         <state key="normal" image="infoIcon"/>
                                         <connections>
                                             <action selector="infoAction:" destination="FHh-u3-K0e" eventType="touchUpInside" id="7KB-qW-Ghr"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="217,876.34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-H6-AAC">
-                                        <rect key="frame" x="347" y="67.5" width="210.5" height="47"/>
-                                        <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="47"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.26274509800000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

@@ -40,5 +40,10 @@ class EscrowForm: UITableViewController , DismissKeyboardOnOutsideTap {
 extension EscrowForm {
     
     @IBAction func subEscrowInfoAction(sender: AnyObject) {
+        //FIXME: Add correct title and message
+        let disclaimerAlertController = UIAlertController(title: "Disclaimer", message: "This app provides general information to real estate professional and others in determining when transaction involving an applicable loan may be consummated.", preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        disclaimerAlertController.addAction(okAction)
+        presentViewController(disclaimerAlertController, animated: true, completion: nil)
     }
 }
