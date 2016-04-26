@@ -2,7 +2,7 @@ import UIKit
 
 class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
     var sellerNewNetSheetFormController : SellerNewNetSheetForm!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +31,6 @@ class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
 extension SellerNetSheetController {

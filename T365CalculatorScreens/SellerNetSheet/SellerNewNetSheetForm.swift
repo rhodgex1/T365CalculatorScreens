@@ -5,6 +5,7 @@ typealias ManageResetButton = () -> Void
 class SellerNewNetSheetForm: UITableViewController, DismissKeyboardOnOutsideTap {
     
     var backgroundView: UIView!
+    var actionSheetController:ActionSheetViewController!
     
     // declaring outlets
     @IBOutlet weak var zipCodeCityState: UITextField!
