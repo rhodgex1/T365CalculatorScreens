@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Proxima Nova Light.otf">
@@ -183,6 +184,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="uNH-2m-BYU">
                         <barButtonItem key="backBarButtonItem" title=" " id="gGO-3a-0pP"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="actionIcon" id="ryf-Gt-I31">
+                                <connections>
+                                    <action selector="moreAction:" destination="bUh-YD-gVj" id="azK-j6-b3I"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="resetIcon" id="xie-nl-Zmu">
+                                <connections>
+                                    <action selector="resetAction:" destination="bUh-YD-gVj" id="n85-ey-vrO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -3442,10 +3455,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="actionIcon" width="24" height="24"/>
         <image name="circularCheck" width="22" height="22"/>
         <image name="circularUncheck" width="24" height="24"/>
         <image name="infoIcon" width="24" height="24"/>
         <image name="locationArrow" width="15" height="16"/>
+        <image name="resetIcon" width="21" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tCa-r2-b9Y"/>

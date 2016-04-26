@@ -19,3 +19,16 @@ class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
     }
 
 }
+
+//MARK: User actions
+extension SellerNetSheetController {
+    
+    @IBAction func moreAction(sender: AnyObject) {
+    }
+    
+    //TODO: remove all data values shown in form
+    @IBAction func resetAction(sender: AnyObject) {
+    }
+
+    
+}
