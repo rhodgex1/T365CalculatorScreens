@@ -75,6 +75,28 @@ extension SellerNetSheetController {
    
     func moreAction(sender: UIButton) {
         // more action
+        
+        let sellerBuyerOtherStoryboard = UIStoryboard(name: "SellerNetSheet", bundle: nil)
+
+        let actionSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("ActionSheetViewController") as! ActionSheetViewController
+        actionSheetController.modalPresentationStyle = .OverCurrentContext
+        
+        let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
+            NSLog("Create New / Start Over")
+        })
+        let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: "actionIconsshare", action: { () -> Void in
+            NSLog("Print or Share")
+        })
+        let actionItemSave = ActionSheetOption(title: "Save", icon: "actionIconsDownload", action: { () -> Void in
+            NSLog("Save")
+        })
+        let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            NSLog("Cancel")
+        })
+        actionSheetController.actionSheetItems = [actionItemCreate, actionItemPrint, actionItemSave, actionItemCancel]
+        
+        self.presentViewController(actionSheetController, animated: false, completion: nil)
+
     }
 }
 
