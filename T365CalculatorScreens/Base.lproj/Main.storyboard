@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qhg-aH-gd2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qhg-aH-gd2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-268" y="508"/>
         </scene>
-        <!--SellerNetSheet-->
+        <!--SellerBuyerOther-->
         <scene sceneID="DOo-Eg-dBt">
             <objects>
-                <viewControllerPlaceholder storyboardName="SellerNetSheet" id="dPP-h0-T2q" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SellerBuyerOther" id="dPP-h0-T2q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTL-GS-3Wb"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIJ-bD-PhE" userLabel="First Responder" sceneMemberID="firstResponder"/>

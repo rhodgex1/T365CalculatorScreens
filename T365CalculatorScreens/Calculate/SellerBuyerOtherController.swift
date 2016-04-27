@@ -44,6 +44,13 @@ class SellerBuyerOtherController: RGPageViewController {
     }
 }
 
+// MARK:- User actions
+extension SellerBuyerOtherController {
+    
+    @IBAction func addAction(sender: AnyObject) {
+    }
+}
+
 // MARK: - RGPageViewController Data Source
 extension SellerBuyerOtherController : RGPageViewControllerDataSource {
     func numberOfPagesForViewController(pageViewController: RGPageViewController) -> Int {
