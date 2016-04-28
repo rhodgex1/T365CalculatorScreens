@@ -86,6 +86,9 @@ extension SellerBuyerOtherController {
             })
             let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: "", action: { () -> Void in
                 print("Closing Disclosure Timeline (TRID)")
+                
+                let purchaseRefinanceController = CDTimelineContainerController()
+                self.navigationController?.pushViewController(purchaseRefinanceController, animated: true)
             })
             let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
                 print("Cancel")

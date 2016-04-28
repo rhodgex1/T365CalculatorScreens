@@ -24,6 +24,9 @@
 		322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D38661CCFAF27006AA163 /* ActionSheetOptionCell.swift */; };
 		322D386B1CCFAF27006AA163 /* ActionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D38671CCFAF27006AA163 /* ActionSheetViewController.swift */; };
 		322D386D1CCFAF36006AA163 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D386C1CCFAF36006AA163 /* DateViewController.swift */; };
+		32F126FC1CD21F8A00644467 /* CDTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FB1CD21F8A00644467 /* CDTimelineController.swift */; };
+		32F127001CD2203A00644467 /* CDTimelineContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */; };
+		32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F127011CD2469C00644467 /* CDTimeline.storyboard */; };
 		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
 		3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */; };
 		3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */; };
@@ -101,6 +104,9 @@
 		322D38661CCFAF27006AA163 /* ActionSheetOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetOptionCell.swift; sourceTree = "<group>"; };
 		322D38671CCFAF27006AA163 /* ActionSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetViewController.swift; sourceTree = "<group>"; };
 		322D386C1CCFAF36006AA163 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		32F126FB1CD21F8A00644467 /* CDTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineController.swift; sourceTree = "<group>"; };
+		32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContainerController.swift; sourceTree = "<group>"; };
+		32F127021CD2469C00644467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CDTimeline.storyboard; sourceTree = SOURCE_ROOT; };
 		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
 		3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClosingCostForm.swift; sourceTree = "<group>"; };
 		3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormCell.swift; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3271884C1CD1F8B400E51161 /* CDTimeline */,
 				322872761CC8F0FB0058FA6C /* Calculate */,
 				3DFE08D91CC4CE2E00101EE3 /* Common */,
 				3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */,
@@ -214,6 +221,16 @@
 				322872861CC8F1450058FA6C /* EstimateCell.swift */,
 			);
 			path = Calculate;
+			sourceTree = "<group>";
+		};
+		3271884C1CD1F8B400E51161 /* CDTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				32F127011CD2469C00644467 /* CDTimeline.storyboard */,
+				32F126FB1CD21F8A00644467 /* CDTimelineController.swift */,
+				32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */,
+			);
+			path = CDTimeline;
 			sourceTree = "<group>";
 		};
 		32B71E921CCE4A6000286054 /* DatePicker */ = {
@@ -389,6 +406,7 @@
 				3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
 				3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */,
+				32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */,
 				3DD530BB1CC7ABC800BEE96D /* Proxima Nova Light It.otf in Resources */,
 				322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */,
 				3DD530C11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf in Resources */,
@@ -424,6 +442,7 @@
 				322D386D1CCFAF36006AA163 /* DateViewController.swift in Sources */,
 				3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */,
 				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
+				32F126FC1CD21F8A00644467 /* CDTimelineController.swift in Sources */,
 				3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */,
 				3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */,
 				3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */,
@@ -456,6 +475,7 @@
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
 				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
+				32F127001CD2203A00644467 /* CDTimelineContainerController.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
 				3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */,
 				3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */,
@@ -490,6 +510,14 @@
 			);
 			name = SellerBuyerOther.storyboard;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		32F127011CD2469C00644467 /* CDTimeline.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F127021CD2469C00644467 /* Base */,
+			);
+			name = CDTimeline.storyboard;
 			sourceTree = "<group>";
 		};
 		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
