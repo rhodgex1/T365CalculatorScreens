@@ -25,7 +25,7 @@ class DateController: UIViewController {
     
     func handleDatePicker(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = .FullStyle
+        dateFormatter.dateFormat = "MM/dd/yyyy"
         let newDate = dateFormatter.stringFromDate(theDatePicker.date)
         selectedDateCallback("\(newDate)")
     }
