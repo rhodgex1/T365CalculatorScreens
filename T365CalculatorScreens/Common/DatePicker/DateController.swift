@@ -1,6 +1,6 @@
 import UIKit
 
-class DateViewController: UIViewController {
+class DateController: UIViewController {
     
     @IBOutlet weak var theDatePicker: UIDatePicker!
     typealias SelectedDateCallback = (String) -> Void
@@ -10,11 +10,13 @@ class DateViewController: UIViewController {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         view.opaque = false
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(DateViewController.handleTap(_:)))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(DateController.handleTap(_:)))
         
         view.addGestureRecognizer(tap)
         
-        theDatePicker.addTarget(self, action: #selector(DateViewController.handleDatePicker(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        theDatePicker.addTarget(self, action: #selector(DateController.handleDatePicker(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        
+        theDatePicker.minimumDate = NSDate()
     }
     
     func handleTap(sender: UITapGestureRecognizer? = nil) {

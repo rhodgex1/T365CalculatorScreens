@@ -43,9 +43,9 @@ extension CDTimelineContainerController {
     }
     
     func moreAction() -> Void {
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: "SellerNetSheet", bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
         
-        let actionSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("ActionSheetViewController") as! ActionSheetViewController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in

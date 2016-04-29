@@ -8,7 +8,7 @@ struct ActionSheetOption {
     var action: ActionSheetCallback?
 }
 
-class ActionSheetViewController: UIViewController {
+class ActionSheetController: UIViewController {
     
     @IBOutlet weak var theActionSheetTableView: UITableView!
 
@@ -22,7 +22,7 @@ class ActionSheetViewController: UIViewController {
 }
 
 // MARK: Private Methods
-extension ActionSheetViewController {
+extension ActionSheetController {
     private func getYoffset() -> CGFloat {
         let numberOfRows = theActionSheetTableView.numberOfRowsInSection(0)
         let heightOfRow = theActionSheetTableView.rowHeight
@@ -42,7 +42,7 @@ extension ActionSheetViewController {
 }
 
 // MARK: UITableView Data Source and Delegate Methods
-extension ActionSheetViewController {
+extension ActionSheetController {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return actionSheetItems.count
     }

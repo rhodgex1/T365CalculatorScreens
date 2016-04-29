@@ -5,7 +5,6 @@ typealias ManageResetButton = () -> Void
 class SellerNewNetSheetForm: UITableViewController, DismissKeyboardOnOutsideTap {
     
     var backgroundView: UIView!
-    var actionSheetController:ActionSheetViewController!
     
     // declaring outlets
     @IBOutlet weak var zipCodeCityState: UITextField!
@@ -144,4 +143,25 @@ extension SellerNewNetSheetForm: UITextFieldDelegate {
     }
 }
 
+// MARK: UITableView Data Source and Delegate Methods
+extension SellerNewNetSheetForm {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 4 {
+            let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+            
+            let dateController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("DateController") as! DateController
+            dateController.modalPresentationStyle = .OverCurrentContext
+            dateController.selectedDateCallback = { [weak self](selectedDate: String) -> Void in
+
+                guard let this = self else {
+                    return
+                }
+
+                this.closingDate.text = selectedDate
+            }
+        
+        self.presentViewController(dateController, animated: true, completion: nil)
+        }
+    }
+}
 

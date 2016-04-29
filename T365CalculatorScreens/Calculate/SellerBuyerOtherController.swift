@@ -23,6 +23,7 @@ class SellerBuyerOtherController: RGPageViewController {
     // declaring constants
     static let kStoryBoardSellerBuyerOther = "SellerBuyerOther"
     static let kStoryBoardSellerNetSheet = "SellerNetSheet"
+    static let kStoryBoardCommonComponents = "CommonComponents"
     let kSellerBuyerOtherContainerController = "SellerBuyerOtherContainerController"
     
     override func viewDidLoad() {
@@ -97,8 +98,9 @@ extension SellerBuyerOtherController {
             return [actionItemFeeEstimate, actionItemClosingDisclosureTimeline, actionItemCancel]
         }
 
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerNetSheet, bundle: nil)
-        let actionSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("ActionSheetViewController") as! ActionSheetViewController
+        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         var theActionSheetItems : [ActionSheetOption]!

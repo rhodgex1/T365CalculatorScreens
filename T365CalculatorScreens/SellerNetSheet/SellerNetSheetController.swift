@@ -76,9 +76,9 @@ extension SellerNetSheetController {
     func moreAction(sender: UIButton) {
         // more action
         
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: "SellerNetSheet", bundle: nil)
-
-        let actionSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("ActionSheetViewController") as! ActionSheetViewController
+        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
