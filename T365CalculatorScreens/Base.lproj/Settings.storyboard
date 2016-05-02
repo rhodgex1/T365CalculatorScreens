@@ -374,7 +374,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IT-9B-Fbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="391"/>
+            <point key="canvasLocation" x="887" y="310"/>
         </scene>
         <!--AccountSettingsController-->
         <scene sceneID="AI7-kc-eMr">
@@ -852,19 +852,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-C1-4EA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735" y="1177"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="I1Q-td-Rgk">
-            <objects>
-                <viewController id="sEU-zt-8CU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aHH-8O-C3T">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4G-Jr-3eS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
