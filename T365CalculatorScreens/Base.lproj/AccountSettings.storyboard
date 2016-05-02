@@ -336,6 +336,11 @@
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="confirmNewPassword" destination="vdl-vx-mOj" id="Yzl-bt-HRK"/>
+                        <outlet property="newPassword" destination="VWg-Fb-aBl" id="FIZ-NU-jD5"/>
+                        <outlet property="oldPassword" destination="hf8-dZ-khI" id="iNp-oE-8ac"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVD-Te-POK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

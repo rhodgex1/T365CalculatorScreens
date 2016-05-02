@@ -369,7 +369,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="version" destination="pwD-z0-gCt" id="7Lx-Pw-wM1"/>
+                        <outlet property="version" destination="j8r-OK-HBa" id="4pS-eV-qgE"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IT-9B-Fbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -382,7 +382,7 @@
                 <viewControllerPlaceholder storyboardName="AccountSettings" referencedIdentifier="AccountSettingsController" id="cfD-EI-8Hg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V0-ix-Aaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="317"/>
+            <point key="canvasLocation" x="1511" y="219"/>
         </scene>
         <!--Profile Credits Controller-->
         <scene sceneID="dxZ-8n-JnH">

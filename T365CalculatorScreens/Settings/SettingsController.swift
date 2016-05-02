@@ -11,7 +11,7 @@ import UIKit
 class SettingsController: UITableViewController {
 
     // IBOutlets
-    @IBOutlet weak var version: NSLayoutConstraint!
+    @IBOutlet weak var version: UILabel!
     
     // enable or disable below flag to display only settings with AE or without AE
     var ifEnableSettingsAE = false

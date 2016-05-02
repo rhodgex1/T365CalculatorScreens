@@ -10,6 +10,11 @@ import UIKit
 
 class ChangePasswordController: UITableViewController {
 
+    //declaring outlets
+    @IBOutlet weak var oldPassword: UITextField!
+    @IBOutlet weak var newPassword: UITextField!
+    @IBOutlet weak var confirmNewPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
