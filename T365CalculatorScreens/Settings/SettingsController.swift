@@ -14,15 +14,12 @@ class SettingsController: UITableViewController {
     @IBOutlet var settingsTable: UITableView!
     
     // enable or disable below flag to display only settings with AE or without AE
-    var ifEnableSettingsAE = false
+    var ifEnableSettingsAE = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Settings"
-        
-        //FIXME: background color of tableview below app version cell should be r:242, g:242, b:242
-        settingsTable.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {

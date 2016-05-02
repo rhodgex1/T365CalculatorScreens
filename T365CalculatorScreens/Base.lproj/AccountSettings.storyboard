@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Proxima Nova Medium.otf">
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+            <string>ProximaNova-Medium</string>
+        </mutableArray>
         <mutableArray key="Proxima Nova Reg.otf">
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
@@ -24,7 +32,7 @@
                             <tableViewSection id="BS9-wx-X5a">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="OOB-xD-0IQ" userLabel="Blank Space Cell">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                        <rect key="frame" x="0.0" y="64" width="600" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OOB-xD-0IQ" id="Lqt-gu-Tgf">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
@@ -33,7 +41,7 @@
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="3zy-kw-kCI" userLabel="Change Password">
-                                        <rect key="frame" x="0.0" y="30" width="600" height="55"/>
+                                        <rect key="frame" x="0.0" y="94" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3zy-kw-kCI" id="X1g-qV-wfP">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
@@ -54,7 +62,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwu-S4-NFI">
-                                                    <rect key="frame" x="15" y="17.5" width="131" height="19"/>
+                                                    <rect key="frame" x="15" y="19" width="127.5" height="16"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -70,9 +78,12 @@
                                                 <constraint firstItem="HCu-wJ-QTk" firstAttribute="leading" secondItem="X1g-qV-wfP" secondAttribute="leading" constant="15" id="oVb-Ac-9E9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CD3-Ac-bmJ" kind="show" id="VzS-lA-wFL"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="9Mb-EG-2SU" userLabel="Touch ID">
-                                        <rect key="frame" x="0.0" y="85" width="600" height="55"/>
+                                        <rect key="frame" x="0.0" y="149" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Mb-EG-2SU" id="gyR-gh-Muh">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
@@ -93,7 +104,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-ib-xvC">
-                                                    <rect key="frame" x="15" y="18" width="63" height="19"/>
+                                                    <rect key="frame" x="15" y="19.5" width="61.5" height="16"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -111,7 +122,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="USZ-f7-zSH" userLabel="Passcode">
-                                        <rect key="frame" x="0.0" y="140" width="600" height="55"/>
+                                        <rect key="frame" x="0.0" y="204" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="USZ-f7-zSH" id="3LO-2F-PbN">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
@@ -132,7 +143,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2H-9H-POm">
-                                                    <rect key="frame" x="15" y="18" width="71" height="19"/>
+                                                    <rect key="frame" x="15" y="19.5" width="68" height="16"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -157,10 +168,165 @@
                             <outlet property="delegate" destination="oVR-jP-c74" id="Cbx-Gs-NIH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="POY-C2-Sqk">
+                        <barButtonItem key="backBarButtonItem" title=" " id="YUt-f3-mia"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VJD-64-rpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="443"/>
+            <point key="canvasLocation" x="207" y="423"/>
+        </scene>
+        <!--Change Password Controller-->
+        <scene sceneID="czx-Ln-eNr">
+            <objects>
+                <tableViewController id="CD3-Ac-bmJ" customClass="ChangePasswordController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="hJQ-KZ-BUO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="78p-fF-qkV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="oV6-zc-vXD" userLabel="Change Password">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oV6-zc-vXD" id="Tgq-UN-7hO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-Pv-ca8">
+                                                    <rect key="frame" x="15" y="29" width="86" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUv-Ve-E5I" userLabel="Underline">
+                                                    <rect key="frame" x="15" y="79" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="J2g-0c-q8Q"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hf8-dZ-khI">
+                                                    <rect key="frame" x="15" y="45" width="570" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="FUo-bj-AAl"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fUv-Ve-E5I" firstAttribute="top" secondItem="hf8-dZ-khI" secondAttribute="bottom" constant="-3.5" id="5WV-Ql-HE0"/>
+                                                <constraint firstAttribute="bottom" secondItem="fUv-Ve-E5I" secondAttribute="bottom" constant="20" id="6MK-Pj-R2j"/>
+                                                <constraint firstItem="hf8-dZ-khI" firstAttribute="trailing" secondItem="fUv-Ve-E5I" secondAttribute="trailing" id="7lL-UI-62n"/>
+                                                <constraint firstItem="hf8-dZ-khI" firstAttribute="leading" secondItem="fUv-Ve-E5I" secondAttribute="leading" id="CC4-Ar-MWM"/>
+                                                <constraint firstItem="fUv-Ve-E5I" firstAttribute="leading" secondItem="Tgq-UN-7hO" secondAttribute="leading" constant="15" id="Jv7-NA-zmN"/>
+                                                <constraint firstAttribute="trailing" secondItem="fUv-Ve-E5I" secondAttribute="trailing" constant="15" id="NHh-zJ-mhp"/>
+                                                <constraint firstItem="5qY-Pv-ca8" firstAttribute="leading" secondItem="hf8-dZ-khI" secondAttribute="leading" id="NwE-ln-f3T"/>
+                                                <constraint firstItem="hf8-dZ-khI" firstAttribute="top" secondItem="5qY-Pv-ca8" secondAttribute="bottom" constant="2" id="QWi-qp-xgi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="z43-ho-V1F" userLabel="New Password">
+                                        <rect key="frame" x="0.0" y="164" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z43-ho-V1F" id="5MS-8O-QHc">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDg-ko-Bvn">
+                                                    <rect key="frame" x="15" y="29" width="92" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUP-vV-fqk" userLabel="Underline">
+                                                    <rect key="frame" x="15" y="79" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="pEC-97-4vJ"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create a new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWg-Fb-aBl">
+                                                    <rect key="frame" x="15" y="45" width="570" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="LC6-OI-cQU"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VWg-Fb-aBl" firstAttribute="top" secondItem="mDg-ko-Bvn" secondAttribute="bottom" constant="2" id="0hP-zq-G4y"/>
+                                                <constraint firstItem="VWg-Fb-aBl" firstAttribute="trailing" secondItem="TUP-vV-fqk" secondAttribute="trailing" id="7qd-i3-8W6"/>
+                                                <constraint firstAttribute="trailing" secondItem="TUP-vV-fqk" secondAttribute="trailing" constant="15" id="8GQ-Yp-TxP"/>
+                                                <constraint firstItem="mDg-ko-Bvn" firstAttribute="leading" secondItem="VWg-Fb-aBl" secondAttribute="leading" id="DL5-he-RQZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="TUP-vV-fqk" secondAttribute="bottom" constant="20" id="Phh-Nq-rI8"/>
+                                                <constraint firstItem="TUP-vV-fqk" firstAttribute="top" secondItem="VWg-Fb-aBl" secondAttribute="bottom" constant="-3.5" id="RhS-Gy-5k1"/>
+                                                <constraint firstItem="VWg-Fb-aBl" firstAttribute="leading" secondItem="TUP-vV-fqk" secondAttribute="leading" id="cCR-Wt-yy7"/>
+                                                <constraint firstItem="TUP-vV-fqk" firstAttribute="leading" secondItem="5MS-8O-QHc" secondAttribute="leading" constant="15" id="vhS-rS-hpT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="OFK-uL-n40" userLabel="Confirm New Password">
+                                        <rect key="frame" x="0.0" y="264" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OFK-uL-n40" id="K0L-JA-9JD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfx-LI-lVX">
+                                                    <rect key="frame" x="15" y="29.5" width="144.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
+                                                    <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50M-Mu-0g0" userLabel="Underline">
+                                                    <rect key="frame" x="15" y="79" width="570" height="1"/>
+                                                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Qbz-mw-dE1"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter password above to match" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vdl-vx-mOj">
+                                                    <rect key="frame" x="15" y="45" width="570" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="mxn-qB-lHb"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vdl-vx-mOj" firstAttribute="top" secondItem="zfx-LI-lVX" secondAttribute="bottom" constant="2" id="00t-Ah-Y5Y"/>
+                                                <constraint firstItem="50M-Mu-0g0" firstAttribute="top" secondItem="vdl-vx-mOj" secondAttribute="bottom" constant="-3.5" id="6vW-vS-pp7"/>
+                                                <constraint firstItem="50M-Mu-0g0" firstAttribute="leading" secondItem="K0L-JA-9JD" secondAttribute="leading" constant="15" id="Dgw-Nd-90C"/>
+                                                <constraint firstAttribute="bottom" secondItem="50M-Mu-0g0" secondAttribute="bottom" constant="20" id="HoG-ED-bEf"/>
+                                                <constraint firstItem="vdl-vx-mOj" firstAttribute="trailing" secondItem="50M-Mu-0g0" secondAttribute="trailing" id="IwV-KK-6Ev"/>
+                                                <constraint firstItem="zfx-LI-lVX" firstAttribute="leading" secondItem="vdl-vx-mOj" secondAttribute="leading" id="gJb-zB-Twm"/>
+                                                <constraint firstItem="vdl-vx-mOj" firstAttribute="leading" secondItem="50M-Mu-0g0" secondAttribute="leading" id="iba-16-Zte"/>
+                                                <constraint firstAttribute="trailing" secondItem="50M-Mu-0g0" secondAttribute="trailing" constant="15" id="uj0-hh-kWK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="CD3-Ac-bmJ" id="VOe-Js-59S"/>
+                            <outlet property="delegate" destination="CD3-Ac-bmJ" id="1tR-LH-Q0i"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVD-Te-POK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="507"/>
         </scene>
     </scenes>
     <resources>

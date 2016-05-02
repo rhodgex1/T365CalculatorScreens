@@ -51,6 +51,7 @@
 		3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */; };
 		3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FA1CC64E3500937E2C /* FinancingForm.swift */; };
 		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
+		3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */; };
 		3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */; };
 		3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */; };
 		3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A21CC7793E00BEE96D /* PayoffCell.swift */; };
@@ -136,6 +137,7 @@
 		3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerForm.swift; sourceTree = "<group>"; };
 		3D9052FA1CC64E3500937E2C /* FinancingForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingForm.swift; sourceTree = "<group>"; };
 		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
+		3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateNetSheetReport.storyboard; path = ../Base.lproj/CreateNetSheetReport.storyboard; sourceTree = "<group>"; };
 		3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetWithContainersBaseController.swift; sourceTree = "<group>"; };
 		3DD530A21CC7793E00BEE96D /* PayoffCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffCell.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			children = (
 				3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */,
 				3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */,
+				3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */,
 			);
 			path = "Account Settings";
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
+				3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
