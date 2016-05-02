@@ -74,6 +74,8 @@
 		3DD530C61CC7ABC800BEE96D /* Proxima Nova Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
+		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
+		3DE8A0A51CD76EBE006E6EF5 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
 		3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */; };
 		3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */; };
@@ -160,6 +162,8 @@
 		3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold.otf"; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
+		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
+		3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
 		3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportController.swift; sourceTree = "<group>"; };
 		3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportFormController.swift; sourceTree = "<group>"; };
@@ -281,6 +285,8 @@
 				3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */,
 				3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */,
 				3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */,
+				3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */,
+				3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */,
 			);
 			path = "Account Settings";
 			sourceTree = "<group>";
@@ -492,11 +498,13 @@
 				322D38681CCFAF27006AA163 /* ActionSheetCancelCell.swift in Sources */,
 				322D38691CCFAF27006AA163 /* ActionSheetCell.swift in Sources */,
 				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
+				3DE8A0A51CD76EBE006E6EF5 /* PasscodeController.swift in Sources */,
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
 				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
 				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
 				3228728E1CC8F1450058FA6C /* RGPageViewController.swift in Sources */,
+				3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
 				3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */,

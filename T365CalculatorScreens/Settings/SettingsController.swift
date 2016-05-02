@@ -11,10 +11,10 @@ import UIKit
 class SettingsController: UITableViewController {
 
     // IBOutlets
-    @IBOutlet var settingsTable: UITableView!
+    @IBOutlet weak var version: NSLayoutConstraint!
     
     // enable or disable below flag to display only settings with AE or without AE
-    var ifEnableSettingsAE = true
+    var ifEnableSettingsAE = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
