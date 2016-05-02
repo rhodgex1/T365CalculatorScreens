@@ -29,6 +29,10 @@
 		32F127001CD2203A00644467 /* CDTimelineContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */; };
 		32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F127011CD2469C00644467 /* CDTimeline.storyboard */; };
 		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
+		3D1BE5B41CD7243900890BE4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B21CD7243900890BE4 /* Settings.storyboard */; };
+		3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */; };
+		3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */; };
+		3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BE5BA1CD7250000890BE4 /* SettingsController.swift */; };
 		3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */; };
 		3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */; };
 		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
@@ -110,6 +114,10 @@
 		32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContainerController.swift; sourceTree = "<group>"; };
 		32F127021CD2469C00644467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CDTimeline.storyboard; sourceTree = SOURCE_ROOT; };
 		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
+		3D1BE5B31CD7243900890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Settings.storyboard; sourceTree = SOURCE_ROOT; };
+		3D1BE5B61CD7246100890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountSettings.storyboard; sourceTree = SOURCE_ROOT; };
+		3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsController.swift; sourceTree = "<group>"; };
+		3D1BE5BA1CD7250000890BE4 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		3D2448581CC89D7F00B2A83C /* AddClosingCostForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClosingCostForm.swift; sourceTree = "<group>"; };
 		3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormCell.swift; sourceTree = "<group>"; };
 		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
@@ -196,6 +204,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3D1BE5B01CD723DB00890BE4 /* Settings */,
 				3271884C1CD1F8B400E51161 /* CDTimeline */,
 				322872761CC8F0FB0058FA6C /* Calculate */,
 				3DFE08D91CC4CE2E00101EE3 /* Common */,
@@ -252,6 +261,25 @@
 				322D38671CCFAF27006AA163 /* ActionSheetController.swift */,
 			);
 			path = ActionSheet;
+			sourceTree = "<group>";
+		};
+		3D1BE5B01CD723DB00890BE4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3D1BE5B11CD7240000890BE4 /* Account Settings */,
+				3D1BE5B21CD7243900890BE4 /* Settings.storyboard */,
+				3D1BE5BA1CD7250000890BE4 /* SettingsController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3D1BE5B11CD7240000890BE4 /* Account Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */,
+				3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */,
+			);
+			path = "Account Settings";
 			sourceTree = "<group>";
 		};
 		3DD530A61CC7ABC800BEE96D /* Proxima Nova */ = {
@@ -406,10 +434,12 @@
 				3DD530BC1CC7ABC800BEE96D /* Proxima Nova Light.otf in Resources */,
 				3DD530B71CC7ABC800BEE96D /* Proxima Nova Black It.otf in Resources */,
 				3DD530BE1CC7ABC800BEE96D /* Proxima Nova Medium.otf in Resources */,
+				3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */,
 				3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
 				3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */,
 				32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */,
+				3D1BE5B41CD7243900890BE4 /* Settings.storyboard in Resources */,
 				3DD530BB1CC7ABC800BEE96D /* Proxima Nova Light It.otf in Resources */,
 				322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */,
 				3DD530C11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf in Resources */,
@@ -436,6 +466,7 @@
 			files = (
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
+				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
 				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
@@ -470,6 +501,7 @@
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
+				3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
@@ -530,6 +562,22 @@
 				32F127021CD2469C00644467 /* Base */,
 			);
 			name = CDTimeline.storyboard;
+			sourceTree = "<group>";
+		};
+		3D1BE5B21CD7243900890BE4 /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1BE5B31CD7243900890BE4 /* Base */,
+			);
+			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D1BE5B61CD7246100890BE4 /* Base */,
+			);
+			name = AccountSettings.storyboard;
 			sourceTree = "<group>";
 		};
 		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
