@@ -31,10 +31,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x8I-kR-cpy">
+                        <barButtonItem key="backBarButtonItem" title=" " id="9mM-tQ-c7C"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="Tt6-RO-WcA">
+                            <connections>
+                                <action selector="addAction:" destination="XSd-Z1-NZc" id="FMU-8G-miW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AeJ-jq-Tsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496" y="376"/>
+            <point key="canvasLocation" x="606" y="342"/>
         </scene>
         <!--Seller Buyer Other Container Controller-->
         <scene sceneID="SIx-Kr-aWa">
@@ -70,7 +79,7 @@
                                 <rect key="frame" x="0.0" y="100" width="600" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gu-AV-GsD">
-                                        <rect key="frame" x="548" y="14.5" width="40" height="14"/>
+                                        <rect key="frame" x="548" y="14" width="40" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="BN3-wD-la4"/>
                                         </constraints>
@@ -79,13 +88,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Estimates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueY-X7-eEh">
-                                        <rect key="frame" x="12" y="13.5" width="108.5" height="15"/>
+                                        <rect key="frame" x="12" y="14" width="109" height="15"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                         <color key="textColor" red="0.60392156862745094" green="0.6470588235294118" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sortArrow" translatesAutoresizingMaskIntoConstraints="NO" id="our-OL-18D">
-                                        <rect key="frame" x="537" y="19" width="8" height="5"/>
+                                        <rect key="frame" x="537" y="18" width="8" height="5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="lv4-M3-DJb"/>
                                             <constraint firstAttribute="height" constant="5" id="ocC-1f-msR"/>
@@ -154,7 +163,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved on Feb 10, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-Lo-EJA">
-                                                            <rect key="frame" x="55" y="38" width="128.5" height="13"/>
+                                                            <rect key="frame" x="55" y="39" width="129" height="13"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -257,13 +266,13 @@ a buyer’s cash to close and more…</string>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Estimates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDu-db-pCX">
-                                                <rect key="frame" x="83.5" y="118" width="121" height="21"/>
+                                                <rect key="frame" x="84" y="118" width="121" height="21"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="21"/>
                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the + button to create one." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIF-fb-83U">
-                                                <rect key="frame" x="46" y="213" width="201.5" height="15"/>
+                                                <rect key="frame" x="46" y="213" width="202" height="15"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                                 <color key="textColor" red="0.2627450980392157" green="0.52156862745098043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>

@@ -1,26 +1,25 @@
 import UIKit
 
-class NetProceedsController: UIViewController {
-
-    @IBOutlet weak var netProceedsAmount: UILabel!
+//TODO: Calendar code should be added here
+class CDTimelineController : UIViewController {
+    
+    @IBOutlet weak var theScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
-//MARK:- user actions
-extension NetProceedsController {
+// MARK: - User Action Methods
+extension CDTimelineController {
+    @IBAction func tridInforButtonAction(sender: AnyObject) {
+        showDisclaimerAlert()
+    }
+    @IBAction func disclaimerButtonAction(sender: AnyObject) {
+        showDisclaimerAlert()
+    }
     
-    @IBAction func infoAction(sender: AnyObject) {
-        //FIXME: Add correct title and message
+    private func showDisclaimerAlert() -> Void {
         let disclaimerAlertController = UIAlertController(title: "Disclaimer", message: "This app provides general information to real estate professional and others in determining when transaction involving an applicable loan may be consummated.", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         disclaimerAlertController.addAction(okAction)
