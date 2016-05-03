@@ -28,7 +28,11 @@
 		32F126FC1CD21F8A00644467 /* CDTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FB1CD21F8A00644467 /* CDTimelineController.swift */; };
 		32F127001CD2203A00644467 /* CDTimelineContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */; };
 		32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F127011CD2469C00644467 /* CDTimeline.storyboard */; };
+		3D05200F1CD8749F006D8D32 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D05200D1CD8749F006D8D32 /* Feedback.storyboard */; };
+		3D0520111CD874AB006D8D32 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520101CD874AB006D8D32 /* FeedbackController.swift */; };
+		3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520121CD874BB006D8D32 /* FeedbackForm.swift */; };
 		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
+		3D15F1631CD8C52F0004E286 /* ScreenshotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15F1621CD8C52F0004E286 /* ScreenshotsController.swift */; };
 		3D1BE5B41CD7243900890BE4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B21CD7243900890BE4 /* Settings.storyboard */; };
 		3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */; };
 		3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */; };
@@ -119,7 +123,11 @@
 		32F126FB1CD21F8A00644467 /* CDTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineController.swift; sourceTree = "<group>"; };
 		32F126FF1CD2203A00644467 /* CDTimelineContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContainerController.swift; sourceTree = "<group>"; };
 		32F127021CD2469C00644467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CDTimeline.storyboard; sourceTree = SOURCE_ROOT; };
+		3D05200E1CD8749F006D8D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Feedback.storyboard; sourceTree = SOURCE_ROOT; };
+		3D0520101CD874AB006D8D32 /* FeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
+		3D0520121CD874BB006D8D32 /* FeedbackForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackForm.swift; sourceTree = "<group>"; };
 		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
+		3D15F1621CD8C52F0004E286 /* ScreenshotsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotsController.swift; sourceTree = "<group>"; };
 		3D1BE5B31CD7243900890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Settings.storyboard; sourceTree = SOURCE_ROOT; };
 		3D1BE5B61CD7246100890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountSettings.storyboard; sourceTree = SOURCE_ROOT; };
 		3D1BE5B81CD724EA00890BE4 /* AccountSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsController.swift; sourceTree = "<group>"; };
@@ -275,9 +283,21 @@
 			path = ActionSheet;
 			sourceTree = "<group>";
 		};
+		3D05200A1CD872A6006D8D32 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				3D05200D1CD8749F006D8D32 /* Feedback.storyboard */,
+				3D0520101CD874AB006D8D32 /* FeedbackController.swift */,
+				3D0520121CD874BB006D8D32 /* FeedbackForm.swift */,
+				3D15F1621CD8C52F0004E286 /* ScreenshotsController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		3D1BE5B01CD723DB00890BE4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				3D05200A1CD872A6006D8D32 /* Feedback */,
 				3D1BE5B11CD7240000890BE4 /* Account Settings */,
 				3D1BE5B21CD7243900890BE4 /* Settings.storyboard */,
 				3D1BE5BA1CD7250000890BE4 /* SettingsController.swift */,
@@ -460,6 +480,7 @@
 				3D1BE5B41CD7243900890BE4 /* Settings.storyboard in Resources */,
 				3DD530BB1CC7ABC800BEE96D /* Proxima Nova Light It.otf in Resources */,
 				322872911CC8F1720058FA6C /* SellerBuyerOther.storyboard in Resources */,
+				3D05200F1CD8749F006D8D32 /* Feedback.storyboard in Resources */,
 				3DD530C11CC7ABC800BEE96D /* Proxima Nova Sbold It.otf in Resources */,
 				3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */,
 				20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */,
@@ -509,6 +530,7 @@
 				322D38691CCFAF27006AA163 /* ActionSheetCell.swift in Sources */,
 				3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */,
 				3DE8A0A51CD76EBE006E6EF5 /* PasscodeController.swift in Sources */,
+				3D15F1631CD8C52F0004E286 /* ScreenshotsController.swift in Sources */,
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
 				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
 				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
@@ -520,6 +542,7 @@
 				3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
+				3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
@@ -538,6 +561,7 @@
 				32F127001CD2203A00644467 /* CDTimelineContainerController.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
 				3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */,
+				3D0520111CD874AB006D8D32 /* FeedbackController.swift in Sources */,
 				3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */,
 				3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */,
 				3D9052F31CC6463600937E2C /* EscrowForm.swift in Sources */,
@@ -586,6 +610,14 @@
 				32F127021CD2469C00644467 /* Base */,
 			);
 			name = CDTimeline.storyboard;
+			sourceTree = "<group>";
+		};
+		3D05200D1CD8749F006D8D32 /* Feedback.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D05200E1CD8749F006D8D32 /* Base */,
+			);
+			name = Feedback.storyboard;
 			sourceTree = "<group>";
 		};
 		3D1BE5B21CD7243900890BE4 /* Settings.storyboard */ = {
