@@ -10,6 +10,7 @@ import UIKit
 
 class FeedbackController: UIViewController {
     var feedbackFormController: FeedbackForm!
+    var screenshot: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class FeedbackController: UIViewController {
 extension FeedbackController {
     
     @IBAction func sendFeedback(sender: AnyObject) {
+        // values to be obtained from feedbackFormController and screenshot
     }
 }
 
@@ -45,13 +47,13 @@ extension FeedbackController {
 extension FeedbackController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        if let _ = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             //TODO: do something with picked image
-            
+            screenshot = image
         }
         
         // uncomment below line to pop the view controller
-        navigationController?.popToViewController(self, animated: true)
+        // navigationController?.popToViewController(self, animated: true)
         
     }
     
