@@ -66,7 +66,7 @@ extension FeedbackForm : UIImagePickerControllerDelegate{
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let _ = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            //TODO: do somethign with picked image
+            //TODO: do something with picked image
 
         }
         
