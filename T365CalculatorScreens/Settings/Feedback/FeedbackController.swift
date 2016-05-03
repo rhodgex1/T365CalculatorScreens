@@ -27,6 +27,7 @@ class FeedbackController: UIViewController {
         if let segueIdentifier = segue.identifier {
             if segueIdentifier == "EmbedContent" {
                 feedbackFormController = segue.destinationViewController as! FeedbackForm
+                feedbackFormController.parentController = self
             }
         }
     }
@@ -38,4 +39,20 @@ extension FeedbackController {
     
     @IBAction func sendFeedback(sender: AnyObject) {
     }
+}
+
+//MARK:- UINavigationControllerDelegate, UIImagePickerControllerDelegate implementation
+extension FeedbackController : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let _ = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            //TODO: do something with picked image
+            
+        }
+        
+        // uncomment below line to pop the view controller
+        navigationController?.popToViewController(self, animated: true)
+        
+    }
+    
 }

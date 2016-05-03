@@ -199,6 +199,9 @@
                                                 <constraint firstItem="dMq-w6-6lS" firstAttribute="centerY" secondItem="T5z-F1-sIa" secondAttribute="centerY" id="xG8-lJ-aKA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3ES-4b-KQg" kind="show" identifier="PushScreenshotsScreen" id="zOO-kT-YYk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="nGc-AP-7kP" userLabel="App and Device Info Title">
                                         <rect key="frame" x="0.0" y="370" width="600" height="50"/>
@@ -308,7 +311,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIZ-9Z-Hu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1435" y="267.5"/>
+            <point key="canvasLocation" x="1302" y="272.5"/>
+        </scene>
+        <!--Screenshots Controller-->
+        <scene sceneID="NyG-OS-k6h">
+            <objects>
+                <viewController storyboardIdentifier="ScreenshotsController" id="3ES-4b-KQg" customClass="ScreenshotsController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kPa-UJ-RtK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kpt-e8-cOa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9uE-IZ-jpN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="485"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCV-7G-5ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2147" y="23"/>
         </scene>
     </scenes>
     <resources>
