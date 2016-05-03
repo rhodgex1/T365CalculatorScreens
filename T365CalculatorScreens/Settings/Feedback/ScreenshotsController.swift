@@ -34,6 +34,7 @@ extension ScreenshotsController {
             imagePickerController.sourceType = .PhotoLibrary;
             imagePickerController.allowsEditing = false
             
+            // below code is added so that UIImagePickerController can be shown with push navigation in place of presenting it modally
             self.view.addSubview(imagePickerController.view)
             imagePickerController.viewWillAppear(true)
             imagePickerController.viewDidAppear(true)
