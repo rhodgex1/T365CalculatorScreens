@@ -1,5 +1,11 @@
 import UIKit
 
+enum AccountRepContentType : Int {
+    case Contact = 0
+    case Statistics  = 1
+    case Relationships  = 2
+}
+
 class AccountRepContainerController: RGPageViewController {
     var tabBarTitles: [String]!
 
@@ -12,7 +18,6 @@ class AccountRepContainerController: RGPageViewController {
         
         datasource = self
         delegate = self
-        
     }
 
 }
@@ -36,14 +41,21 @@ extension AccountRepContainerController : RGPageViewControllerDataSource {
     }
     
     func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
+        let accountRepStoryboard = UIStoryboard(name: "AccountRep", bundle: nil)
+        var viewController: UIViewController!
         
-//        let cdTimelineStoryboard = UIStoryboard(name: "AccountRep", bundle: nil)
-//        let purchaseRefinanceContainerController = cdTimelineStoryboard.instantiateViewControllerWithIdentifier("AccountRepController")
-
-        let purchaseRefinanceContainerController = UIViewController()
-        purchaseRefinanceContainerController.view.backgroundColor = UIColor.whiteColor()
+        if let accountRepContentType = AccountRepContentType(rawValue: index) {
+            switch accountRepContentType {
+            case .Contact:
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("ContactController")
+            case .Statistics:
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("StatisticsController")
+            case .Relationships:
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("RelationshipsController")
+            }
+        }
         
-        return purchaseRefinanceContainerController
+        return viewController
     }
     
 }
@@ -51,7 +63,7 @@ extension AccountRepContainerController : RGPageViewControllerDataSource {
 // MARK: - RGPageViewController Delegate
 extension AccountRepContainerController: RGPageViewControllerDelegate {
     func heightForTabAtIndex(index: Int) -> CGFloat {
-        return 164.0
+        return 220.0
     }
     
     func widthForTabAtIndex(index: Int) -> CGFloat {
