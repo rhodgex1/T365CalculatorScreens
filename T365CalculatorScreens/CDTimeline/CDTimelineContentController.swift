@@ -8,12 +8,14 @@
 
 import UIKit
 
+//NOTE: Since each component is added on a cell, it can be easily made hidden by setting height of corresponding cell to 0 
 class CDTimelineContentController: UITableViewController {
 
     //MARK:- IBOutlets
     @IBOutlet weak var startClosingDateSegment: UISegmentedControl!
     @IBOutlet weak var addToCalendarButton: UIButton!
     @IBOutlet weak var federalHolidayIndicator: UIView!
+    @IBOutlet weak var chooseDateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

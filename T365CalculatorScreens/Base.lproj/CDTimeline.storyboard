@@ -43,7 +43,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kc0-x2-hHQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="n4H-HK-NEa">
                                 <cells>
@@ -99,11 +99,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="SWA-cI-rOd" userLabel="Start Date/ Closing Date">
-                                        <rect key="frame" x="0.0" y="249" width="600" height="87"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="SWA-cI-rOd" userLabel="Start Date/ Closing Date">
+                                        <rect key="frame" x="0.0" y="249" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SWA-cI-rOd" id="F8J-iQ-9A4">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Huw-d3-n80">
@@ -117,25 +117,38 @@
                                                         <action selector="startClosingDateAction:" destination="t4c-DV-h9s" eventType="valueChanged" id="0hM-1n-xmy"/>
                                                     </connections>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a desired Closing Disclosure delivery date to begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI7-1b-mdh">
-                                                    <rect key="frame" x="15" y="59" width="570" height="12"/>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Huw-d3-n80" firstAttribute="centerX" secondItem="F8J-iQ-9A4" secondAttribute="centerX" id="1g6-R8-31L"/>
+                                                <constraint firstItem="Huw-d3-n80" firstAttribute="leading" secondItem="F8J-iQ-9A4" secondAttribute="leading" constant="15" id="p7H-Et-7OT"/>
+                                                <constraint firstAttribute="trailing" secondItem="Huw-d3-n80" secondAttribute="trailing" constant="15" id="so0-TS-c1i"/>
+                                                <constraint firstItem="Huw-d3-n80" firstAttribute="centerY" secondItem="F8J-iQ-9A4" secondAttribute="centerY" id="v69-cQ-VjI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="20" id="M53-fb-XTH" userLabel="Choose date msg">
+                                        <rect key="frame" x="0.0" y="309" width="600" height="20"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M53-fb-XTH" id="4CT-F5-rM5">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a desired Closing Disclosure delivery date to begin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-ax-GGT">
+                                                    <rect key="frame" x="15" y="4" width="570" height="12"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="pI7-1b-mdh" secondAttribute="trailing" constant="15" id="2eT-VD-dIs"/>
-                                                <constraint firstItem="Huw-d3-n80" firstAttribute="top" secondItem="F8J-iQ-9A4" secondAttribute="top" constant="16" id="EI2-tV-dOk"/>
-                                                <constraint firstItem="Huw-d3-n80" firstAttribute="leading" secondItem="F8J-iQ-9A4" secondAttribute="leading" constant="15" id="iDu-FX-jcG"/>
-                                                <constraint firstItem="pI7-1b-mdh" firstAttribute="leading" secondItem="F8J-iQ-9A4" secondAttribute="leading" constant="15" id="mAj-wy-cQx"/>
-                                                <constraint firstItem="pI7-1b-mdh" firstAttribute="top" secondItem="Huw-d3-n80" secondAttribute="bottom" constant="15" id="mes-EC-qjU"/>
-                                                <constraint firstAttribute="trailing" secondItem="Huw-d3-n80" secondAttribute="trailing" constant="15" id="oLu-Pc-00E"/>
+                                                <constraint firstItem="Kfa-ax-GGT" firstAttribute="centerY" secondItem="4CT-F5-rM5" secondAttribute="centerY" id="3n7-pu-MDZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kfa-ax-GGT" secondAttribute="trailing" constant="15" id="OxT-1N-OZL"/>
+                                                <constraint firstItem="Kfa-ax-GGT" firstAttribute="leading" secondItem="4CT-F5-rM5" secondAttribute="leading" constant="15" id="wMy-Rr-emx"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="rGi-Y0-td8" userLabel="Calendar Cell">
-                                        <rect key="frame" x="0.0" y="336" width="600" height="250"/>
+                                        <rect key="frame" x="0.0" y="329" width="600" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rGi-Y0-td8" id="AEz-AX-wB9">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
@@ -143,7 +156,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="mYu-90-yVQ" userLabel="Exclude Sat">
-                                        <rect key="frame" x="0.0" y="586" width="600" height="43"/>
+                                        <rect key="frame" x="0.0" y="579" width="600" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mYu-90-yVQ" id="x6i-2u-OK1">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -172,7 +185,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="DYd-jw-cyZ" userLabel="Federal Holiday">
-                                        <rect key="frame" x="0.0" y="629" width="600" height="43"/>
+                                        <rect key="frame" x="0.0" y="622" width="600" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DYd-jw-cyZ" id="JeP-ro-98E">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -204,7 +217,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="YXu-GK-pIy" userLabel="Add to Calendar">
-                                        <rect key="frame" x="0.0" y="672" width="600" height="70"/>
+                                        <rect key="frame" x="0.0" y="665" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YXu-GK-pIy" id="MTb-Sd-O07">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
@@ -231,7 +244,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="FLH-Lk-q5h" userLabel="Disclaimer">
-                                        <rect key="frame" x="0.0" y="742" width="600" height="93"/>
+                                        <rect key="frame" x="0.0" y="735" width="600" height="93"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FLH-Lk-q5h" id="mL2-XI-8ft">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="93"/>
@@ -266,6 +279,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="addToCalendarButton" destination="cBu-44-nx7" id="cbe-rY-pp3"/>
+                        <outlet property="chooseDateLabel" destination="Kfa-ax-GGT" id="iwV-Pz-CFA"/>
                         <outlet property="federalHolidayIndicator" destination="yh0-Dv-tzf" id="y6Q-Bo-4gA"/>
                         <outlet property="startClosingDateSegment" destination="Huw-d3-n80" id="n30-Gw-Hjz"/>
                     </connections>
