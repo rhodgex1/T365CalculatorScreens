@@ -57,6 +57,7 @@
 		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
 		3DB0FEA91CD77A8F006AD9D5 /* ProfileCreditsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FEA81CD77A8F006AD9D5 /* ProfileCreditsForm.swift */; };
 		3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */; };
+		3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */; };
 		3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */; };
 		3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */; };
 		3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */; };
@@ -152,6 +153,7 @@
 		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
 		3DB0FEA81CD77A8F006AD9D5 /* ProfileCreditsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreditsForm.swift; sourceTree = "<group>"; };
 		3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreditsController.swift; sourceTree = "<group>"; };
+		3DC308EB1CD9C9A9001F61F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountRep.storyboard; sourceTree = SOURCE_ROOT; };
 		3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		3DD5309E1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateNetSheetReport.storyboard; path = ../Base.lproj/CreateNetSheetReport.storyboard; sourceTree = "<group>"; };
 		3DD530A01CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetWithContainersBaseController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3DC308E81CD9C91C001F61F6 /* Profile */,
 				3D1BE5B01CD723DB00890BE4 /* Settings */,
 				3271884C1CD1F8B400E51161 /* CDTimeline */,
 				322872761CC8F0FB0058FA6C /* Calculate */,
@@ -318,6 +321,30 @@
 				3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */,
 			);
 			path = "Account Settings";
+			sourceTree = "<group>";
+		};
+		3DC308E81CD9C91C001F61F6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3DC308ED1CD9C9DF001F61F6 /* MyProfile */,
+				3DC308E91CD9C97A001F61F6 /* AccountRep */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3DC308E91CD9C97A001F61F6 /* AccountRep */ = {
+			isa = PBXGroup;
+			children = (
+				3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */,
+			);
+			path = AccountRep;
+			sourceTree = "<group>";
+		};
+		3DC308ED1CD9C9DF001F61F6 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyProfile;
 			sourceTree = "<group>";
 		};
 		3DD530A61CC7ABC800BEE96D /* Proxima Nova */ = {
@@ -491,6 +518,7 @@
 				3DD530B91CC7ABC800BEE96D /* Proxima Nova Bold It.otf in Resources */,
 				3DD530C01CC7ABC800BEE96D /* Proxima Nova Reg.otf in Resources */,
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
+				3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */,
 				3DD530BA1CC7ABC800BEE96D /* Proxima Nova Bold.otf in Resources */,
 				32DB229F1CD33CB3005277B8 /* CommonComponents.storyboard in Resources */,
 			);
@@ -634,6 +662,14 @@
 				3D1BE5B61CD7246100890BE4 /* Base */,
 			);
 			name = AccountSettings.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC308EB1CD9C9A9001F61F6 /* Base */,
+			);
+			name = AccountRep.storyboard;
 			sourceTree = "<group>";
 		};
 		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
