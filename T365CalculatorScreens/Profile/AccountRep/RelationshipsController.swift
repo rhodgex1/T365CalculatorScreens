@@ -47,7 +47,7 @@ class RelationshipsController: UIViewController {
     }
 }
 
-//MARK:- TableViewDataSource methods
+//MARK:- UITableViewDataSource methods
 extension RelationshipsController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let teamMembersList = teamMembers {
@@ -67,3 +67,4 @@ extension RelationshipsController: UITableViewDataSource {
         
     }
 }
+
