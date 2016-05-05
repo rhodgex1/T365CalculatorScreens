@@ -40,6 +40,8 @@
 		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
 		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
 		3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D11CDB786500667B55 /* ContactActionsController.swift */; };
+		3D42D8D61CDB85E400667B55 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D51CDB85E400667B55 /* MyProfileController.swift */; };
+		3D42D8D91CDB85F900667B55 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
@@ -64,7 +66,7 @@
 		3DD2116B1CDA121B00DFE86C /* RelationshipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */; };
 		3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2116C1CDA125800DFE86C /* AccountRepContainerController.swift */; };
 		3DD2116F1CDA125800DFE86C /* AccountRepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2116D1CDA125800DFE86C /* AccountRepController.swift */; };
-		3DD211711CDA13CD00DFE86C /* UserInfoHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211701CDA13CD00DFE86C /* UserInfoHeaderController.swift */; };
+		3DD211711CDA13CD00DFE86C /* UserInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211701CDA13CD00DFE86C /* UserInfoController.swift */; };
 		3DD211731CDA19CE00DFE86C /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211721CDA19CE00DFE86C /* RGPageViewController.swift */; };
 		3DD211751CDA1F5100DFE86C /* RelationshipsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211741CDA1F5100DFE86C /* RelationshipsCell.swift */; };
 		3DD211771CDA203100DFE86C /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211761CDA203100DFE86C /* CircularImageView.swift */; };
@@ -146,6 +148,8 @@
 		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
 		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
 		3D42D8D11CDB786500667B55 /* ContactActionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactActionsController.swift; sourceTree = "<group>"; };
+		3D42D8D51CDB85E400667B55 /* MyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/MyProfile.storyboard; sourceTree = SOURCE_ROOT; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
@@ -170,7 +174,7 @@
 		3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipsController.swift; sourceTree = "<group>"; };
 		3DD2116C1CDA125800DFE86C /* AccountRepContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepContainerController.swift; sourceTree = "<group>"; };
 		3DD2116D1CDA125800DFE86C /* AccountRepController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepController.swift; sourceTree = "<group>"; };
-		3DD211701CDA13CD00DFE86C /* UserInfoHeaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoHeaderController.swift; sourceTree = "<group>"; };
+		3DD211701CDA13CD00DFE86C /* UserInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoController.swift; sourceTree = "<group>"; };
 		3DD211721CDA19CE00DFE86C /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
 		3DD211741CDA1F5100DFE86C /* RelationshipsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipsCell.swift; sourceTree = "<group>"; };
 		3DD211761CDA203100DFE86C /* CircularImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
@@ -360,7 +364,7 @@
 				3DD211661CDA11E700DFE86C /* ContactController.swift */,
 				3DD211681CDA120B00DFE86C /* StatisticsController.swift */,
 				3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */,
-				3DD211701CDA13CD00DFE86C /* UserInfoHeaderController.swift */,
+				3DD211701CDA13CD00DFE86C /* UserInfoController.swift */,
 				3DD211741CDA1F5100DFE86C /* RelationshipsCell.swift */,
 			);
 			path = AccountRep;
@@ -369,6 +373,8 @@
 		3DC308ED1CD9C9DF001F61F6 /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
+				3D42D8D51CDB85E400667B55 /* MyProfileController.swift */,
+				3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -530,6 +536,7 @@
 				3DD530B71CC7ABC800BEE96D /* Proxima Nova Black It.otf in Resources */,
 				3DD530BE1CC7ABC800BEE96D /* Proxima Nova Medium.otf in Resources */,
 				3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */,
+				3D42D8D91CDB85F900667B55 /* MyProfile.storyboard in Resources */,
 				3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
 				3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */,
@@ -580,7 +587,7 @@
 				3DB0FEA91CD77A8F006AD9D5 /* ProfileCreditsForm.swift in Sources */,
 				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
 				3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */,
-				3DD211711CDA13CD00DFE86C /* UserInfoHeaderController.swift in Sources */,
+				3DD211711CDA13CD00DFE86C /* UserInfoController.swift in Sources */,
 				3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */,
 				3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */,
 				3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */,
@@ -610,6 +617,7 @@
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
+				3D42D8D61CDB85E400667B55 /* MyProfileController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
 				3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
@@ -702,6 +710,14 @@
 				3D1BE5B61CD7246100890BE4 /* Base */,
 			);
 			name = AccountSettings.storyboard;
+			sourceTree = "<group>";
+		};
+		3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D42D8D81CDB85F900667B55 /* Base */,
+			);
+			name = MyProfile.storyboard;
 			sourceTree = "<group>";
 		};
 		3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */ = {

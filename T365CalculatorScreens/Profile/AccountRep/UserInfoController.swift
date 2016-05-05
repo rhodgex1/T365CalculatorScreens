@@ -1,5 +1,5 @@
 //
-//  UserInfoHeaderController.swift
+//  UserInfoController.swift
 //  T365CalculatorScreens
 //
 //  Created by Devarshi Kulshreshtha on 5/4/16.
@@ -8,12 +8,13 @@
 
 import UIKit
 
-class UserInfoHeaderController: UIViewController {
+class UserInfoController: UIViewController {
 
     //MARK:- IBOutlets declarations
     @IBOutlet weak var personImage: CircularImageView!
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var personDesignation: UILabel!
+    @IBOutlet weak var contactButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +36,3 @@ class UserInfoHeaderController: UIViewController {
 
 }
 
-//MARK:- User actions
-extension UserInfoHeaderController {
-    
-    @IBAction func callAction(sender: UIButton) {
-    }
-
-}
