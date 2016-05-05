@@ -47,7 +47,7 @@ extension CDTimelineContentController {
     private func configureAddToCalendarButton() {
         addToCalendarButton.layer.borderWidth = 2
         addToCalendarButton.layer.cornerRadius = 5
-        addToCalendarButton.layer.borderColor = UIColor(red: 230, green: 230, blue: 230, alpha:1).CGColor
+        addToCalendarButton.layer.borderColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha:1).CGColor
     }
 }
 
