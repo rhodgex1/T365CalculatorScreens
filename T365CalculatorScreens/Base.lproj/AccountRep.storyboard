@@ -141,16 +141,17 @@
                                 <state key="normal" image="callContactWhite"/>
                                 <connections>
                                     <action selector="callAction:" destination="NgD-fN-tsh" eventType="touchUpInside" id="ba0-u7-1Zt"/>
+                                    <segue destination="3xd-dV-veW" kind="presentation" identifier="ShowContactActions" modalPresentationStyle="overCurrentContext" id="pAv-GG-QMi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Christine Kaplan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcx-iC-xOg">
-                                <rect key="frame" x="234" y="120" width="132" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Christine Kaplan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcx-iC-xOg">
+                                <rect key="frame" x="234" y="120" width="132" height="21"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Estate Agent - Keller Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kns-Fc-Srg">
-                                <rect key="frame" x="188.5" y="146" width="224" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Real Estate Agent - Keller Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kns-Fc-Srg">
+                                <rect key="frame" x="184.5" y="149" width="231.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                 <color key="textColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -183,6 +184,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCk-lu-d6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="283" y="1176"/>
+        </scene>
+        <!--ContactActionsController-->
+        <scene sceneID="Kal-oE-KsV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CommonComponents" referencedIdentifier="ContactActionsController" id="3xd-dV-veW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZP6-ea-HR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483.5" y="1428"/>
         </scene>
         <!--Contact Controller-->
         <scene sceneID="buW-Sc-NMW">
@@ -768,7 +777,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wI4-Ei-Dhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="1391"/>
+            <point key="canvasLocation" x="1665" y="1839"/>
         </scene>
         <!--Relationships Controller-->
         <scene sceneID="RiC-9g-U1f">

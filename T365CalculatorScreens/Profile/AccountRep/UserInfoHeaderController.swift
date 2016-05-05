@@ -25,6 +25,13 @@ class UserInfoHeaderController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier where segueIdentifier == "ShowContactActions" {
+            let contactActionsController = segue.destinationViewController
+            contactActionsController.view.backgroundColor = UIColor(white: 1.0, alpha: 0.9)
+        }
+    }
 
 }
 

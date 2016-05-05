@@ -39,6 +39,7 @@
 		3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */; };
 		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
 		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
+		3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D11CDB786500667B55 /* ContactActionsController.swift */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
@@ -144,6 +145,7 @@
 		3D24485E1CC8ABEC00B2A83C /* ClosingCostFormCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormCell.swift; sourceTree = "<group>"; };
 		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
 		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
+		3D42D8D11CDB786500667B55 /* ContactActionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactActionsController.swift; sourceTree = "<group>"; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
@@ -457,6 +459,7 @@
 				32DB229D1CD33CB3005277B8 /* CommonComponents.storyboard */,
 				3DD211761CDA203100DFE86C /* CircularImageView.swift */,
 				3DD211781CDA259100DFE86C /* CircularView.swift */,
+				3D42D8D11CDB786500667B55 /* ContactActionsController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 			files = (
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
 				3DD211671CDA11E700DFE86C /* ContactController.swift in Sources */,
+				3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */,
