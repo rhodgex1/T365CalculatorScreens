@@ -1,5 +1,5 @@
 //
-//  ContactController.swift
+//  ProfileContactDetailController.swift
 //  T365CalculatorScreens
 //
 //  Created by Devarshi Kulshreshtha on 5/4/16.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ContactController: UIViewController {
+class ProfileContactDetailController: UIViewController {
 
     //MARK:- Constant declarations
-    static let storyboardId = "ContactController"
+    static let storyboardId = "ProfileContactDetailController"
     static let embedSegueIdentifier = "EmbedContact"
     
     //MARK:- Declaring IBOutlets
@@ -36,7 +36,7 @@ class ContactController: UIViewController {
 }
 
 //MARK:- User Actions
-extension ContactController {
+extension ProfileContactDetailController {
     
     @IBAction func launchWeb(sender: UIButton) {
     }

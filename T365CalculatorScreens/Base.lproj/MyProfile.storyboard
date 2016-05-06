@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--My Profile Controller-->
+        <!--Profile Controller-->
         <scene sceneID="5CA-QE-meK">
             <objects>
-                <viewController storyboardIdentifier="MyProfileController" id="zLv-vd-xAv" customClass="MyProfileController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileController" id="zLv-vd-xAv" customClass="ProfileController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="19a-af-YlX"/>
                         <viewControllerLayoutGuide type="bottom" id="3N9-qD-dS9"/>
@@ -47,11 +47,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="9Vl-mL-FzI">
                         <barButtonItem key="backBarButtonItem" title=" " id="PmS-G0-MVH"/>
-                        <barButtonItem key="rightBarButtonItem" image="actionIcon" id="eLY-f1-4bS">
-                            <connections>
-                                <action selector="moreAction:" destination="zLv-vd-xAv" id="eXy-FS-Nqg"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
@@ -67,16 +62,13 @@
             </objects>
             <point key="canvasLocation" x="734.5" y="88"/>
         </scene>
-        <!--ContactController-->
+        <!--ProfileContactDetailController-->
         <scene sceneID="UGd-7w-vpC">
             <objects>
-                <viewControllerPlaceholder storyboardName="AccountRep" referencedIdentifier="ContactController" id="gxf-Y8-Ddr" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="AccountRep" referencedIdentifier="ProfileContactDetailController" id="gxf-Y8-Ddr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcs-hB-xmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675.5" y="429"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="actionIcon" width="24" height="24"/>
-    </resources>
 </document>

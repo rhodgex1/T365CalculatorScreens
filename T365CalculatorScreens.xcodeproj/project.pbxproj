@@ -40,7 +40,7 @@
 		3D2448611CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */; };
 		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
 		3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D11CDB786500667B55 /* ContactActionsController.swift */; };
-		3D42D8D61CDB85E400667B55 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D51CDB85E400667B55 /* MyProfileController.swift */; };
+		3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D51CDB85E400667B55 /* ProfileController.swift */; };
 		3D42D8D91CDB85F900667B55 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
@@ -61,7 +61,7 @@
 		3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */; };
 		3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */; };
 		3DD211651CD9D27500DFE86C /* CDTimelineContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */; };
-		3DD211671CDA11E700DFE86C /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211661CDA11E700DFE86C /* ContactController.swift */; };
+		3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */; };
 		3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211681CDA120B00DFE86C /* StatisticsController.swift */; };
 		3DD2116B1CDA121B00DFE86C /* RelationshipsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */; };
 		3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2116C1CDA125800DFE86C /* AccountRepContainerController.swift */; };
@@ -150,7 +150,7 @@
 		3D2448601CC8AC7800B2A83C /* ClosingCostFormSegueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormSegueCell.swift; sourceTree = "<group>"; };
 		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
 		3D42D8D11CDB786500667B55 /* ContactActionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactActionsController.swift; sourceTree = "<group>"; };
-		3D42D8D51CDB85E400667B55 /* MyProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		3D42D8D51CDB85E400667B55 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/MyProfile.storyboard; sourceTree = SOURCE_ROOT; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		3DC308EB1CD9C9A9001F61F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountRep.storyboard; sourceTree = SOURCE_ROOT; };
 		3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContentController.swift; sourceTree = "<group>"; };
-		3DD211661CDA11E700DFE86C /* ContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContactDetailController.swift; sourceTree = "<group>"; };
 		3DD211681CDA120B00DFE86C /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
 		3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelationshipsController.swift; sourceTree = "<group>"; };
 		3DD2116C1CDA125800DFE86C /* AccountRepContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepContainerController.swift; sourceTree = "<group>"; };
@@ -365,7 +365,7 @@
 				3DD2116C1CDA125800DFE86C /* AccountRepContainerController.swift */,
 				3DD2116D1CDA125800DFE86C /* AccountRepController.swift */,
 				3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */,
-				3DD211661CDA11E700DFE86C /* ContactController.swift */,
+				3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */,
 				3DD211681CDA120B00DFE86C /* StatisticsController.swift */,
 				3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */,
 				3DD211701CDA13CD00DFE86C /* UserInfoController.swift */,
@@ -379,7 +379,7 @@
 		3DC308ED1CD9C9DF001F61F6 /* MyProfile */ = {
 			isa = PBXGroup;
 			children = (
-				3D42D8D51CDB85E400667B55 /* MyProfileController.swift */,
+				3D42D8D51CDB85E400667B55 /* ProfileController.swift */,
 				3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */,
 			);
 			path = MyProfile;
@@ -575,7 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
-				3DD211671CDA11E700DFE86C /* ContactController.swift in Sources */,
+				3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */,
 				3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
@@ -623,7 +623,7 @@
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
-				3D42D8D61CDB85E400667B55 /* MyProfileController.swift in Sources */,
+				3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
 				3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,

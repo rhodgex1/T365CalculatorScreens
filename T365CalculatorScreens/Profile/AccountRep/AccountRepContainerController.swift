@@ -47,7 +47,7 @@ extension AccountRepContainerController : RGPageViewControllerDataSource {
         if let accountRepContentType = AccountRepContentType(rawValue: index) {
             switch accountRepContentType {
             case .Contact:
-                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(ContactController.storyboardId)
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(ProfileContactDetailController.storyboardId)
             case .Statistics:
                 viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(StatisticsController.storyboardId)
             case .Relationships:

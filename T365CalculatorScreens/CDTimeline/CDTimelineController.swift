@@ -31,6 +31,7 @@ class CDTimelineController: RGPageViewController {
 
 // MARK: - Private Methods
 extension CDTimelineController {
+    //TODO: similar code is used in other class, for reusability move it to common class
     private func addMoreButton() {
         let moreButton = UIButton()
         moreButton.setImage(UIImage(named: "actionIcon"), forState: .Normal)
@@ -41,7 +42,10 @@ extension CDTimelineController {
         
         self.navigationItem.rightBarButtonItem = moreBarItem
     }
-    
+}
+
+// MARK:- User actions
+extension CDTimelineController {
     func moreAction() -> Void {
         let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
