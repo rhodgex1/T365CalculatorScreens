@@ -97,5 +97,22 @@ extension ProfileController {
     
     func myProfileMoreAction() -> Void {
         //TODO: complete the implementation
+        
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
+        
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
+        actionSheetController.modalPresentationStyle = .OverCurrentContext
+        
+        let editProfileActionItem = ActionSheetOption(title: "Edit Profile", icon: "moreIconContacts",    action: { () -> Void in
+            //TODO: complete implementation
+            print("Edit Profile")
+        })
+        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            print("Cancel")
+            // Nothing to do for now :-)
+        })
+        actionSheetController.actionSheetItems = [editProfileActionItem, cancelActionItem]
+        
+        self.presentViewController(actionSheetController, animated: false, completion: nil)
     }
 }

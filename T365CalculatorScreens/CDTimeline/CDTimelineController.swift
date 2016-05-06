@@ -53,16 +53,16 @@ extension CDTimelineController {
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
-            NSLog("Create New / Start Over")
+            print("Create New / Start Over")
         })
         let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: "actionIconsshare", action: { () -> Void in
-            NSLog("Print or Share")
+            print("Print or Share")
         })
         let actionItemSave = ActionSheetOption(title: "Save", icon: "actionIconsDownload", action: { () -> Void in
-            NSLog("Save")
+            print("Save")
         })
         let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
-            NSLog("Cancel")
+            print("Cancel")
         })
         actionSheetController.actionSheetItems = [actionItemCreate, actionItemPrint, actionItemSave, actionItemCancel]
         

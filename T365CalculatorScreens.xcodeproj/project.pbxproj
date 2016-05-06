@@ -41,7 +41,7 @@
 		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
 		3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D11CDB786500667B55 /* ContactActionsController.swift */; };
 		3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D51CDB85E400667B55 /* ProfileController.swift */; };
-		3D42D8D91CDB85F900667B55 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */; };
+		3D42D8D91CDB85F900667B55 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* Profile.storyboard */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
@@ -151,7 +151,7 @@
 		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
 		3D42D8D11CDB786500667B55 /* ContactActionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactActionsController.swift; sourceTree = "<group>"; };
 		3D42D8D51CDB85E400667B55 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/MyProfile.storyboard; sourceTree = SOURCE_ROOT; };
+		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
@@ -380,7 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				3D42D8D51CDB85E400667B55 /* ProfileController.swift */,
-				3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */,
+				3D42D8D71CDB85F900667B55 /* Profile.storyboard */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -542,7 +542,7 @@
 				3DD530B71CC7ABC800BEE96D /* Proxima Nova Black It.otf in Resources */,
 				3DD530BE1CC7ABC800BEE96D /* Proxima Nova Medium.otf in Resources */,
 				3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */,
-				3D42D8D91CDB85F900667B55 /* MyProfile.storyboard in Resources */,
+				3D42D8D91CDB85F900667B55 /* Profile.storyboard in Resources */,
 				3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */,
 				20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */,
 				3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */,
@@ -720,12 +720,12 @@
 			name = AccountSettings.storyboard;
 			sourceTree = "<group>";
 		};
-		3D42D8D71CDB85F900667B55 /* MyProfile.storyboard */ = {
+		3D42D8D71CDB85F900667B55 /* Profile.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3D42D8D81CDB85F900667B55 /* Base */,
 			);
-			name = MyProfile.storyboard;
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 		3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */ = {
