@@ -465,13 +465,23 @@
             </objects>
             <point key="canvasLocation" x="2357" y="1361"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="oMl-HE-3vN">
+        <!--Statistics Content Page Controller-->
+        <scene sceneID="StK-O0-dlm">
             <objects>
-                <pageViewController storyboardIdentifier="StatisticsContentPageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="IFh-ks-mgI" customClass="PageViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D1a-Da-ee9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="StatisticsContentPageController" id="20N-mW-Ilm" customClass="StatisticsContentPageController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EfJ-Ys-Z1n"/>
+                        <viewControllerLayoutGuide type="bottom" id="r5S-xr-RRO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lr0-eL-Sab">
+                        <rect key="frame" x="0.0" y="0.0" width="602" height="187"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cui-3e-qL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2122" y="1813.5"/>
+            <point key="canvasLocation" x="1725" y="1827"/>
         </scene>
         <!--Statistics Page Content Controller-->
         <scene sceneID="GjY-Ne-twh">
@@ -690,7 +700,7 @@
                                                             <constraint firstAttribute="height" constant="187" id="CZz-xQ-Yqq"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="IFh-ks-mgI" kind="embed" identifier="EmbedPageViewController" id="Rx4-vu-0Q4"/>
+                                                            <segue destination="20N-mW-Ilm" kind="embed" id="kuz-cO-bzs"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
