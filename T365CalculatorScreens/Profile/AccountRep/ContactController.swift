@@ -10,6 +10,9 @@ import UIKit
 
 class ContactController: UIViewController {
 
+    //MARK:- Constant declarations
+    static let embedSegueIdentifier = "EmbedContact"
+    
     //MARK:- Declaring IBOutlets
     @IBOutlet weak var officeAddress: UILabel!
     @IBOutlet weak var mobilePhone: UILabel!

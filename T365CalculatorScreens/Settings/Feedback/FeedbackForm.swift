@@ -29,7 +29,7 @@ class FeedbackForm: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let segueIdentifier = segue.identifier {
-            if segueIdentifier == "PushScreenshotsScreen" {
+            if segueIdentifier == ScreenshotsController.showSegueIdentifier {
                 screenshotsController = (segue.destinationViewController as! ScreenshotsController)
                 screenshotsController.imagePickerController.delegate = parentController
                 

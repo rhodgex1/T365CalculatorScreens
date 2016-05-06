@@ -10,6 +10,9 @@ import UIKit
 
 class ScreenshotsController: UIViewController {
 
+    //MARK:- constants declarations
+    static let showSegueIdentifier = "ShowScreenshotsScreen"
+    
     var imagePickerController = UIImagePickerController()
     
     override func viewDidLoad() {

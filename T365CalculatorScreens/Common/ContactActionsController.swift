@@ -9,6 +9,8 @@
 import UIKit
 
 class ContactActionsController: UIViewController {
+    //MARK:- Constant declarations
+    static let showSegueIdentifier = "ShowContactActions"
 
     override func viewDidLoad() {
         super.viewDidLoad()

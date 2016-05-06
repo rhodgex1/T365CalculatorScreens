@@ -9,6 +9,8 @@
 import UIKit
 
 class UserInfoController: UIViewController {
+    //MARK:- Constant declarations
+    static let embedSegueIdentifier = "EmbedUserInfo"
 
     //MARK:- IBOutlets declarations
     @IBOutlet weak var personImage: CircularImageView!
@@ -32,7 +34,7 @@ class UserInfoController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let segueIdentifier = segue.identifier where segueIdentifier == "ShowContactActions" {
+        if let segueIdentifier = segue.identifier where segueIdentifier == ContactActionsController.showSegueIdentifier {
             let contactActionsController = segue.destinationViewController
             contactActionsController.view.backgroundColor = UIColor(white: 1.0, alpha: 0.9)
         }

@@ -12,23 +12,11 @@ protocol EmbedUserInfo {
     var userInfoController: UserInfoController! { get }
 }
 
-extension EmbedUserInfo {
-    func getUserInfoHeaderEmbedSegueIdentifier() -> String {
-        return "EmbedUserInfo"
-    }
-}
-
 protocol EmbedContact {
     var contactController: ContactController! { get }
 }
 
-extension EmbedContact {
-    func getUserInfoHeaderEmbedSegueIdentifier() -> String {
-        return "EmbedContact"
-    }
-}
-
-class MyProfileController: UIViewController,  EmbedUserInfo, EmbedContact{
+class MyProfileController: UIViewController, EmbedUserInfo, EmbedContact{
 
     //MARK:- Var declarations
     var userInfoController: UserInfoController!
@@ -48,11 +36,11 @@ class MyProfileController: UIViewController,  EmbedUserInfo, EmbedContact{
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let segueIdentifier = segue.identifier {
-            if segueIdentifier == "EmbedUserInfo" {
+            if segueIdentifier == UserInfoController.embedSegueIdentifier {
                 userInfoController = segue.destinationViewController as! UserInfoController
                 userInfoController.showContactButton = false
             }
-            else if segueIdentifier == "EmbedUserInfo" {
+            else if segueIdentifier == ContactController.embedSegueIdentifier {
                 contactController = segue.destinationViewController as! ContactController
             }
             else {
