@@ -11,6 +11,7 @@ import UIKit
 class ContactController: UIViewController {
 
     //MARK:- Constant declarations
+    static let storyboardId = "ContactController"
     static let embedSegueIdentifier = "EmbedContact"
     
     //MARK:- Declaring IBOutlets

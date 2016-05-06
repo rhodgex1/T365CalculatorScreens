@@ -21,10 +21,8 @@ class SellerBuyerOtherController: RGPageViewController {
     var tabBarTitles: [String]!
     
     // declaring constants
-    static let kStoryBoardSellerBuyerOther = "SellerBuyerOther"
-    static let kStoryBoardSellerNetSheet = "SellerNetSheet"
-    static let kStoryBoardCommonComponents = "CommonComponents"
-    let kSellerBuyerOtherContainerController = "SellerBuyerOtherContainerController"
+    static let storyboardId = "SellerBuyerOtherController"
+    static let storyboardName = "SellerBuyerOther"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +52,8 @@ extension SellerBuyerOtherController {
             let actionItemSellersNetSheet = ActionSheetOption(title: "Seller's Net Sheet", icon: "actionIconEstimate", action: { () -> Void in
                 print("Seller's Net Sheet")
                 
-                let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerNetSheet, bundle: nil)
-                let netSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("SellerNetSheetController")
+                let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
+                let netSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(SellerNetSheetController.storyboardId)
                 
                 self.navigationController?.pushViewController(netSheetController, animated: true)
 
@@ -98,9 +96,9 @@ extension SellerBuyerOtherController {
             return [actionItemFeeEstimate, actionItemClosingDisclosureTimeline, actionItemCancel]
         }
 
-        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
-        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         var theActionSheetItems : [ActionSheetOption]!
@@ -143,8 +141,8 @@ extension SellerBuyerOtherController : RGPageViewControllerDataSource {
     
     func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerBuyerOther, bundle: nil)
-        let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
+        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
+        let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(SellerBuyerOtherContainerController.storyboardId) as! SellerBuyerOtherContainerController
         
         if let userType = UserType(rawValue:index) {
             switch userType {

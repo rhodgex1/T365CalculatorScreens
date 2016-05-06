@@ -21,6 +21,8 @@ struct TeamMember {
 }
 
 class RelationshipsController: UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "RelationshipsController"
 
     var teamMembers: [TeamMember]?
     

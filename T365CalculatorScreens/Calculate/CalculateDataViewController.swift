@@ -1,6 +1,8 @@
 import UIKit
 
 class CalculateDataViewController : UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "CalculateDataViewController"
 
     @IBOutlet weak var calculateDataTableView: UITableView!
 

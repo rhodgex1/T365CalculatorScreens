@@ -10,6 +10,9 @@ import UIKit
 
 //NOTE: Since each component is added on a cell, it can be easily made hidden by setting height of corresponding cell to 0 
 class CDTimelineContentController: UITableViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "CDTimelineContentController"
+    static let storyboardName = "CDTimeline"
 
     //MARK:- IBOutlets
     @IBOutlet weak var startClosingDateSegment: UISegmentedControl!

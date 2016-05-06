@@ -43,9 +43,9 @@ extension CDTimelineController {
     }
     
     func moreAction() -> Void {
-        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
-        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
@@ -86,8 +86,8 @@ extension CDTimelineController : RGPageViewControllerDataSource {
     
     func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
-        let cdTimelineStoryboard = UIStoryboard(name: "CDTimeline", bundle: nil)
-        let purchaseRefinanceContainerController = cdTimelineStoryboard.instantiateViewControllerWithIdentifier("CDTimelineContentController")
+        let cdTimelineStoryboard = UIStoryboard(name: CDTimelineContentController.storyboardName, bundle: nil)
+        let purchaseRefinanceContainerController = cdTimelineStoryboard.instantiateViewControllerWithIdentifier(CDTimelineContentController.storyboardId)
         
         return purchaseRefinanceContainerController
     }

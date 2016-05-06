@@ -8,10 +8,12 @@
 
 import UIKit
 
+//MARK:- EmbedUserInfo protocol
 protocol EmbedUserInfo {
     var userInfoController: UserInfoController! { get }
 }
 
+//MARK:- EmbedContact protocol
 protocol EmbedContact {
     var contactController: ContactController! { get }
 }

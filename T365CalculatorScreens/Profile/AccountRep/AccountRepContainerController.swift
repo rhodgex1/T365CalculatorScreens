@@ -41,17 +41,17 @@ extension AccountRepContainerController : RGPageViewControllerDataSource {
     }
     
     func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
-        let accountRepStoryboard = UIStoryboard(name: "AccountRep", bundle: nil)
+        let accountRepStoryboard = UIStoryboard(name: AccountRepController.storyboardName, bundle: nil)
         var viewController: UIViewController!
         
         if let accountRepContentType = AccountRepContentType(rawValue: index) {
             switch accountRepContentType {
             case .Contact:
-                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("ContactController")
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(ContactController.storyboardId)
             case .Statistics:
-                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("StatisticsController")
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(StatisticsController.storyboardId)
             case .Relationships:
-                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier("RelationshipsController")
+                viewController = accountRepStoryboard.instantiateViewControllerWithIdentifier(RelationshipsController.storyboardId)
             }
         }
         

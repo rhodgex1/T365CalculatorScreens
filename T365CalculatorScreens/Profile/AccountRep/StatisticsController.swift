@@ -8,20 +8,25 @@
 
 import UIKit
 
+//MARK:- EmbedPageViewController Protocol
+protocol EmbedPageViewController {
+    var userInfoController: UserInfoController! { get }
+}
+
 class StatisticsController: UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "StatisticsController"
 
     //MARK:- Top View IBOutlets declarations
-    @IBOutlet weak var closingRatioPercentage: UILabel!
-    @IBOutlet weak var openedCount: UILabel!
-    @IBOutlet weak var closedCount: UILabel!
-    @IBOutlet weak var notIncludedCount: UILabel!
-    @IBOutlet weak var daysToCloseAvgNumber: UILabel!
     @IBOutlet weak var topView: UIView!
 
     //MARK:- Bottom View IBOutlets declarations
     @IBOutlet weak var usedTodayCount: UILabel!
     @IBOutlet weak var usedThisMonthCount: UILabel!
     @IBOutlet weak var resetFarmingCreditsButton: UIButton!
+    
+    //MARK:- var declarations
+    var statisticsContentPageController: StatisticsContentPageController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +40,18 @@ class StatisticsController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier where segueIdentifier == StatisticsContentPageController.embedSegue {
+            statisticsContentPageController = segue.destinationViewController as! StatisticsContentPageController
+        }
+    }
 
 }
 
 //MARK:- Private methods
 extension StatisticsController {
+    
     private func configureResetFarmingCreditsButton(){
         resetFarmingCreditsButton.layer.borderWidth = 1.0
         resetFarmingCreditsButton.layer.cornerRadius = 5.0

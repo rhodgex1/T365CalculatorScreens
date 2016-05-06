@@ -9,6 +9,9 @@ struct ActionSheetOption {
 }
 
 class ActionSheetController: UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "ActionSheetController"
+    static let storyboardName = "CommonComponents"
     
     @IBOutlet weak var theActionSheetTableView: UITableView!
 

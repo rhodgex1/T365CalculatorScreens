@@ -91,6 +91,8 @@
 		3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */; };
 		3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */; };
 		3DD530C61CC7ABC800BEE96D /* Proxima Nova Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */; };
+		3DE15AA61CDC6F5C0034532B /* StatisticsContentPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */; };
+		3DE15AA81CDCA0DE0034532B /* StatisticsPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
@@ -199,6 +201,8 @@
 		3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
 		3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold It.otf"; sourceTree = "<group>"; };
 		3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold.otf"; sourceTree = "<group>"; };
+		3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsContentPageController.swift; sourceTree = "<group>"; };
+		3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPageContentController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
@@ -366,6 +370,8 @@
 				3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */,
 				3DD211701CDA13CD00DFE86C /* UserInfoController.swift */,
 				3DD211741CDA1F5100DFE86C /* RelationshipsCell.swift */,
+				3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */,
+				3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */,
 			);
 			path = AccountRep;
 			sourceTree = "<group>";
@@ -631,7 +637,9 @@
 				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
+				3DE15AA61CDC6F5C0034532B /* StatisticsContentPageController.swift in Sources */,
 				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
+				3DE15AA81CDCA0DE0034532B /* StatisticsPageContentController.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
 				32F127001CD2203A00644467 /* CDTimelineController.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,

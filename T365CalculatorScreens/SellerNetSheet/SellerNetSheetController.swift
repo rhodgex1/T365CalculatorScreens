@@ -1,6 +1,10 @@
 import UIKit
 
 class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
+    //MARK:- contant declaration
+    static let storyboardId = "SellerNetSheetController"
+    static let storyboardName = "SellerNetSheet"
+    
     var sellerNewNetSheetFormController : SellerNewNetSheetForm!
     
     override func viewDidLoad() {
@@ -76,9 +80,9 @@ extension SellerNetSheetController {
     func moreAction(sender: UIButton) {
         // more action
         
-        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
-        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in

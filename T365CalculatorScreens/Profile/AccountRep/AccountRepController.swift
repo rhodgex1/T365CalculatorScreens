@@ -1,5 +1,6 @@
 import UIKit
 
-class AccountRepABCController: UIViewController {
-    
+class AccountRepController: UIViewController {
+    //MARK:- contant declaration
+    static let storyboardName = "AccountRep"
 }
