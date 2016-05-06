@@ -50,7 +50,7 @@ class MyProfileController: UIViewController,  EmbedUserInfo, EmbedContact{
         if let segueIdentifier = segue.identifier {
             if segueIdentifier == "EmbedUserInfo" {
                 userInfoController = segue.destinationViewController as! UserInfoController
-//                userInfoController.contactButton.hidden = true
+                userInfoController.showContactButton = false
             }
             else if segueIdentifier == "EmbedUserInfo" {
                 contactController = segue.destinationViewController as! ContactController

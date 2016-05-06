@@ -16,10 +16,14 @@ class UserInfoController: UIViewController {
     @IBOutlet weak var personDesignation: UILabel!
     @IBOutlet weak var contactButton: UIButton!
     
+    //MARK:- var declarations
+    var showContactButton = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        contactButton.hidden = !showContactButton
     }
 
     override func didReceiveMemoryWarning() {
