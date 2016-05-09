@@ -45,6 +45,12 @@
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3D5F1E031CE06B7600D1D979 /* StatisticsPaginationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */; };
+		3D5F1E071CE0A4A700D1D979 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */; };
+		3D5F1E091CE0A57A00D1D979 /* PersonalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */; };
+		3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */; };
+		3D5F1E0D1CE0A5BB00D1D979 /* AddressTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */; };
+		3D5F1E0F1CE0A5CA00D1D979 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */; };
+		3D5F1E111CE0A5ED00D1D979 /* AddNewAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
 		3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E81CC6119900937E2C /* PayoffsForm.swift */; };
 		3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */; };
@@ -155,6 +161,12 @@
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPaginationContainer.swift; sourceTree = "<group>"; };
+		3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoCell.swift; sourceTree = "<group>"; };
+		3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsCell.swift; sourceTree = "<group>"; };
+		3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTitleCell.swift; sourceTree = "<group>"; };
+		3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAddressCell.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
 		3D9052E81CC6119900937E2C /* PayoffsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsForm.swift; sourceTree = "<group>"; };
 		3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsForm.swift; sourceTree = "<group>"; };
@@ -381,6 +393,12 @@
 			children = (
 				3D42D8D51CDB85E400667B55 /* ProfileController.swift */,
 				3D42D8D71CDB85F900667B55 /* Profile.storyboard */,
+				3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */,
+				3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */,
+				3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */,
+				3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */,
+				3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */,
+				3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -574,14 +592,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5F1E091CE0A57A00D1D979 /* PersonalInfoCell.swift in Sources */,
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
 				3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */,
 				3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */,
+				3D5F1E0D1CE0A5BB00D1D979 /* AddressTitleCell.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */,
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
+				3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */,
 				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
 				3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */,
 				3DD211751CDA1F5100DFE86C /* RelationshipsCell.swift in Sources */,
@@ -619,6 +640,7 @@
 				3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */,
 				3DD2116F1CDA125800DFE86C /* AccountRepController.swift in Sources */,
 				3DFE08DD1CC4F3C300101EE3 /* NetProceedsController.swift in Sources */,
+				3D5F1E071CE0A4A700D1D979 /* EditProfileController.swift in Sources */,
 				3DD211791CDA259100DFE86C /* CircularView.swift in Sources */,
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */,
@@ -632,10 +654,12 @@
 				3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */,
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
+				3D5F1E111CE0A5ED00D1D979 /* AddNewAddressCell.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
 				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
+				3D5F1E0F1CE0A5CA00D1D979 /* AddressCell.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
 				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				3DE15AA81CDCA0DE0034532B /* StatisticsPaginationContentController.swift in Sources */,
