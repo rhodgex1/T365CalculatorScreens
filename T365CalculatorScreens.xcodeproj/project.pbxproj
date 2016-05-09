@@ -44,6 +44,7 @@
 		3D42D8D91CDB85F900667B55 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* Profile.storyboard */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
+		3D5F1E031CE06B7600D1D979 /* StatisticsPaginationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
 		3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E81CC6119900937E2C /* PayoffsForm.swift */; };
 		3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */; };
@@ -91,8 +92,7 @@
 		3DD530C41CC7ABC800BEE96D /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */; };
 		3DD530C51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */; };
 		3DD530C61CC7ABC800BEE96D /* Proxima Nova Xbold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */; };
-		3DE15AA61CDC6F5C0034532B /* StatisticsContentPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */; };
-		3DE15AA81CDCA0DE0034532B /* StatisticsPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */; };
+		3DE15AA81CDCA0DE0034532B /* StatisticsPaginationContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE15AA71CDCA0DE0034532B /* StatisticsPaginationContentController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
@@ -154,6 +154,7 @@
 		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
+		3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPaginationContainer.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
 		3D9052E81CC6119900937E2C /* PayoffsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsForm.swift; sourceTree = "<group>"; };
 		3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsForm.swift; sourceTree = "<group>"; };
@@ -201,8 +202,7 @@
 		3DD530B41CC7ABC800BEE96D /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
 		3DD530B51CC7ABC800BEE96D /* Proxima Nova Xbold It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold It.otf"; sourceTree = "<group>"; };
 		3DD530B61CC7ABC800BEE96D /* Proxima Nova Xbold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Xbold.otf"; sourceTree = "<group>"; };
-		3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsContentPageController.swift; sourceTree = "<group>"; };
-		3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPageContentController.swift; sourceTree = "<group>"; };
+		3DE15AA71CDCA0DE0034532B /* StatisticsPaginationContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPaginationContentController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
@@ -370,8 +370,8 @@
 				3DD2116A1CDA121B00DFE86C /* RelationshipsController.swift */,
 				3DD211701CDA13CD00DFE86C /* UserInfoController.swift */,
 				3DD211741CDA1F5100DFE86C /* RelationshipsCell.swift */,
-				3DE15AA51CDC6F5C0034532B /* StatisticsContentPageController.swift */,
-				3DE15AA71CDCA0DE0034532B /* StatisticsPageContentController.swift */,
+				3DE15AA71CDCA0DE0034532B /* StatisticsPaginationContentController.swift */,
+				3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */,
 			);
 			path = AccountRep;
 			sourceTree = "<group>";
@@ -637,9 +637,9 @@
 				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
-				3DE15AA61CDC6F5C0034532B /* StatisticsContentPageController.swift in Sources */,
 				3DFE08DB1CC4CE4F00101EE3 /* DismissKeyboardOnOutsideTap.swift in Sources */,
-				3DE15AA81CDCA0DE0034532B /* StatisticsPageContentController.swift in Sources */,
+				3DE15AA81CDCA0DE0034532B /* StatisticsPaginationContentController.swift in Sources */,
+				3D5F1E031CE06B7600D1D979 /* StatisticsPaginationContainer.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,
 				32F127001CD2203A00644467 /* CDTimelineController.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,

@@ -26,7 +26,7 @@ class StatisticsController: UIViewController {
     @IBOutlet weak var resetFarmingCreditsButton: UIButton!
     
     //MARK:- var declarations
-    var statisticsContentPageController: StatisticsContentPageController!
+    var statisticsPaginationContainer: StatisticsPaginationContainer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +42,8 @@ class StatisticsController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let segueIdentifier = segue.identifier where segueIdentifier == StatisticsContentPageController.embedSegue {
-            statisticsContentPageController = segue.destinationViewController as! StatisticsContentPageController
+        if let segueIdentifier = segue.identifier where segueIdentifier == StatisticsPaginationContainer.embedSegue {
+            statisticsPaginationContainer = segue.destinationViewController as! StatisticsPaginationContainer
         }
     }
 

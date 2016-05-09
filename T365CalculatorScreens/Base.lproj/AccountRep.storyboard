@@ -465,28 +465,44 @@
             </objects>
             <point key="canvasLocation" x="2357" y="1361"/>
         </scene>
-        <!--Statistics Content Page Controller-->
+        <!--Statistics Pagination Container-->
         <scene sceneID="StK-O0-dlm">
             <objects>
-                <viewController storyboardIdentifier="StatisticsContentPageController" id="20N-mW-Ilm" customClass="StatisticsContentPageController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StatisticsPaginationContainer" id="20N-mW-Ilm" customClass="StatisticsPaginationContainer" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EfJ-Ys-Z1n"/>
                         <viewControllerLayoutGuide type="bottom" id="r5S-xr-RRO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lr0-eL-Sab">
-                        <rect key="frame" x="0.0" y="0.0" width="602" height="187"/>
+                        <rect key="frame" x="0.0" y="0.0" width="602" height="215"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics Pagination Container" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxX-CX-tAh">
+                                <rect key="frame" x="245" y="60" width="113" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="GJj-yn-s0R"/>
+                                    <constraint firstAttribute="height" constant="94" id="dxL-U0-zlT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SxX-CX-tAh" firstAttribute="centerX" secondItem="Lr0-eL-Sab" secondAttribute="centerX" id="Nhc-UH-d0t"/>
+                            <constraint firstItem="SxX-CX-tAh" firstAttribute="centerY" secondItem="Lr0-eL-Sab" secondAttribute="centerY" id="t5O-n6-BKc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cui-3e-qL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="1827"/>
+            <point key="canvasLocation" x="1615" y="2164.5"/>
         </scene>
-        <!--Statistics Page Content Controller-->
+        <!--Statistics Pagination Content Controller-->
         <scene sceneID="GjY-Ne-twh">
             <objects>
-                <viewController storyboardIdentifier="StatisticsPageContentController" id="a9N-oR-xxK" customClass="StatisticsPageContentController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StatisticsPaginationContentController" id="a9N-oR-xxK" customClass="StatisticsPaginationContentController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Abg-LP-4Gz"/>
                         <viewControllerLayoutGuide type="bottom" id="aHM-uA-zU0"/>
@@ -643,10 +659,18 @@
                             <constraint firstItem="ZOx-gh-u5H" firstAttribute="centerX" secondItem="Cgy-GJ-A4m" secondAttribute="centerX" id="tvQ-2J-8DY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closedCount" destination="YZ6-Wk-FWp" id="KZO-yP-Sng"/>
+                        <outlet property="daysToCloseAvgNum" destination="hO3-86-efH" id="qve-ke-une"/>
+                        <outlet property="graphContainerView" destination="CDa-Tc-8L8" id="xsE-WD-Tz2"/>
+                        <outlet property="notIncludedCount" destination="PLn-cm-wNw" id="eGz-Hb-7cy"/>
+                        <outlet property="openedCount" destination="pEb-yu-w8L" id="W3t-HL-ZUo"/>
+                        <outlet property="statisticsPercentage" destination="ztC-Dw-ac0" id="foA-3M-nJ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uz-YK-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1826" y="2511"/>
+            <point key="canvasLocation" x="1832" y="2397"/>
         </scene>
         <!--Statistics Controller-->
         <scene sceneID="zbi-PH-fZQ">
@@ -664,17 +688,17 @@
                                 <rect key="frame" x="0.0" y="76" width="600" height="524"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxi-pL-jbN" userLabel="Contentview">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="607"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="591"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1W3-Fj-3we" userLabel="Shadow View">
-                                                <rect key="frame" x="0.0" y="352" width="600" height="3"/>
+                                                <rect key="frame" x="0.0" y="336" width="600" height="3"/>
                                                 <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="3" id="k7Y-XS-AIs"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4s-cf-Nrb" userLabel="Top View">
-                                                <rect key="frame" x="-1" y="-1" width="602" height="355"/>
+                                                <rect key="frame" x="-1" y="-1" width="602" height="339"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMk-k9-NQI">
                                                         <rect key="frame" x="20" y="42" width="140" height="24"/>
@@ -689,15 +713,15 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* The number of orders &quot;not included&quot; are those orders that have not met the average number of days to close." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O5-pU-7Wp">
-                                                        <rect key="frame" x="25" y="298" width="552" height="28"/>
-                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
+                                                        <rect key="frame" x="25" y="300" width="552" height="10"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="10"/>
                                                         <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuv-RZ-REa">
-                                                        <rect key="frame" x="0.0" y="81" width="602" height="187"/>
+                                                        <rect key="frame" x="0.0" y="81" width="602" height="215"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="187" id="CZz-xQ-Yqq"/>
+                                                            <constraint firstAttribute="height" constant="215" id="CZz-xQ-Yqq"/>
                                                         </constraints>
                                                         <connections>
                                                             <segue destination="20N-mW-Ilm" kind="embed" id="kuz-cO-bzs"/>
@@ -709,7 +733,7 @@
                                                     <constraint firstItem="rVL-qN-VP6" firstAttribute="leading" secondItem="c4s-cf-Nrb" secondAttribute="leading" constant="20" id="0lA-Wc-oJr"/>
                                                     <constraint firstItem="NMk-k9-NQI" firstAttribute="top" secondItem="rVL-qN-VP6" secondAttribute="bottom" constant="8" id="CWR-6Q-CAM"/>
                                                     <constraint firstItem="3O5-pU-7Wp" firstAttribute="leading" secondItem="c4s-cf-Nrb" secondAttribute="leading" constant="25" id="DoV-um-tdd"/>
-                                                    <constraint firstItem="3O5-pU-7Wp" firstAttribute="top" secondItem="zuv-RZ-REa" secondAttribute="bottom" constant="30" id="MHq-Ct-mwP"/>
+                                                    <constraint firstItem="3O5-pU-7Wp" firstAttribute="top" secondItem="zuv-RZ-REa" secondAttribute="bottom" constant="4" id="MHq-Ct-mwP"/>
                                                     <constraint firstAttribute="bottom" secondItem="3O5-pU-7Wp" secondAttribute="bottom" constant="29" id="OAW-za-0Ji"/>
                                                     <constraint firstAttribute="trailing" secondItem="zuv-RZ-REa" secondAttribute="trailing" id="Ur3-fL-nD0"/>
                                                     <constraint firstItem="NMk-k9-NQI" firstAttribute="leading" secondItem="rVL-qN-VP6" secondAttribute="leading" id="jG7-Og-Hc0"/>
@@ -720,7 +744,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-Dh-pXG" userLabel="Bottom View">
-                                                <rect key="frame" x="0.0" y="365" width="600" height="242"/>
+                                                <rect key="frame" x="0.0" y="349" width="600" height="242"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Profile Credits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsF-Zo-A0H">
                                                         <rect key="frame" x="19" y="25" width="247.5" height="24"/>
@@ -836,7 +860,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wI4-Ei-Dhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="1592"/>
+            <point key="canvasLocation" x="786" y="2176"/>
         </scene>
         <!--Relationships Controller-->
         <scene sceneID="RiC-9g-U1f">
