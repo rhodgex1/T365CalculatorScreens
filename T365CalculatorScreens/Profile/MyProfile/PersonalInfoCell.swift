@@ -9,6 +9,7 @@
 import UIKit
 
 class PersonalInfoCell: UITableViewCell {
+    static let cellIdentifier = "PersonalInfoCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

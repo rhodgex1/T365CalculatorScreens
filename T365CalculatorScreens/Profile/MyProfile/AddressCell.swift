@@ -9,6 +9,7 @@
 import UIKit
 
 class AddressCell: UITableViewCell {
+    static let cellIdentifier = "AddressCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

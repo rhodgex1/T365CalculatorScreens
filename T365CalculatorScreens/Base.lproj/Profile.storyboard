@@ -691,6 +691,9 @@
                             <constraint firstItem="qXQ-wS-PVD" firstAttribute="leading" secondItem="0tA-EO-BML" secondAttribute="leading" id="u0i-AS-W7z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="editProfileTable" destination="qXQ-wS-PVD" id="mYL-AN-3FX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ua6-qF-ACc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

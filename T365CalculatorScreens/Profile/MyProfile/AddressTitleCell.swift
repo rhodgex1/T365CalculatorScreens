@@ -9,6 +9,7 @@
 import UIKit
 
 class AddresTitleCell: UITableViewCell {
+    static let cellIdentifier = "AddresTitleCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
