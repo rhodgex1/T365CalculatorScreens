@@ -12,6 +12,7 @@
 		20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C931CBC43AE0058DA02 /* Main.storyboard */; };
 		20109C971CBC43AE0058DA02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20109C961CBC43AE0058DA02 /* Assets.xcassets */; };
 		20109C9A1CBC43AE0058DA02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20109C981CBC43AE0058DA02 /* LaunchScreen.storyboard */; };
+		3226BDF81CE21BE200401923 /* ContactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226BDF71CE21BE200401923 /* ContactsController.swift */; };
 		322872891CC8F1450058FA6C /* CalculateDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872831CC8F1450058FA6C /* CalculateDataViewController.swift */; };
 		3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */; };
 		3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */; };
@@ -132,6 +133,7 @@
 		20109C961CBC43AE0058DA02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20109C991CBC43AE0058DA02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20109C9B1CBC43AE0058DA02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3226BDF71CE21BE200401923 /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
 		322872831CC8F1450058FA6C /* CalculateDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateDataViewController.swift; sourceTree = "<group>"; };
 		322872841CC8F1450058FA6C /* SellerBuyerOtherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherController.swift; sourceTree = "<group>"; };
 		322872851CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerBuyerOtherContainerController.swift; sourceTree = "<group>"; };
@@ -417,6 +419,7 @@
 		3DCDC3541CE20B140092B592 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				3226BDF71CE21BE200401923 /* ContactsController.swift */,
 				3DCDC3571CE20B5D0092B592 /* Contact.storyboard */,
 				3DCDC35A1CE20B7C0092B592 /* AddContactController.swift */,
 			);
@@ -654,6 +657,7 @@
 				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
 				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
+				3226BDF81CE21BE200401923 /* ContactsController.swift in Sources */,
 				3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */,
 				3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */,
 				3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */,
