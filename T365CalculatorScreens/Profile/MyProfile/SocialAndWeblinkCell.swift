@@ -10,12 +10,12 @@ import UIKit
 
 typealias AddNewSocialAndWeblinkHandler = () -> Void
 
-//MARK:- Address Title Cell
+//MARK:- SocialAndWeblinkTitleCell
 class SocialAndWeblinkTitleCell: UITableViewCell {
     static let cellIdentifier = "SocialAndWeblinkTitleCell"
 }
 
-//MARK:- Address Cell
+//MARK:- SocialAndWeblinkCell
 class SocialAndWeblinkCell: UITableViewCell {
     static let cellIdentifier = "SocialAndWeblinkCell"
     
@@ -30,7 +30,7 @@ class SocialAndWeblinkCell: UITableViewCell {
 }
 
 
-//MARK:- Add New Address Cell
+//MARK:- AddNewSocialAndWeblinkCell
 class AddNewSocialAndWeblinkCell: UITableViewCell {
     static let cellIdentifier = "AddNewSocialAndWeblinkCell"
     var addNewSocialAndWeblinkHandler : AddNewSocialAndWeblinkHandler!
