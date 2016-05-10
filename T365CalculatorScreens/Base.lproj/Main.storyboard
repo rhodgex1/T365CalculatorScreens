@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="-268" y="508"/>
         </scene>
-        <!--EditProfileController-->
+        <!--EditProfileContainerController-->
         <scene sceneID="DOo-Eg-dBt">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="EditProfileController" id="dPP-h0-T2q" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="EditProfileContainerController" id="dPP-h0-T2q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tTL-GS-3Wb"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIJ-bD-PhE" userLabel="First Responder" sceneMemberID="firstResponder"/>

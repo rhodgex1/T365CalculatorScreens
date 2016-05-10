@@ -54,6 +54,7 @@
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
             <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -104,18 +105,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3F-xF-cei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="552"/>
+            <point key="canvasLocation" x="-1573" y="400"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Image Controller-->
         <scene sceneID="qpA-TX-I34">
             <objects>
-                <viewController id="Ivv-92-ed9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditImageController" id="Ivv-92-ed9" customClass="EditImageController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ug2-OB-CkY"/>
                         <viewControllerLayoutGuide type="bottom" id="cJb-6L-Ydb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zbv-Yu-2ET">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="170"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euB-ta-L29" userLabel="EditPicContainerView">
@@ -124,13 +125,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ag-Ai-Z1H" userLabel="CircularView" customClass="CircularView" customModule="T365CalculatorScreens" customModuleProvider="target">
                                         <rect key="frame" x="255" y="27" width="90" height="90"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHE-b4-XNP" customClass="CircularImageView" customModule="T365CalculatorScreens" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KHE-b4-XNP" customClass="CircularImageView" customModule="T365CalculatorScreens" customModuleProvider="target">
                                                 <rect key="frame" x="4" y="4" width="81" height="81"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="81" id="6FD-o7-AlU"/>
+                                                    <constraint firstAttribute="height" constant="81" id="A8m-Mu-lDu"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="KHE-b4-XNP" firstAttribute="centerY" secondItem="3ag-Ai-Z1H" secondAttribute="centerY" id="JYM-Av-mkq"/>
                                             <constraint firstAttribute="width" constant="90" id="SqY-Gr-TcH"/>
+                                            <constraint firstItem="KHE-b4-XNP" firstAttribute="centerX" secondItem="3ag-Ai-Z1H" secondAttribute="centerX" id="WYS-HP-E8c"/>
                                             <constraint firstAttribute="height" constant="90" id="qnS-dJ-MKa"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -145,11 +152,13 @@
                                         <state key="normal" title="Edit Photo">
                                             <color key="titleColor" red="0.2627450980392157" green="0.52156862745098043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="editPhoto:" destination="Ivv-92-ed9" eventType="touchUpInside" id="9GR-Rb-rVc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="170" id="Gh3-Tt-0ns"/>
                                     <constraint firstItem="3ag-Ai-Z1H" firstAttribute="centerX" secondItem="euB-ta-L29" secondAttribute="centerX" id="HvJ-Xe-0hZ"/>
                                     <constraint firstItem="ZmB-pE-UAm" firstAttribute="top" secondItem="3ag-Ai-Z1H" secondAttribute="bottom" constant="6" id="Lty-Vg-kEh"/>
                                     <constraint firstItem="3ag-Ai-Z1H" firstAttribute="centerY" secondItem="euB-ta-L29" secondAttribute="centerY" constant="-13" id="QjU-hC-Qs2"/>
@@ -165,10 +174,13 @@
                             <constraint firstItem="euB-ta-L29" firstAttribute="leading" secondItem="zbv-Yu-2ET" secondAttribute="leading" id="rts-7K-lpU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userImage" destination="KHE-b4-XNP" id="wpC-Vb-2eW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edp-Xw-hyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="910" y="44"/>
+            <point key="canvasLocation" x="864" y="-41"/>
         </scene>
         <!--UserInfoController-->
         <scene sceneID="hL3-ZT-J53">
@@ -176,7 +188,69 @@
                 <viewControllerPlaceholder storyboardName="AccountRep" referencedIdentifier="UserInfoController" id="XZA-CN-Vnk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zyd-es-9y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="507.5" y="60"/>
+            <point key="canvasLocation" x="-948.5" y="564"/>
+        </scene>
+        <!--Edit Profile Container Controller-->
+        <scene sceneID="Z66-Kt-aBo">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileContainerController" id="78W-bD-JV7" customClass="EditProfileContainerController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IzX-hF-ONf"/>
+                        <viewControllerLayoutGuide type="bottom" id="N1r-6b-hFu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LVN-dI-v55">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNZ-jb-wY9" userLabel="BodyView">
+                                <rect key="frame" x="0.0" y="134" width="600" height="426"/>
+                                <connections>
+                                    <segue destination="Xnf-RM-h8e" kind="embed" id="3cR-xn-eim"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rz8-IQ-c9l" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="8Co-yq-H4R"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Ivv-92-ed9" kind="embed" id="DkM-48-Myb"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sye-oF-zJf">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gcB-i6-0wu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.2627450980392157" green="0.52156862745098043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="78W-bD-JV7" eventType="touchUpInside" id="QfZ-5h-9mP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="N1r-6b-hFu" firstAttribute="top" secondItem="sye-oF-zJf" secondAttribute="bottom" id="Bzz-dE-86L"/>
+                            <constraint firstItem="UNZ-jb-wY9" firstAttribute="top" secondItem="Rz8-IQ-c9l" secondAttribute="bottom" constant="-100" id="FXi-lS-bUd"/>
+                            <constraint firstAttribute="trailing" secondItem="Rz8-IQ-c9l" secondAttribute="trailing" id="QhJ-wc-S6w"/>
+                            <constraint firstItem="sye-oF-zJf" firstAttribute="top" secondItem="UNZ-jb-wY9" secondAttribute="bottom" constant="-10" id="WOw-rZ-ROM"/>
+                            <constraint firstAttribute="trailing" secondItem="UNZ-jb-wY9" secondAttribute="trailing" id="a8z-Q6-0JW"/>
+                            <constraint firstItem="Rz8-IQ-c9l" firstAttribute="leading" secondItem="LVN-dI-v55" secondAttribute="leading" id="bmV-CM-f0l"/>
+                            <constraint firstAttribute="trailing" secondItem="sye-oF-zJf" secondAttribute="trailing" id="dEk-Ab-pN9"/>
+                            <constraint firstItem="sye-oF-zJf" firstAttribute="leading" secondItem="LVN-dI-v55" secondAttribute="leading" id="dzZ-fY-lcp"/>
+                            <constraint firstItem="Rz8-IQ-c9l" firstAttribute="top" secondItem="IzX-hF-ONf" secondAttribute="bottom" id="e6a-Yh-IfB"/>
+                            <constraint firstItem="UNZ-jb-wY9" firstAttribute="leading" secondItem="LVN-dI-v55" secondAttribute="leading" id="q7R-Kl-1Jx"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usO-Yf-3tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96" y="356"/>
         </scene>
         <!--Edit Profile Controller-->
         <scene sceneID="cvR-DB-M4E">
@@ -187,11 +261,11 @@
                         <viewControllerLayoutGuide type="bottom" id="J4h-KV-cZl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0tA-EO-BML">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="426"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="204" sectionHeaderHeight="10" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="qXQ-wS-PVD">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="426"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddNewSpecialtyCell" rowHeight="56" id="nEk-4N-22j" customClass="AddNewSpecialtyCell" customModule="T365CalculatorScreens" customModuleProvider="target">
@@ -456,13 +530,13 @@
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUR-6e-i6N">
-                                                    <rect key="frame" x="519.5" y="252" width="57" height="14"/>
+                                                    <rect key="frame" x="519" y="252" width="57" height="14"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
                                                     <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="94144" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Vi-oJ-M7U">
-                                                    <rect key="frame" x="519.5" y="272" width="65.5" height="30"/>
+                                                    <rect key="frame" x="519" y="272" width="65.5" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="65.5" id="gds-cg-ZGP"/>
                                                     </constraints>
@@ -471,13 +545,13 @@
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxD-Im-Kd9">
-                                                    <rect key="frame" x="457.5" y="252" width="32" height="14"/>
+                                                    <rect key="frame" x="457" y="252" width="32" height="14"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="14"/>
                                                     <color key="textColor" red="0.51372549020000002" green="0.51372549020000002" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CA" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4d-QO-4qG">
-                                                    <rect key="frame" x="457.5" y="272" width="50" height="30"/>
+                                                    <rect key="frame" x="457" y="272" width="50" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="qWx-vq-fkK"/>
                                                     </constraints>
@@ -583,7 +657,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfN-bx-kOb" userLabel="CenterView">
-                                                    <rect key="frame" x="299" y="107.5" width="1" height="1"/>
+                                                    <rect key="frame" x="299" y="107" width="1" height="1"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="1" id="3Dn-db-RLt"/>
@@ -603,7 +677,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-s3-zyL" userLabel="CenterView">
-                                                    <rect key="frame" x="299" y="107.5" width="1" height="1"/>
+                                                    <rect key="frame" x="299" y="107" width="1" height="1"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="BSN-rB-9Hl"/>
@@ -823,7 +897,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ua6-qF-ACc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="-205"/>
+            <point key="canvasLocation" x="1073" y="502"/>
         </scene>
         <!--ProfileContactDetailController-->
         <scene sceneID="UGd-7w-vpC">
@@ -831,7 +905,7 @@
                 <viewControllerPlaceholder storyboardName="AccountRep" referencedIdentifier="ProfileContactDetailController" id="gxf-Y8-Ddr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcs-hB-xmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="435"/>
+            <point key="canvasLocation" x="-1085" y="1131"/>
         </scene>
     </scenes>
 </document>

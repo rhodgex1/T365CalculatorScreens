@@ -67,6 +67,8 @@
 		3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */; };
 		3DCDC34B1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */; };
 		3DCDC34D1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34C1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift */; };
+		3DCDC34F1CE2004B0092B592 /* EditProfileContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34E1CE2004B0092B592 /* EditProfileContainerController.swift */; };
+		3DCDC3511CE201210092B592 /* EditImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC3501CE201210092B592 /* EditImageController.swift */; };
 		3DD211651CD9D27500DFE86C /* CDTimelineContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */; };
 		3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */; };
 		3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211681CDA120B00DFE86C /* StatisticsController.swift */; };
@@ -183,6 +185,8 @@
 		3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
 		3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAndWeblinkCell.swift; sourceTree = "<group>"; };
 		3DCDC34C1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceAndSpecialtiesCell.swift; sourceTree = "<group>"; };
+		3DCDC34E1CE2004B0092B592 /* EditProfileContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileContainerController.swift; sourceTree = "<group>"; };
+		3DCDC3501CE201210092B592 /* EditImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageController.swift; sourceTree = "<group>"; };
 		3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContentController.swift; sourceTree = "<group>"; };
 		3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContactDetailController.swift; sourceTree = "<group>"; };
 		3DD211681CDA120B00DFE86C /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
@@ -399,6 +403,8 @@
 				3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */,
 				3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */,
 				3DCDC34C1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift */,
+				3DCDC34E1CE2004B0092B592 /* EditProfileContainerController.swift */,
+				3DCDC3501CE201210092B592 /* EditImageController.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -651,6 +657,8 @@
 				3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */,
+				3DCDC3511CE201210092B592 /* EditImageController.swift in Sources */,
+				3DCDC34F1CE2004B0092B592 /* EditProfileContainerController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
 				3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */,
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
