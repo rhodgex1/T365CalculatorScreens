@@ -48,9 +48,7 @@
 		3D5F1E071CE0A4A700D1D979 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */; };
 		3D5F1E091CE0A57A00D1D979 /* PersonalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */; };
 		3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */; };
-		3D5F1E0D1CE0A5BB00D1D979 /* AddressTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */; };
 		3D5F1E0F1CE0A5CA00D1D979 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */; };
-		3D5F1E111CE0A5ED00D1D979 /* AddNewAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
 		3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E81CC6119900937E2C /* PayoffsForm.swift */; };
 		3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */; };
@@ -67,6 +65,7 @@
 		3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */; };
 		3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */; };
 		3DCA0F3A1CD766DF009448AE /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */; };
+		3DCDC34B1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */; };
 		3DD211651CD9D27500DFE86C /* CDTimelineContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */; };
 		3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */; };
 		3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211681CDA120B00DFE86C /* StatisticsController.swift */; };
@@ -164,9 +163,7 @@
 		3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoCell.swift; sourceTree = "<group>"; };
 		3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsCell.swift; sourceTree = "<group>"; };
-		3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTitleCell.swift; sourceTree = "<group>"; };
 		3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
-		3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewAddressCell.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
 		3D9052E81CC6119900937E2C /* PayoffsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsForm.swift; sourceTree = "<group>"; };
 		3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsForm.swift; sourceTree = "<group>"; };
@@ -183,6 +180,7 @@
 		3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreditsController.swift; sourceTree = "<group>"; };
 		3DC308EB1CD9C9A9001F61F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountRep.storyboard; sourceTree = SOURCE_ROOT; };
 		3DCA0F391CD766DF009448AE /* ChangePasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAndWeblinkCell.swift; sourceTree = "<group>"; };
 		3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContentController.swift; sourceTree = "<group>"; };
 		3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContactDetailController.swift; sourceTree = "<group>"; };
 		3DD211681CDA120B00DFE86C /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
@@ -396,9 +394,8 @@
 				3D5F1E061CE0A4A700D1D979 /* EditProfileController.swift */,
 				3D5F1E081CE0A57A00D1D979 /* PersonalInfoCell.swift */,
 				3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */,
-				3D5F1E0C1CE0A5BB00D1D979 /* AddressTitleCell.swift */,
 				3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */,
-				3D5F1E101CE0A5ED00D1D979 /* AddNewAddressCell.swift */,
+				3DCDC34A1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift */,
 			);
 			path = MyProfile;
 			sourceTree = "<group>";
@@ -596,7 +593,6 @@
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
 				3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */,
 				3D42D8D21CDB786500667B55 /* ContactActionsController.swift in Sources */,
-				3D5F1E0D1CE0A5BB00D1D979 /* AddressTitleCell.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */,
@@ -647,6 +643,7 @@
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
 				3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
+				3DCDC34B1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift in Sources */,
 				3DD2116E1CDA125800DFE86C /* AccountRepContainerController.swift in Sources */,
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */,
@@ -654,7 +651,6 @@
 				3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */,
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
-				3D5F1E111CE0A5ED00D1D979 /* AddNewAddressCell.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
 				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
