@@ -114,6 +114,8 @@ extension EditProfileController {
     private func configureTableView() {
         editProfileTable.estimatedRowHeight = 10.0
         editProfileTable.rowHeight = UITableViewAutomaticDimension
+        // removed blank space at top of tableview as per below link
+        // http://stackoverflow.com/a/18935526/217586
         editProfileTable.contentInset = UIEdgeInsetsMake(-24, 0, 0, 0);
     }
     
