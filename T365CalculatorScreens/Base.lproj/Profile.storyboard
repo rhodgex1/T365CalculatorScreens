@@ -146,8 +146,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmB-pE-UAm">
-                                        <rect key="frame" x="268" y="123" width="63" height="26"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmB-pE-UAm">
+                                        <rect key="frame" x="266.5" y="123" width="66" height="29"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                         <state key="normal" title="Edit Photo">
                                             <color key="titleColor" red="0.2627450980392157" green="0.52156862745098043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -250,12 +250,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usO-Yf-3tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-96" y="356"/>
+            <point key="canvasLocation" x="171" y="358"/>
         </scene>
         <!--Edit Profile Controller-->
         <scene sceneID="cvR-DB-M4E">
             <objects>
-                <viewController storyboardIdentifier="EditProfileController" id="Xnf-RM-h8e" customClass="EditProfileController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditProfileController" automaticallyAdjustsScrollViewInsets="NO" id="Xnf-RM-h8e" customClass="EditProfileController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zzb-eV-t2f"/>
                         <viewControllerLayoutGuide type="bottom" id="J4h-KV-cZl"/>

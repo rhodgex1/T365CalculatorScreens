@@ -69,6 +69,8 @@
 		3DCDC34D1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34C1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift */; };
 		3DCDC34F1CE2004B0092B592 /* EditProfileContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC34E1CE2004B0092B592 /* EditProfileContainerController.swift */; };
 		3DCDC3511CE201210092B592 /* EditImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC3501CE201210092B592 /* EditImageController.swift */; };
+		3DCDC3591CE20B5D0092B592 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCDC3571CE20B5D0092B592 /* Contact.storyboard */; };
+		3DCDC35B1CE20B7C0092B592 /* AddContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCDC35A1CE20B7C0092B592 /* AddContactController.swift */; };
 		3DD211651CD9D27500DFE86C /* CDTimelineContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */; };
 		3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */; };
 		3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD211681CDA120B00DFE86C /* StatisticsController.swift */; };
@@ -187,6 +189,8 @@
 		3DCDC34C1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperienceAndSpecialtiesCell.swift; sourceTree = "<group>"; };
 		3DCDC34E1CE2004B0092B592 /* EditProfileContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileContainerController.swift; sourceTree = "<group>"; };
 		3DCDC3501CE201210092B592 /* EditImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditImageController.swift; sourceTree = "<group>"; };
+		3DCDC3581CE20B5D0092B592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Contact.storyboard; sourceTree = SOURCE_ROOT; };
+		3DCDC35A1CE20B7C0092B592 /* AddContactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactController.swift; sourceTree = "<group>"; };
 		3DD211641CD9D27500DFE86C /* CDTimelineContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineContentController.swift; sourceTree = "<group>"; };
 		3DD211661CDA11E700DFE86C /* ProfileContactDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileContactDetailController.swift; sourceTree = "<group>"; };
 		3DD211681CDA120B00DFE86C /* StatisticsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsController.swift; sourceTree = "<group>"; };
@@ -369,6 +373,7 @@
 		3DC308E81CD9C91C001F61F6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3DCDC3541CE20B140092B592 /* Contact */,
 				3DC308ED1CD9C9DF001F61F6 /* MyProfile */,
 				3DC308E91CD9C97A001F61F6 /* AccountRep */,
 			);
@@ -407,6 +412,15 @@
 				3DCDC3501CE201210092B592 /* EditImageController.swift */,
 			);
 			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		3DCDC3541CE20B140092B592 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				3DCDC3571CE20B5D0092B592 /* Contact.storyboard */,
+				3DCDC35A1CE20B7C0092B592 /* AddContactController.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		3DD530A61CC7ABC800BEE96D /* Proxima Nova */ = {
@@ -587,6 +601,7 @@
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
 				3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */,
 				3DD530BA1CC7ABC800BEE96D /* Proxima Nova Bold.otf in Resources */,
+				3DCDC3591CE20B5D0092B592 /* Contact.storyboard in Resources */,
 				32DB229F1CD33CB3005277B8 /* CommonComponents.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +679,7 @@
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
+				3DCDC35B1CE20B7C0092B592 /* AddContactController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
 				3D24485F1CC8ABEC00B2A83C /* ClosingCostFormCell.swift in Sources */,
 				20109C921CBC43AE0058DA02 /* ViewController.swift in Sources */,
@@ -766,6 +782,14 @@
 				3DC308EB1CD9C9A9001F61F6 /* Base */,
 			);
 			name = AccountRep.storyboard;
+			sourceTree = "<group>";
+		};
+		3DCDC3571CE20B5D0092B592 /* Contact.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCDC3581CE20B5D0092B592 /* Base */,
+			);
+			name = Contact.storyboard;
 			sourceTree = "<group>";
 		};
 		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {

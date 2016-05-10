@@ -114,6 +114,7 @@ extension EditProfileController {
     private func configureTableView() {
         editProfileTable.estimatedRowHeight = 10.0
         editProfileTable.rowHeight = UITableViewAutomaticDimension
+        editProfileTable.contentInset = UIEdgeInsetsMake(-24, 0, 0, 0);
     }
     
     //TODO: pass blank value for each attribute
