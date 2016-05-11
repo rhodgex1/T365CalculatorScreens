@@ -34,7 +34,7 @@ extension ActionSheetController {
         return CGFloat(yOffset)
     }
     
-    private func configureUIElements() -> Void {
+    private func configureUIElements() {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         view.opaque = false
         

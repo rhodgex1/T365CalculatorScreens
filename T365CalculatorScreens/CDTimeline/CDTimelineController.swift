@@ -46,7 +46,7 @@ extension CDTimelineController {
 
 // MARK:- User actions
 extension CDTimelineController {
-    func moreAction() -> Void {
+    func moreAction() {
         let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
         let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController

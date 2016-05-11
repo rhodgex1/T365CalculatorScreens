@@ -8,16 +8,38 @@
 
 import UIKit
 
+@IBDesignable
 class CircularImageView: UIImageView {
     // properties with default values
-    var borderColor = UIColor.whiteColor()
-    var borderWidth : CGFloat = 1.0
+    
+    @IBInspectable var borderColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            layer.borderColor = borderColor.CGColor
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 1.0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            layer.masksToBounds = cornerRadius > 0
+        }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        layer.borderWidth = borderWidth
-        layer.cornerRadius = frame.width / 2
-        layer.borderColor = borderColor.CGColor
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    override func awakeFromNib() {
+        cornerRadius = frame.width / 2
     }
 }

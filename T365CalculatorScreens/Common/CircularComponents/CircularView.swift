@@ -8,34 +8,38 @@
 
 import UIKit
 
+@IBDesignable
 class CircularView: UIView {
-    var borderColor : UIColor?
-    var borderWidth : CGFloat?
+    //MARK:- Declaring inspectable properties
+    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
+        didSet {
+            layer.borderColor = borderColor.CGColor
+        }
+    }
+    
+    @IBInspectable var borderWidth: CGFloat = 1.0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            layer.masksToBounds = cornerRadius > 0
+        }
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        layer.cornerRadius = frame.width / 2
+        
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
     override func awakeFromNib() {
-        // the properties are moved to awakeFromNib because at this instance user defined runtime attributes return non-nil values, if assigned
-        // we can either specify below properties programmatically or 
-        // we can assign through user defined runtime attributes in Identity Inspector
-        if borderColor == nil {
-            borderColor = UIColor.clearColor()
-        }
-        layer.borderColor = borderColor!.CGColor
-        
-        if borderWidth == nil {
-            borderWidth = 1.0
-        }
-        layer.borderWidth = borderWidth!
-        
-        if backgroundColor == nil {
-            backgroundColor = UIColor.whiteColor()
-        }
-        
-        
-        
+        cornerRadius = frame.width / 2
     }
 }

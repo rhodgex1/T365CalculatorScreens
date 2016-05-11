@@ -36,7 +36,7 @@ class CDTimelineContentController: UITableViewController {
 
 //MARK:- Private methods
 extension CDTimelineContentController {
-    private func showDisclaimerAlert() -> Void {
+    private func showDisclaimerAlert() {
         let disclaimerAlertController = UIAlertController(title: "Disclaimer", message: "This app provides general information to real estate professional and others in determining when transaction involving an applicable loan may be consummated.", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
         disclaimerAlertController.addAction(okAction)

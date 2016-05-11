@@ -108,6 +108,7 @@
 		3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E501CE3148A00B02A7A /* RGPageViewController.swift */; };
 		3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */; };
 		3DE30E5F1CE31C5700B02A7A /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE30E5D1CE31C5700B02A7A /* More.storyboard */; };
+		3DE30E611CE3234500B02A7A /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E601CE3234500B02A7A /* MoreController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
@@ -232,6 +233,7 @@
 		3DE30E501CE3148A00B02A7A /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
 		3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsController.swift; sourceTree = "<group>"; };
 		3DE30E5E1CE31C5700B02A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/More.storyboard; sourceTree = SOURCE_ROOT; };
+		3DE30E601CE3234500B02A7A /* MoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 			children = (
 				3DE30E5D1CE31C5700B02A7A /* More.storyboard */,
 				3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */,
+				3DE30E601CE3234500B02A7A /* MoreController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				3D15F1631CD8C52F0004E286 /* ScreenshotsController.swift in Sources */,
 				3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */,
 				3228728A1CC8F1450058FA6C /* SellerBuyerOtherController.swift in Sources */,
+				3DE30E611CE3234500B02A7A /* MoreController.swift in Sources */,
 				3DD530A31CC7793E00BEE96D /* PayoffCell.swift in Sources */,
 				3D9052F71CC64BE200937E2C /* SellerCreditsToBuyerController.swift in Sources */,
 				3226BDF81CE21BE200401923 /* ContactsController.swift in Sources */,

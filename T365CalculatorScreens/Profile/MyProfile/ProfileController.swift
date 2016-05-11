@@ -95,7 +95,7 @@ extension ProfileController {
 //MARK:- User actions
 extension ProfileController {
     
-    func myProfileMoreAction() -> Void {
+    func myProfileMoreAction() {
         //TODO: complete the implementation
         
         let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
