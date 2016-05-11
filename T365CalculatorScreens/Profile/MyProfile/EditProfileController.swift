@@ -74,7 +74,7 @@ struct ExperienceAndSpecialties {
 //TODO:- implement one of these :-
 // http://stackoverflow.com/questions/5265559/get-uitableview-to-scroll-to-the-selected-uitextfield-and-avoid-being-hidden-by
 // http://stackoverflow.com/q/15036519/217586
-class EditProfileController: UIViewController, DismissKeyboardOnOutsideTap {
+class EditProfileController: UITableViewController, DismissKeyboardOnOutsideTap {
     //MARK:- Outlets declarations
     @IBOutlet weak var editProfileTable: UITableView!
     
@@ -107,6 +107,149 @@ class EditProfileController: UIViewController, DismissKeyboardOnOutsideTap {
 
 //MARK:- private functions
 extension EditProfileController {
+    private func getAddressSectionCell(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : UITableViewCell!
+        
+        if indexPath.row == 0 {
+            // show 'Address' title
+            cell = tableView.dequeueReusableCellWithIdentifier(AddresTitleCell.cellIdentifier, forIndexPath: indexPath)
+        }
+        else if indexPath.row == addresses.count + 1 {
+            // show 'Add New Address' button
+            let addNewAddressCell = tableView.dequeueReusableCellWithIdentifier(AddNewAddressCell.cellIdentifier, forIndexPath: indexPath) as! AddNewAddressCell
+            
+            addNewAddressCell.addNewAddressHandler = { [weak self] in
+                guard let this = self else {
+                    return
+                }
+                
+                // add new address
+                let newAddress = Address(type:"", address1: "", address2: "", city: "", state: "", zipCode: "")
+                this.addresses.append(newAddress)
+                
+                // Insert row at new indexPath
+                let newRow = this.addresses.count + 1
+                let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
+                this.editProfileTable.beginUpdates()
+                this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
+                this.editProfileTable.endUpdates()
+                
+                // scroll to newly added row
+                this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
+            }
+            
+            cell = addNewAddressCell
+        }
+        else {
+            // show data cells
+            let addressCell = tableView.dequeueReusableCellWithIdentifier(AddressCell.cellIdentifier, forIndexPath: indexPath) as! AddressCell
+            
+            let anAddress = addresses[indexPath.row - 1]
+            addressCell.populateWithData(anAddress)
+            cell = addressCell
+        }
+        
+        return cell
+    }
+    
+    private func getSocialAndWeblinksSectionCell(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : UITableViewCell!
+        
+        if indexPath.row == 0 {
+            // show 'Social and weblink' title
+            cell = tableView.dequeueReusableCellWithIdentifier(SocialAndWeblinkTitleCell.cellIdentifier, forIndexPath: indexPath)
+        }
+        else if indexPath.row == socialAndWeblinks.count + 1 {
+            // show 'Add New Link' button
+            let addNewSocialAndWeblinkCell = tableView.dequeueReusableCellWithIdentifier(AddNewSocialAndWeblinkCell.cellIdentifier, forIndexPath: indexPath) as! AddNewSocialAndWeblinkCell
+            
+            addNewSocialAndWeblinkCell.addNewSocialAndWeblinkHandler = { [weak self] in
+                guard let this = self else {
+                    return
+                }
+                
+                // add new weblink
+                let newLink = SocialAndWeblink(name:"", url: "")
+                this.socialAndWeblinks.append(newLink)
+                
+                // Insert row at new indexPath
+                let newRow = this.socialAndWeblinks.count + 1
+                let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
+                this.editProfileTable.beginUpdates()
+                this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
+                this.editProfileTable.endUpdates()
+                
+                // scroll to newly added row
+                this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
+            }
+            
+            cell = addNewSocialAndWeblinkCell
+        }
+        else {
+            // show data cells
+            let socialAndWeblinkCell = tableView.dequeueReusableCellWithIdentifier(SocialAndWeblinkCell.cellIdentifier, forIndexPath: indexPath) as! SocialAndWeblinkCell
+            
+            let aLink = socialAndWeblinks[indexPath.row - 1]
+            socialAndWeblinkCell.populateWithData(aLink)
+            cell = socialAndWeblinkCell
+        }
+        
+        return cell
+    }
+    
+    private func getExperienceAndSpecialtiesSectionCell(tableView: UITableView, indexPath: NSIndexPath) -> UITableViewCell {
+        var cell : UITableViewCell!
+        
+        if indexPath.row == 0 {
+            // show 'ExperienceAndSpecialties' title
+            cell = tableView.dequeueReusableCellWithIdentifier(ExperienceAndSpecialtiesTitleCell.cellIdentifier, forIndexPath: indexPath)
+        }
+        else if indexPath.row == 1 {
+            // show 'Years of experience'
+            let yearOfExperiencecell = tableView.dequeueReusableCellWithIdentifier(YearsOfExperienceCell.cellIdentifier, forIndexPath: indexPath) as! YearsOfExperienceCell
+            yearOfExperiencecell.populateWithData(experienceAndSpecialties.experience)
+            cell = yearOfExperiencecell
+        }
+        else if indexPath.row == experienceAndSpecialties.specialties.count + 2 {
+            // show 'Add New Specialty' button
+            let addNewSpecialtyCell = tableView.dequeueReusableCellWithIdentifier(AddNewSpecialtyCell.cellIdentifier, forIndexPath: indexPath) as! AddNewSpecialtyCell
+            
+            addNewSpecialtyCell.addNewSpecialtyHandler = { [weak self] in
+                guard let this = self else {
+                    return
+                }
+                
+                // add new specialty
+                var specialties = this.experienceAndSpecialties.specialties
+                specialties.append("")
+                this.experienceAndSpecialties.specialties = specialties
+                
+                // Insert row at new indexPath
+                let newRow = specialties.count + 2
+                let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
+                this.editProfileTable.beginUpdates()
+                this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
+                this.editProfileTable.endUpdates()
+                
+                // scroll to newly added row
+                this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
+            }
+            
+            cell = addNewSpecialtyCell
+        }
+        else {
+            // show specialty cells
+            let specialtyCell = tableView.dequeueReusableCellWithIdentifier(SpecialtyCell.cellIdentifier, forIndexPath: indexPath) as! SpecialtyCell
+            
+            let specialties = experienceAndSpecialties.specialties
+            let aSpecialty = specialties[indexPath.row - 2]
+            specialtyCell.populateWithData(aSpecialty)
+            cell = specialtyCell
+        }
+        
+        return cell
+    }
+    
     func hideKeyboard() {
         backgroundView.endEditing(true)
     }
@@ -130,8 +273,8 @@ extension EditProfileController {
 }
 
 //MARK:- Implementing UITableViewDataSource methods
-extension EditProfileController: UITableViewDataSource {
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension EditProfileController {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var rowsCount = 0
         
         if let tableViewSection = TableViewSection(rawValue: section) {
@@ -155,7 +298,7 @@ extension EditProfileController: UITableViewDataSource {
         return rowsCount
         
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let section = indexPath.section
         
         var cell : UITableViewCell!
@@ -167,136 +310,17 @@ extension EditProfileController: UITableViewDataSource {
             case .ContactDetails:
                 cell = tableView.dequeueReusableCellWithIdentifier(ContactDetailsCell.cellIdentifier, forIndexPath: indexPath)
             case .Address:
-                if indexPath.row == 0 {
-                    // show 'Address' title
-                    cell = tableView.dequeueReusableCellWithIdentifier(AddresTitleCell.cellIdentifier, forIndexPath: indexPath)
-                }
-                else if indexPath.row == addresses.count + 1 {
-                    // show 'Add New Address' button
-                    let addNewAddressCell = tableView.dequeueReusableCellWithIdentifier(AddNewAddressCell.cellIdentifier, forIndexPath: indexPath) as! AddNewAddressCell
-                    
-                    addNewAddressCell.addNewAddressHandler = { [weak self] in
-                        guard let this = self else {
-                            return
-                        }
-                        
-                        // add new address
-                        let newAddress = Address(type:"", address1: "", address2: "", city: "", state: "", zipCode: "")
-                        this.addresses.append(newAddress)
-                        
-                        // Insert row at new indexPath
-                        let newRow = this.addresses.count + 1
-                        let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
-                        this.editProfileTable.beginUpdates()
-                        this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
-                        this.editProfileTable.endUpdates()
-                        
-                        // scroll to newly added row
-                        this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
-                    }
-                    
-                    cell = addNewAddressCell
-                }
-                else {
-                    // show data cells
-                    let addressCell = tableView.dequeueReusableCellWithIdentifier(AddressCell.cellIdentifier, forIndexPath: indexPath) as! AddressCell
-                    
-                    let anAddress = addresses[indexPath.row - 1]
-                    addressCell.populateWithData(anAddress)
-                     cell = addressCell
-                }
+                cell = getAddressSectionCell(tableView, indexPath: indexPath)
             case .SocialAndWeblink:
-                if indexPath.row == 0 {
-                    // show 'Social and weblink' title
-                    cell = tableView.dequeueReusableCellWithIdentifier(SocialAndWeblinkTitleCell.cellIdentifier, forIndexPath: indexPath)
-                }
-                else if indexPath.row == socialAndWeblinks.count + 1 {
-                    // show 'Add New Link' button
-                    let addNewSocialAndWeblinkCell = tableView.dequeueReusableCellWithIdentifier(AddNewSocialAndWeblinkCell.cellIdentifier, forIndexPath: indexPath) as! AddNewSocialAndWeblinkCell
-                    
-                    addNewSocialAndWeblinkCell.addNewSocialAndWeblinkHandler = { [weak self] in
-                        guard let this = self else {
-                            return
-                        }
-                        
-                        // add new weblink
-                        let newLink = SocialAndWeblink(name:"", url: "")
-                        this.socialAndWeblinks.append(newLink)
-                        
-                        // Insert row at new indexPath
-                        let newRow = this.socialAndWeblinks.count + 1
-                        let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
-                        this.editProfileTable.beginUpdates()
-                        this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
-                        this.editProfileTable.endUpdates()
-                        
-                        // scroll to newly added row
-                        this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
-                    }
-                    
-                    cell = addNewSocialAndWeblinkCell
-                }
-                else {
-                    // show data cells
-                    let socialAndWeblinkCell = tableView.dequeueReusableCellWithIdentifier(SocialAndWeblinkCell.cellIdentifier, forIndexPath: indexPath) as! SocialAndWeblinkCell
-                    
-                    let aLink = socialAndWeblinks[indexPath.row - 1]
-                    socialAndWeblinkCell.populateWithData(aLink)
-                    cell = socialAndWeblinkCell
-                }
+                cell = getSocialAndWeblinksSectionCell(tableView, indexPath: indexPath)
             case .ExperienceAndSpecialties:
-                if indexPath.row == 0 {
-                    // show 'ExperienceAndSpecialties' title
-                    cell = tableView.dequeueReusableCellWithIdentifier(ExperienceAndSpecialtiesTitleCell.cellIdentifier, forIndexPath: indexPath)
-                }
-                else if indexPath.row == 1 {
-                    // show 'Years of experience' 
-                    let yearOfExperiencecell = tableView.dequeueReusableCellWithIdentifier(YearsOfExperienceCell.cellIdentifier, forIndexPath: indexPath) as! YearsOfExperienceCell
-                    yearOfExperiencecell.populateWithData(experienceAndSpecialties.experience)
-                    cell = yearOfExperiencecell
-                }
-                else if indexPath.row == experienceAndSpecialties.specialties.count + 2 {
-                    // show 'Add New Specialty' button
-                    let addNewSpecialtyCell = tableView.dequeueReusableCellWithIdentifier(AddNewSpecialtyCell.cellIdentifier, forIndexPath: indexPath) as! AddNewSpecialtyCell
-                    
-                    addNewSpecialtyCell.addNewSpecialtyHandler = { [weak self] in
-                        guard let this = self else {
-                            return
-                        }
-                        
-                        // add new specialty
-                        var specialties = this.experienceAndSpecialties.specialties
-                        specialties.append("")
-                        this.experienceAndSpecialties.specialties = specialties
-                        
-                        // Insert row at new indexPath
-                        let newRow = specialties.count + 2
-                        let newIndexPath = NSIndexPath(forRow: newRow, inSection: indexPath.section)
-                        this.editProfileTable.beginUpdates()
-                        this.editProfileTable.insertRowsAtIndexPaths([newIndexPath], withRowAnimation: .None)
-                        this.editProfileTable.endUpdates()
-                        
-                        // scroll to newly added row
-                        this.editProfileTable.scrollToRowAtIndexPath(newIndexPath, atScrollPosition: .Bottom, animated: true)
-                    }
-                    
-                    cell = addNewSpecialtyCell
-                }
-                else {
-                    // show specialty cells
-                    let specialtyCell = tableView.dequeueReusableCellWithIdentifier(SpecialtyCell.cellIdentifier, forIndexPath: indexPath) as! SpecialtyCell
-                    
-                    let specialties = experienceAndSpecialties.specialties
-                    let aSpecialty = specialties[indexPath.row - 2]
-                    specialtyCell.populateWithData(aSpecialty)
-                    cell = specialtyCell
-                }
+                cell = getExperienceAndSpecialtiesSectionCell(tableView, indexPath: indexPath)
             }
         }
         
         return cell
     }
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return TableViewSection.caseCount
     }
 }
