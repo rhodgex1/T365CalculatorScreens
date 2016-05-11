@@ -8,23 +8,6 @@
 
 import UIKit
 
-//MARK:- enum which provides a count of its cases
-protocol CaseCountable {
-    static func countCases() -> Int
-    static var caseCount : Int { get }
-}
-
-//MARK:- provide a default implementation to count the cases for Int enums assuming starting at 0 and contiguous
-extension CaseCountable where Self : RawRepresentable, Self.RawValue == Int {
-    // count the number of cases in the enum
-    static func countCases() -> Int {
-        // starting at zero, verify whether the enum can be instantiated from the Int and increment until it cannot
-        var count = 0
-        while let _ = Self(rawValue: count) { count += 1 }
-        return count
-    }
-}
-
 //MARK:- Enum declarations
 enum TableViewSection : Int, CaseCountable {
     case PersonalInfo = 0
@@ -69,11 +52,7 @@ struct ExperienceAndSpecialties {
     var specialties: [String]
 }
 
-//MARK:- class
-//FIXME:- UITextField in below rows are being hidden by Keyboard
-//TODO:- implement one of these :-
-// http://stackoverflow.com/questions/5265559/get-uitableview-to-scroll-to-the-selected-uitextfield-and-avoid-being-hidden-by
-// http://stackoverflow.com/q/15036519/217586
+//MARK:- EditProfileController class
 class EditProfileController: UITableViewController, DismissKeyboardOnOutsideTap {
     //MARK:- Outlets declarations
     @IBOutlet weak var editProfileTable: UITableView!
@@ -102,6 +81,59 @@ class EditProfileController: UITableViewController, DismissKeyboardOnOutsideTap 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+}
+
+//MARK:- Implementing UITableViewDataSource methods
+extension EditProfileController {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var rowsCount = 0
+        
+        if let tableViewSection = TableViewSection(rawValue: section) {
+            switch tableViewSection{
+            case .PersonalInfo:
+                rowsCount = 1
+            case .ContactDetails:
+                rowsCount = 1
+            case .Address:
+                // added 2 for title and add new address row
+                rowsCount = addresses.count + 2
+            case .SocialAndWeblink:
+                // added 2 for title and add new weblink row
+                rowsCount = socialAndWeblinks.count + 2
+            case .ExperienceAndSpecialties:
+                // added 3 for title, years of experience, and add new specialty row
+                rowsCount = experienceAndSpecialties.specialties.count + 3
+            }
+        }
+        
+        return rowsCount
+        
+    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let section = indexPath.section
+        
+        var cell : UITableViewCell!
+        
+        if let tableViewSection = TableViewSection(rawValue: section) {
+            switch tableViewSection{
+            case .PersonalInfo:
+                cell = tableView.dequeueReusableCellWithIdentifier(PersonalInfoCell.cellIdentifier, forIndexPath: indexPath)
+            case .ContactDetails:
+                cell = tableView.dequeueReusableCellWithIdentifier(ContactDetailsCell.cellIdentifier, forIndexPath: indexPath)
+            case .Address:
+                cell = getAddressSectionCell(tableView, indexPath: indexPath)
+            case .SocialAndWeblink:
+                cell = getSocialAndWeblinksSectionCell(tableView, indexPath: indexPath)
+            case .ExperienceAndSpecialties:
+                cell = getExperienceAndSpecialtiesSectionCell(tableView, indexPath: indexPath)
+            }
+        }
+        
+        return cell
+    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return TableViewSection.caseCount
     }
 }
 
@@ -272,55 +304,3 @@ extension EditProfileController {
     }
 }
 
-//MARK:- Implementing UITableViewDataSource methods
-extension EditProfileController {
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var rowsCount = 0
-        
-        if let tableViewSection = TableViewSection(rawValue: section) {
-            switch tableViewSection{
-                case .PersonalInfo:
-                    rowsCount = 1
-                case .ContactDetails:
-                    rowsCount = 1
-                case .Address:
-                    // added 2 for title and add new address row
-                    rowsCount = addresses.count + 2
-                case .SocialAndWeblink:
-                    // added 2 for title and add new weblink row
-                    rowsCount = socialAndWeblinks.count + 2
-                case .ExperienceAndSpecialties:
-                    // added 3 for title, years of experience, and add new specialty row
-                    rowsCount = experienceAndSpecialties.specialties.count + 3
-            }
-        }
-        
-        return rowsCount
-        
-    }
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let section = indexPath.section
-        
-        var cell : UITableViewCell!
-        
-        if let tableViewSection = TableViewSection(rawValue: section) {
-            switch tableViewSection{
-            case .PersonalInfo:
-                cell = tableView.dequeueReusableCellWithIdentifier(PersonalInfoCell.cellIdentifier, forIndexPath: indexPath)
-            case .ContactDetails:
-                cell = tableView.dequeueReusableCellWithIdentifier(ContactDetailsCell.cellIdentifier, forIndexPath: indexPath)
-            case .Address:
-                cell = getAddressSectionCell(tableView, indexPath: indexPath)
-            case .SocialAndWeblink:
-                cell = getSocialAndWeblinksSectionCell(tableView, indexPath: indexPath)
-            case .ExperienceAndSpecialties:
-                cell = getExperienceAndSpecialtiesSectionCell(tableView, indexPath: indexPath)
-            }
-        }
-        
-        return cell
-    }
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return TableViewSection.caseCount
-    }
-}

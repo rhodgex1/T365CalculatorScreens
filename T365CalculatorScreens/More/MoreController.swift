@@ -8,11 +8,22 @@
 
 import UIKit
 
+//MARK:- Enum declaration
+//note: there are two screen for which same controller-UI can be reused, below enum is declared for same
+enum MoreScreenType: Int {
+    case More = 0
+    case AcccountRepMore = 1
+}
+
 class MoreController: UIViewController {
     //MARK:- Declaring outlets
     @IBOutlet weak var personName: UILabel!
     @IBOutlet weak var personDesignation: UILabel!
     @IBOutlet weak var personImage: CircularImageView!
+    @IBOutlet weak var moreOptionsTopConstraint: NSLayoutConstraint!
+    
+    //MARK:- Declare variable
+    var moreScreenType: MoreScreenType!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +33,10 @@ class MoreController: UIViewController {
         addRightUserBarButton(UIImage(named: "actionIconActivateDeactivate")!)
         
         title = "More"
+        
+        //TODO: this should be set from parentview controller
+        moreScreenType = .AcccountRepMore
+        refreshMoreOptionsTopConstraint ()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +58,19 @@ extension MoreController {
 
 //MARK:- Declaring private methods
 extension MoreController {
+    private func refreshMoreOptionsTopConstraint () {
+        if let moreType = moreScreenType {
+            switch moreType {
+                case .More:
+                    moreOptionsTopConstraint.constant = 145
+                case .AcccountRepMore:
+                    moreOptionsTopConstraint.constant = 0
+            }
+            
+            view.layoutIfNeeded()
+        }
+    }
+    
     private func addRightUserBarButton(userImage: UIImage) {
         let moreButton = UIButton()
         

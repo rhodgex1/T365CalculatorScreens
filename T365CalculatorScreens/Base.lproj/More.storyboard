@@ -101,14 +101,15 @@
                             <constraint firstItem="DdK-9x-LDK" firstAttribute="top" secondItem="LB7-yi-llQ" secondAttribute="bottom" id="Lpf-8D-a2l"/>
                             <constraint firstAttribute="trailing" secondItem="TOt-gj-zBm" secondAttribute="trailing" id="OTq-fq-NQT"/>
                             <constraint firstItem="pxB-S3-5LR" firstAttribute="top" secondItem="DdK-9x-LDK" secondAttribute="bottom" id="YaG-Rm-IIb"/>
-                            <constraint firstItem="LB7-yi-llQ" firstAttribute="top" secondItem="TOt-gj-zBm" secondAttribute="bottom" constant="25" id="dPF-q5-A4J"/>
                             <constraint firstItem="TOt-gj-zBm" firstAttribute="top" secondItem="ulH-gi-Geh" secondAttribute="bottom" id="gvo-We-LDV"/>
                             <constraint firstItem="LB7-yi-llQ" firstAttribute="leading" secondItem="HwJ-GU-ZfA" secondAttribute="leading" id="l2q-xZ-8as"/>
+                            <constraint firstItem="LB7-yi-llQ" firstAttribute="top" secondItem="ulH-gi-Geh" secondAttribute="bottom" constant="145" id="lDm-F3-p8c"/>
                             <constraint firstAttribute="trailing" secondItem="LB7-yi-llQ" secondAttribute="trailing" id="nqx-AU-C65"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="moreOptionsTopConstraint" destination="lDm-F3-p8c" id="ShK-E9-YH4"/>
                         <outlet property="personDesignation" destination="yV2-4F-LM6" id="PzD-e0-G1J"/>
                         <outlet property="personImage" destination="uru-W3-g8p" id="usg-M6-mS2"/>
                         <outlet property="personName" destination="FTU-Db-QbQ" id="lXo-Zw-nJx"/>
@@ -423,7 +424,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bij-oM-L9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="139"/>
+            <point key="canvasLocation" x="881" y="185.5"/>
         </scene>
     </scenes>
     <resources>
