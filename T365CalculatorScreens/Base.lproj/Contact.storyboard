@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Proxima Nova Medium.otf">
@@ -29,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-td-OGI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="560"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="496"/>
                                 <connections>
                                     <segue destination="zX7-3b-Mdz" kind="embed" id="qUq-gZ-smL"/>
                                 </connections>
@@ -51,11 +50,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="b1Z-hi-9JO" secondAttribute="trailing" id="CJI-uD-Hm3"/>
-                            <constraint firstItem="MwC-td-OGI" firstAttribute="top" secondItem="P6s-6H-hCM" secondAttribute="topMargin" id="LHT-sT-Kwc"/>
                             <constraint firstItem="dJz-Tx-avR" firstAttribute="top" secondItem="b1Z-hi-9JO" secondAttribute="bottom" id="NHT-hA-0GI"/>
                             <constraint firstAttribute="trailing" secondItem="MwC-td-OGI" secondAttribute="trailing" id="Ofy-Wz-cym"/>
                             <constraint firstItem="b1Z-hi-9JO" firstAttribute="top" secondItem="MwC-td-OGI" secondAttribute="bottom" constant="-10" id="PrZ-zp-A4K"/>
                             <constraint firstItem="b1Z-hi-9JO" firstAttribute="leading" secondItem="P6s-6H-hCM" secondAttribute="leading" id="RxT-pB-qrB"/>
+                            <constraint firstItem="MwC-td-OGI" firstAttribute="top" secondItem="JGp-v7-hK6" secondAttribute="bottom" id="WAB-u2-HNZ"/>
                             <constraint firstItem="MwC-td-OGI" firstAttribute="leading" secondItem="P6s-6H-hCM" secondAttribute="leading" id="yg6-5c-6qa"/>
                         </constraints>
                     </view>
@@ -63,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nt-ZK-9c7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="573"/>
+            <point key="canvasLocation" x="-173" y="536"/>
         </scene>
         <!--EditProfileController-->
         <scene sceneID="Tzj-aP-p6d">
@@ -71,7 +70,7 @@
                 <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="EditProfileController" id="zX7-3b-Mdz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmx-VC-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462.5" y="710"/>
+            <point key="canvasLocation" x="328.5" y="612"/>
         </scene>
         <!--Contacts Controller-->
         <scene sceneID="Pb3-IM-q4S">
@@ -125,14 +124,14 @@
                                                                 <constraint firstAttribute="height" constant="40" id="vfX-L6-Iv7"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Carolyn Altonadi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-qR-jky">
-                                                            <rect key="frame" x="71" y="22" width="482" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carolyn Altonadi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-qR-jky">
+                                                            <rect key="frame" x="71" y="20.5" width="482" height="19"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Real Estate Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-CM-REN">
-                                                            <rect key="frame" x="71" y="43" width="482" height="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Estate Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-CM-REN">
+                                                            <rect key="frame" x="71" y="42" width="482" height="16.5"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
