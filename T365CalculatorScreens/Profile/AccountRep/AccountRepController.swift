@@ -35,16 +35,16 @@ extension AccountRepController {
         let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
-        let markAsFavActionItem = ActionSheetOption(title: "Mark as Favorite", icon: "actionIconsStarContact",    action: { () -> Void in
+        let markAsFavActionItem = ActionSheetOption(title: "Mark as Favorite", icon: UIImage(asset: .ActionIconsStarContact),    action: { () -> Void in
             //TODO: complete implementation
             print("Mark as favorite")
         })
-        let deactivateAcntActionItem = ActionSheetOption(title: "Deactivate Account", icon: "actionIconActivateDeactivate",    action: { () -> Void in
+        let deactivateAcntActionItem = ActionSheetOption(title: "Deactivate Account", icon: UIImage(asset: .ActionIconActivateDeactivate), action: { () -> Void in
             //TODO: complete implementation
             print("Deactivate Account")
         })
         
-        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
             print("Cancel")
             // Nothing to do for now :-)
         })

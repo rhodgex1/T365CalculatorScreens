@@ -52,16 +52,16 @@ extension CDTimelineController {
         let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
-        let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
+        let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: UIImage(asset: .ActionIconsRefresh),    action: { () -> Void in
             print("Create New / Start Over")
         })
-        let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: "actionIconsshare", action: { () -> Void in
+        let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: UIImage(asset: .ActionIconsshare), action: { () -> Void in
             print("Print or Share")
         })
-        let actionItemSave = ActionSheetOption(title: "Save", icon: "actionIconsDownload", action: { () -> Void in
+        let actionItemSave = ActionSheetOption(title: "Save", icon: UIImage(asset: .ActionIconsDownload), action: { () -> Void in
             print("Save")
         })
-        let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+        let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
             print("Cancel")
         })
         actionSheetController.actionSheetItems = [actionItemCreate, actionItemPrint, actionItemSave, actionItemCancel]

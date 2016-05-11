@@ -43,11 +43,11 @@ extension DocumentCell {
         let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
-        let deleteActionItem = ActionSheetOption(title: "Delete", icon: "actionIcondelete",    action: { () -> Void in
+        let deleteActionItem = ActionSheetOption(title: "Delete", icon: UIImage(asset: .ActionIconDelete),    action: { () -> Void in
             //TODO: complete implementation
             print("Delete item")
         })
-        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
             print("Cancel")
             // Nothing to do for now :-)
         })

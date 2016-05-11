@@ -36,7 +36,7 @@ class ProfileController: UIViewController, EmbedUserInfo, EmbedContact{
         // Do any additional setup after loading the view.
         
         //FIXME: remove below hardcoded profileType this shall be passed from previous view controller
-        profileType = .MyAccountExecutive
+        profileType = .MyProfile
         
         configureLayoutAsPerProfileType()
     }
@@ -103,11 +103,11 @@ extension ProfileController {
         let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
-        let editProfileActionItem = ActionSheetOption(title: "Edit Profile", icon: "moreIconContacts",    action: { () -> Void in
+        let editProfileActionItem = ActionSheetOption(title: "Edit Profile", icon: UIImage(asset: .ActionIconActivateDeactivate),    action: { () -> Void in
             //TODO: complete implementation
             print("Edit Profile")
         })
-        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+        let cancelActionItem = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
             print("Cancel")
             // Nothing to do for now :-)
         })

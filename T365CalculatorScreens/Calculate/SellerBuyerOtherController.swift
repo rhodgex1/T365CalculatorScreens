@@ -49,7 +49,7 @@ extension SellerBuyerOtherController {
     @IBAction func addAction(sender: AnyObject) {
         
         func sellerActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemSellersNetSheet = ActionSheetOption(title: "Seller's Net Sheet", icon: "actionIconEstimate", action: { () -> Void in
+            let actionItemSellersNetSheet = ActionSheetOption(title: "Seller's Net Sheet", icon: UIImage(asset: .ActionIconEstimate), action: { () -> Void in
                 print("Seller's Net Sheet")
                 
                 let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
@@ -58,7 +58,7 @@ extension SellerBuyerOtherController {
                 self.navigationController?.pushViewController(netSheetController, animated: true)
 
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             
@@ -66,13 +66,13 @@ extension SellerBuyerOtherController {
         }
 
         func buyerActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemBuyersEstimate = ActionSheetOption(title: "Buyer's Estimate", icon: "actionIconEstimate", action: { () -> Void in
+            let actionItemBuyersEstimate = ActionSheetOption(title: "Buyer's Estimate", icon: UIImage(asset: .ActionIconEstimate), action: { () -> Void in
                 print("Buyer's Estimate")
             })
-            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: "", action: { () -> Void in
-                print("Cancel")
+            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: UIImage(asset: .ActionMonthlyPaymentAffordability), action: { () -> Void in
+                print("Monthly Payment Affordability")
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             
@@ -80,16 +80,16 @@ extension SellerBuyerOtherController {
         }
 
         func otherActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemFeeEstimate = ActionSheetOption(title: "Fee Estimate", icon: "actionIconEstimate",    action: { () -> Void in
+            let actionItemFeeEstimate = ActionSheetOption(title: "Fee Estimate", icon: UIImage(asset: .ActionIconEstimate),    action: { () -> Void in
                 print("Fee Estimate")
             })
-            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: "", action: { () -> Void in
+            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: UIImage(asset: .ActionClosingDisclosureTimeline), action: { () -> Void in
                 print("Closing Disclosure Timeline (TRID)")
                 
                 let purchaseRefinanceController = CDTimelineController()
                 self.navigationController?.pushViewController(purchaseRefinanceController, animated: true)
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             

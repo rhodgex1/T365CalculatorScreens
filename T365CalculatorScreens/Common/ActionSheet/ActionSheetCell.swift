@@ -17,12 +17,7 @@ class ActionSheetCell: UITableViewCell {
     }
 
     func populateWithData(actionSheetOption: ActionSheetOption) {
-        let iconImage = UIImage(named:actionSheetOption.icon)
-        
         actionTitle.text = actionSheetOption.title
-        
-        if iconImage != nil {
-            actionIcon.image = UIImage(named:actionSheetOption.icon)!
-        }
+        actionIcon.image = actionSheetOption.icon
     }
 }

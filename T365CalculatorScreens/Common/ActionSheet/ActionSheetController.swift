@@ -2,12 +2,39 @@ import UIKit
 
 typealias ActionSheetCallback = () -> Void
 
+//MARK:- Defining struct
 struct ActionSheetOption {
     var title:  String
-    var icon:   String
+    var icon:   UIImage
     var action: ActionSheetCallback?
 }
 
+//MARK:- UIImage extension enlisting all images to be used in action sheet
+extension UIImage {
+    enum Asset: String {
+        case ActionCancel = "actionCancel"
+        case ActionIcon = "actionIcon"
+        case ActionIconActivateDeactivate = "actionIconActivateDeactivate"
+        case ActionIconDelete = "actionIcondelete"
+        case ActionIconEstimate = "actionIconEstimate"
+        case ActionIconsDownload = "actionIconsDownload"
+        case ActionIconsshare = "actionIconsshare"
+        case ActionIconsStarContact = "actionIconsStarContact"
+        case ActionIconsRefresh = "actionIconsRefresh"
+        case ActionMonthlyPaymentAffordability = "actionMonthlyPaymentAffordability"
+        case ActionClosingDisclosureTimeline = "actionClosingDisclosureTimeline"
+        
+        var image: UIImage {
+            return UIImage(named: self.rawValue)!
+        }
+    }
+    
+    convenience init!(asset: Asset) {
+        self.init(named: asset.rawValue)
+    }
+}
+
+//MARK:- Defining class
 class ActionSheetController: UIViewController {
     //MARK:- contant declaration
     static let storyboardId = "ActionSheetController"
