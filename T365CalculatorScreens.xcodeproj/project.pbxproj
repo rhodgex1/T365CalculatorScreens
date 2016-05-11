@@ -106,6 +106,8 @@
 		3DE30E511CE3148A00B02A7A /* ContactActionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E4E1CE3148A00B02A7A /* ContactActionsController.swift */; };
 		3DE30E521CE3148A00B02A7A /* DateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E4F1CE3148A00B02A7A /* DateController.swift */; };
 		3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E501CE3148A00B02A7A /* RGPageViewController.swift */; };
+		3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */; };
+		3DE30E5F1CE31C5700B02A7A /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE30E5D1CE31C5700B02A7A /* More.storyboard */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
@@ -228,6 +230,8 @@
 		3DE30E4E1CE3148A00B02A7A /* ContactActionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactActionsController.swift; sourceTree = "<group>"; };
 		3DE30E4F1CE3148A00B02A7A /* DateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateController.swift; sourceTree = "<group>"; };
 		3DE30E501CE3148A00B02A7A /* RGPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGPageViewController.swift; sourceTree = "<group>"; };
+		3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreOptionsController.swift; sourceTree = "<group>"; };
+		3DE30E5E1CE31C5700B02A7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/More.storyboard; sourceTree = SOURCE_ROOT; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3DE30E541CE317BB00B02A7A /* More */,
 				3DC308E81CD9C91C001F61F6 /* Profile */,
 				3D1BE5B01CD723DB00890BE4 /* Settings */,
 				3271884C1CD1F8B400E51161 /* CDTimeline */,
@@ -472,6 +477,15 @@
 			path = CommonUIComponents;
 			sourceTree = "<group>";
 		};
+		3DE30E541CE317BB00B02A7A /* More */ = {
+			isa = PBXGroup;
+			children = (
+				3DE30E5D1CE31C5700B02A7A /* More.storyboard */,
+				3DE30E591CE31C0900B02A7A /* MoreOptionsController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +633,7 @@
 				3DD5309F1CC74F8B00BEE96D /* CreateNetSheetReport.storyboard in Resources */,
 				3DD530B81CC7ABC800BEE96D /* Proxima Nova Black.otf in Resources */,
 				3DD530B91CC7ABC800BEE96D /* Proxima Nova Bold It.otf in Resources */,
+				3DE30E5F1CE31C5700B02A7A /* More.storyboard in Resources */,
 				3DD530C01CC7ABC800BEE96D /* Proxima Nova Reg.otf in Resources */,
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
 				3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */,
@@ -701,6 +716,7 @@
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
+				3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */,
 				3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */,
 				3DCDC35B1CE20B7C0092B592 /* AddContactController.swift in Sources */,
 				3DFE08DF1CC4F92400101EE3 /* BrokerFeeController.swift in Sources */,
@@ -815,6 +831,14 @@
 				3DCDC3581CE20B5D0092B592 /* Base */,
 			);
 			name = Contact.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE30E5D1CE31C5700B02A7A /* More.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE30E5E1CE31C5700B02A7A /* Base */,
+			);
+			name = More.storyboard;
 			sourceTree = "<group>";
 		};
 		3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */ = {
