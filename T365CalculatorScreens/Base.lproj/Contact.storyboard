@@ -108,9 +108,9 @@
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wnS-QC-eNC">
                                         <rect key="frame" x="0.0" y="85" width="600" height="515"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileCell" id="Ccx-iy-TLE">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactCell" id="Ccx-iy-TLE" customClass="ContactCell" customModule="T365CalculatorScreens" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="600" height="81"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ccx-iy-TLE" id="nTz-Sh-xPi">
@@ -124,13 +124,13 @@
                                                                 <constraint firstAttribute="height" constant="40" id="vfX-L6-Iv7"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Carolyn Altonadi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-qR-jky">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carolyn Altonadi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpF-qR-jky">
                                                             <rect key="frame" x="71" y="22" width="482" height="16"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Real Estate Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-CM-REN">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Estate Agent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-CM-REN">
                                                             <rect key="frame" x="71" y="43.5" width="482" height="14"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,6 +177,13 @@
                                                         <constraint firstAttribute="trailing" secondItem="qb7-4d-7gv" secondAttribute="trailing" constant="15" id="zZY-00-Gld"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="contactImage" destination="Con-vi-GYQ" id="r5W-de-1S6"/>
+                                                    <outlet property="contactName" destination="CpF-qR-jky" id="DKk-lC-bhw"/>
+                                                    <outlet property="contactProfile" destination="j6L-CM-REN" id="eps-d4-qaH"/>
+                                                    <outlet property="contactStarImage" destination="t2h-JZ-7JY" id="Zah-xb-bRN"/>
+                                                    <outlet property="contactStatus" destination="qb7-4d-7gv" id="ClQ-JZ-Upt"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -211,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xew-1W-a6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885" y="636"/>
+            <point key="canvasLocation" x="614" y="612"/>
         </scene>
     </scenes>
     <resources>

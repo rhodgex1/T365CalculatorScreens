@@ -19,13 +19,13 @@ extension ContactsController: CellFullWidthSeparator {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(ContactCell.cellIdentifier, forIndexPath: indexPath) as! ContactCell
         adjustCellSeparatorMargin(cell)
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print("do nothing")
+        print("do nothing for now")
     }
 }

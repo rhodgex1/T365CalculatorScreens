@@ -49,6 +49,10 @@
 		3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */; };
 		3D5F1E0F1CE0A5CA00D1D979 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */; };
 		3D6E81071CE3537200FA161F /* CaseCountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E81061CE3537200FA161F /* CaseCountable.swift */; };
+		3D6E810B1CE3550D00FA161F /* Document.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E81091CE3550D00FA161F /* Document.storyboard */; };
+		3D6E810D1CE3553700FA161F /* DocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E810C1CE3553700FA161F /* DocumentController.swift */; };
+		3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E810E1CE3559500FA161F /* ContactCell.swift */; };
+		3D6E81111CE35E2900FA161F /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E81101CE35E2900FA161F /* DocumentCell.swift */; };
 		3D9052E71CC610EC00937E2C /* PayoffsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E61CC610EC00937E2C /* PayoffsController.swift */; };
 		3D9052E91CC6119900937E2C /* PayoffsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052E81CC6119900937E2C /* PayoffsForm.swift */; };
 		3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */; };
@@ -175,6 +179,10 @@
 		3D5F1E0A1CE0A5A800D1D979 /* ContactDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsCell.swift; sourceTree = "<group>"; };
 		3D5F1E0E1CE0A5CA00D1D979 /* AddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
 		3D6E81061CE3537200FA161F /* CaseCountable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaseCountable.swift; sourceTree = "<group>"; };
+		3D6E810A1CE3550D00FA161F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Document.storyboard; sourceTree = SOURCE_ROOT; };
+		3D6E810C1CE3553700FA161F /* DocumentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentController.swift; sourceTree = "<group>"; };
+		3D6E810E1CE3559500FA161F /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		3D6E81101CE35E2900FA161F /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		3D9052E61CC610EC00937E2C /* PayoffsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsController.swift; sourceTree = "<group>"; };
 		3D9052E81CC6119900937E2C /* PayoffsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayoffsForm.swift; sourceTree = "<group>"; };
 		3D9052EA1CC6183400937E2C /* ClosingCostsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostsForm.swift; sourceTree = "<group>"; };
@@ -286,6 +294,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3D6E81081CE354E200FA161F /* Document */,
 				3DE30E541CE317BB00B02A7A /* More */,
 				3DC308E81CD9C91C001F61F6 /* Profile */,
 				3D1BE5B01CD723DB00890BE4 /* Settings */,
@@ -375,6 +384,16 @@
 			path = "Account Settings";
 			sourceTree = "<group>";
 		};
+		3D6E81081CE354E200FA161F /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E81091CE3550D00FA161F /* Document.storyboard */,
+				3D6E810C1CE3553700FA161F /* DocumentController.swift */,
+				3D6E81101CE35E2900FA161F /* DocumentCell.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 		3DC308E81CD9C91C001F61F6 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +444,7 @@
 				3226BDF71CE21BE200401923 /* ContactsController.swift */,
 				3DCDC3571CE20B5D0092B592 /* Contact.storyboard */,
 				3DCDC35A1CE20B7C0092B592 /* AddContactController.swift */,
+				3D6E810E1CE3559500FA161F /* ContactCell.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -644,6 +664,7 @@
 				20109C951CBC43AE0058DA02 /* Main.storyboard in Resources */,
 				3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */,
 				3DD530BA1CC7ABC800BEE96D /* Proxima Nova Bold.otf in Resources */,
+				3D6E810B1CE3550D00FA161F /* Document.storyboard in Resources */,
 				3DCDC3591CE20B5D0092B592 /* Contact.storyboard in Resources */,
 				32DB229F1CD33CB3005277B8 /* CommonComponents.storyboard in Resources */,
 			);
@@ -660,10 +681,12 @@
 				322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */,
 				3DD211671CDA11E700DFE86C /* ProfileContactDetailController.swift in Sources */,
 				3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */,
+				3D6E81111CE35E2900FA161F /* DocumentCell.swift in Sources */,
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */,
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
+				3D6E810D1CE3553700FA161F /* DocumentController.swift in Sources */,
 				3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */,
 				3DE30E471CE313C800B02A7A /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
@@ -723,6 +746,7 @@
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
+				3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */,
 				3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */,
 				3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */,
 				3D6E81071CE3537200FA161F /* CaseCountable.swift in Sources */,
@@ -823,6 +847,14 @@
 				3D42D8D81CDB85F900667B55 /* Base */,
 			);
 			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6E81091CE3550D00FA161F /* Document.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6E810A1CE3550D00FA161F /* Base */,
+			);
+			name = Document.storyboard;
 			sourceTree = "<group>";
 		};
 		3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */ = {
