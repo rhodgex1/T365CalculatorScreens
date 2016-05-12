@@ -484,7 +484,7 @@
                                     <constraint firstAttribute="height" constant="94" id="dxL-U0-zlT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -597,7 +597,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztC-Dw-ac0">
                                                 <rect key="frame" x="37" y="52" width="60" height="32"/>
                                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="32"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -665,12 +665,13 @@
                         <outlet property="graphContainerView" destination="CDa-Tc-8L8" id="xsE-WD-Tz2"/>
                         <outlet property="notIncludedCount" destination="PLn-cm-wNw" id="eGz-Hb-7cy"/>
                         <outlet property="openedCount" destination="pEb-yu-w8L" id="W3t-HL-ZUo"/>
+                        <outlet property="purchaseRefinanceLabel" destination="hVu-6T-m37" id="Xeq-1p-57a"/>
                         <outlet property="statisticsPercentage" destination="ztC-Dw-ac0" id="foA-3M-nJ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uz-YK-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1832" y="2397"/>
+            <point key="canvasLocation" x="2095" y="2397"/>
         </scene>
         <!--Statistics Controller-->
         <scene sceneID="zbi-PH-fZQ">
@@ -1001,7 +1002,7 @@
                                     <constraint firstAttribute="width" constant="160" id="emf-B7-iHh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

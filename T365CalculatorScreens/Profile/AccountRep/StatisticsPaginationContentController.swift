@@ -21,6 +21,8 @@ class StatisticsPaginationContentController: UIViewController {
     @IBOutlet weak var notIncludedCount: UILabel!
     @IBOutlet weak var daysToCloseAvgNum: UILabel!
     @IBOutlet weak var graphContainerView: UIView!
+    @IBOutlet weak var purchaseRefinanceLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
