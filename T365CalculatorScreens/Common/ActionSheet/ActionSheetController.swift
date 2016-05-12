@@ -10,6 +10,7 @@ struct ActionSheetOption {
 }
 
 //MARK:- UIImage extension enlisting all images to be used in action sheet
+//related concept explained here: https://www.natashatherobot.com/non-optional-uiimage-named-swift/
 extension UIImage {
     enum Asset: String {
         case ActionCancel = "actionCancel"
@@ -21,8 +22,8 @@ extension UIImage {
         case ActionIconsshare = "actionIconsshare"
         case ActionIconsStarContact = "actionIconsStarContact"
         case ActionIconsRefresh = "actionIconsRefresh"
-        case ActionMonthlyPaymentAffordability = "actionMonthlyPaymentAffordability"
-        case ActionClosingDisclosureTimeline = "actionClosingDisclosureTimeline"
+        case ActionIconPITI = "actionIconPiti"
+        case ActionIconTRID = "actionIconTRID"
         
         var image: UIImage {
             return UIImage(named: self.rawValue)!

@@ -69,7 +69,7 @@ extension SellerBuyerOtherController {
             let actionItemBuyersEstimate = ActionSheetOption(title: "Buyer's Estimate", icon: UIImage(asset: .ActionIconEstimate), action: { () -> Void in
                 print("Buyer's Estimate")
             })
-            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: UIImage(asset: .ActionMonthlyPaymentAffordability), action: { () -> Void in
+            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: UIImage(asset: .ActionIconPITI), action: { () -> Void in
                 print("Monthly Payment Affordability")
             })
             let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
@@ -83,7 +83,7 @@ extension SellerBuyerOtherController {
             let actionItemFeeEstimate = ActionSheetOption(title: "Fee Estimate", icon: UIImage(asset: .ActionIconEstimate),    action: { () -> Void in
                 print("Fee Estimate")
             })
-            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: UIImage(asset: .ActionClosingDisclosureTimeline), action: { () -> Void in
+            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: UIImage(asset: .ActionIconTRID), action: { () -> Void in
                 print("Closing Disclosure Timeline (TRID)")
                 
                 let purchaseRefinanceController = CDTimelineController()
