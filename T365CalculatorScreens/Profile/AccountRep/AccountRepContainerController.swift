@@ -6,8 +6,7 @@ enum AccountRepContentType : Int {
     case Relationships  = 2
 }
 
-class AccountRepContainerController: RGPageViewController {
-    var tabBarTitles: [String]!
+class AccountRepContainerController: ViewPagerBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,32 +14,14 @@ class AccountRepContainerController: RGPageViewController {
         title = "Christine"
         
         tabBarTitles = ["Contact", "Statistics", "Relationships"]
-        
-        datasource = self
-        delegate = self
     }
 
 }
 
 // MARK: - RGPageViewController Data Source
-extension AccountRepContainerController : RGPageViewControllerDataSource {
-    func numberOfPagesForViewController(pageViewController: RGPageViewController) -> Int {
-        return tabBarTitles.count
-    }
+extension AccountRepContainerController {
     
-    func tabViewForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIView {
-        var tabView: UIView!
-        
-        // configuring tabView
-        tabView = UILabel()
-        (tabView as! UILabel).font = UIFont(name:"ProximaNova-Medium", size:16)
-        (tabView as! UILabel).text = tabBarTitles[index]
-        (tabView as! UILabel).sizeToFit()
-        
-        return tabView
-    }
-    
-    func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
+    override func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         let accountRepStoryboard = UIStoryboard(name: AccountRepController.storyboardName, bundle: nil)
         var viewController: UIViewController!
         
@@ -58,20 +39,4 @@ extension AccountRepContainerController : RGPageViewControllerDataSource {
         return viewController
     }
     
-}
-
-// MARK: - RGPageViewController Delegate
-extension AccountRepContainerController: RGPageViewControllerDelegate {
-    func heightForTabAtIndex(index: Int) -> CGFloat {
-        return 220.0
-    }
-    
-    func widthForTabAtIndex(index: Int) -> CGFloat {
-        let theTabWidth = UIScreen.mainScreen().bounds.width / 3
-        return theTabWidth
-    }
-    
-    func widthOrHeightForIndicator() -> CGFloat {
-        return 2.0
-    }
 }

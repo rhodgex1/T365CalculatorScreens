@@ -10,6 +10,14 @@ import UIKit
 
 class AccountExecutiveHomeController: HomeBaseController {
 
+    //MARK:- Binding outlets
+    @IBOutlet weak var projectedPremiumsAmount: UILabel!
+    @IBOutlet weak var closingsCount: UILabel!
+    @IBOutlet weak var officeCount: UILabel!
+    @IBOutlet weak var companyCount: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,4 +29,11 @@ class AccountExecutiveHomeController: HomeBaseController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+//MARK:- User actions
+extension AccountExecutiveHomeController {
+    
+    @IBAction func moreDetail(sender: UIButton) {
+    }
 }

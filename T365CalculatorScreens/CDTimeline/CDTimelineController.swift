@@ -1,12 +1,6 @@
 import UIKit
 
-class CDTimelineController: RGPageViewController {
-
-    // declaring variables
-    var tabBarTitles: [String]!
-
-    @IBOutlet weak var theScrollView: UIScrollView!
-    
+class CDTimelineController: ViewPagerBaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -14,9 +8,6 @@ class CDTimelineController: RGPageViewController {
         title = "CD Timeline (TRID)"
         
         tabBarTitles = ["Purchase", "Refinance"]
-        
-        datasource = self
-        delegate = self
 
     }
     
@@ -71,24 +62,8 @@ extension CDTimelineController {
 }
 
 // MARK: - RGPageViewController Data Source
-extension CDTimelineController : RGPageViewControllerDataSource {
-    func numberOfPagesForViewController(pageViewController: RGPageViewController) -> Int {
-        return tabBarTitles.count
-    }
-    
-    func tabViewForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIView {
-        var tabView: UIView!
-        
-        // configuring tabView
-        tabView = UILabel()
-        (tabView as! UILabel).font = UIFont(name:"ProximaNova-Medium", size:16)
-        (tabView as! UILabel).text = tabBarTitles[index]
-        (tabView as! UILabel).sizeToFit()
-        
-        return tabView
-    }
-    
-    func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
+extension CDTimelineController {
+    override func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
         let cdTimelineStoryboard = UIStoryboard(name: CDTimelineContentController.storyboardName, bundle: nil)
         let purchaseRefinanceContainerController = cdTimelineStoryboard.instantiateViewControllerWithIdentifier(CDTimelineContentController.storyboardId)
@@ -99,17 +74,8 @@ extension CDTimelineController : RGPageViewControllerDataSource {
 }
 
 // MARK: - RGPageViewController Delegate
-extension CDTimelineController: RGPageViewControllerDelegate {
-    func heightForTabAtIndex(index: Int) -> CGFloat {
+extension CDTimelineController {
+    override func heightForTabAtIndex(index: Int) -> CGFloat {
         return 164.0
-    }
-    
-    func widthForTabAtIndex(index: Int) -> CGFloat {
-        let theTabWidth = UIScreen.mainScreen().bounds.width / 2
-        return theTabWidth
-    }
-    
-    func widthOrHeightForIndicator() -> CGFloat {
-        return 2.0
     }
 }

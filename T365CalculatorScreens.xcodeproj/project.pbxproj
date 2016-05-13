@@ -30,6 +30,7 @@
 		3D0520111CD874AB006D8D32 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520101CD874AB006D8D32 /* FeedbackController.swift */; };
 		3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520121CD874BB006D8D32 /* FeedbackForm.swift */; };
 		3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */; };
+		3D0AA95C1CE60279007C6BBF /* HelpfulResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AA95B1CE60279007C6BBF /* HelpfulResourcesController.swift */; };
 		3D15F1631CD8C52F0004E286 /* ScreenshotsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D15F1621CD8C52F0004E286 /* ScreenshotsController.swift */; };
 		3D1BE5B41CD7243900890BE4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B21CD7243900890BE4 /* Settings.storyboard */; };
 		3D1BE5B71CD7246100890BE4 /* AccountSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D1BE5B51CD7246100890BE4 /* AccountSettings.storyboard */; };
@@ -46,6 +47,10 @@
 		3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */; };
 		3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D42D8D51CDB85E400667B55 /* ProfileController.swift */; };
 		3D42D8D91CDB85F900667B55 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D42D8D71CDB85F900667B55 /* Profile.storyboard */; };
+		3D4E4E941CE5C20000BD7E0A /* MySalesPaginationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E4E931CE5C20000BD7E0A /* MySalesPaginationController.swift */; };
+		3D4E4E961CE5C27600BD7E0A /* PaginationViewBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E4E951CE5C27600BD7E0A /* PaginationViewBaseController.swift */; };
+		3D4E4E981CE5CB4F00BD7E0A /* PaginationContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E4E971CE5CB4F00BD7E0A /* PaginationContainerController.swift */; };
+		3D4E4E9A1CE5F6CF00BD7E0A /* ViewPagerBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4E4E991CE5F6CF00BD7E0A /* ViewPagerBaseController.swift */; };
 		3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90561CC211E300293486 /* SellerNetSheetController.swift */; };
 		3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */; };
 		3D5F1E031CE06B7600D1D979 /* StatisticsPaginationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */; };
@@ -70,6 +75,8 @@
 		3D9052F91CC64C0000937E2C /* SellerCreditsToBuyerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */; };
 		3D9052FB1CC64E3500937E2C /* FinancingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FA1CC64E3500937E2C /* FinancingForm.swift */; };
 		3D9052FD1CC64E4400937E2C /* FinancingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9052FC1CC64E4400937E2C /* FinancingController.swift */; };
+		3DAC75EF1CE4C370009D508B /* MySalesPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC75EE1CE4C370009D508B /* MySalesPagerController.swift */; };
+		3DAC75F11CE4C532009D508B /* MySalesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAC75F01CE4C532009D508B /* MySalesController.swift */; };
 		3DB0FEA91CD77A8F006AD9D5 /* ProfileCreditsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FEA81CD77A8F006AD9D5 /* ProfileCreditsForm.swift */; };
 		3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */; };
 		3DC308EC1CD9C9A9001F61F6 /* AccountRep.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC308EA1CD9C9A9001F61F6 /* AccountRep.storyboard */; };
@@ -165,6 +172,7 @@
 		3D0520101CD874AB006D8D32 /* FeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
 		3D0520121CD874BB006D8D32 /* FeedbackForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackForm.swift; sourceTree = "<group>"; };
 		3D0902EE1CCA49E1008910A5 /* MiscellaneousCreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiscellaneousCreditCell.swift; sourceTree = "<group>"; };
+		3D0AA95B1CE60279007C6BBF /* HelpfulResourcesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpfulResourcesController.swift; sourceTree = "<group>"; };
 		3D15F1621CD8C52F0004E286 /* ScreenshotsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotsController.swift; sourceTree = "<group>"; };
 		3D1BE5B31CD7243900890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Settings.storyboard; sourceTree = SOURCE_ROOT; };
 		3D1BE5B61CD7246100890BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountSettings.storyboard; sourceTree = SOURCE_ROOT; };
@@ -181,6 +189,10 @@
 		3D2448621CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosingCostFormBaseCell.swift; sourceTree = "<group>"; };
 		3D42D8D51CDB85E400667B55 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		3D42D8D81CDB85F900667B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		3D4E4E931CE5C20000BD7E0A /* MySalesPaginationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySalesPaginationController.swift; sourceTree = "<group>"; };
+		3D4E4E951CE5C27600BD7E0A /* PaginationViewBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewBaseController.swift; sourceTree = "<group>"; };
+		3D4E4E971CE5CB4F00BD7E0A /* PaginationContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationContainerController.swift; sourceTree = "<group>"; };
+		3D4E4E991CE5F6CF00BD7E0A /* ViewPagerBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPagerBaseController.swift; sourceTree = "<group>"; };
 		3D5D90561CC211E300293486 /* SellerNetSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNetSheetController.swift; sourceTree = "<group>"; };
 		3D5D90581CC2130200293486 /* SellerNewNetSheetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerNewNetSheetForm.swift; sourceTree = "<group>"; };
 		3D5F1E021CE06B7600D1D979 /* StatisticsPaginationContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsPaginationContainer.swift; sourceTree = "<group>"; };
@@ -205,6 +217,8 @@
 		3D9052F81CC64C0000937E2C /* SellerCreditsToBuyerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellerCreditsToBuyerForm.swift; sourceTree = "<group>"; };
 		3D9052FA1CC64E3500937E2C /* FinancingForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingForm.swift; sourceTree = "<group>"; };
 		3D9052FC1CC64E4400937E2C /* FinancingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancingController.swift; sourceTree = "<group>"; };
+		3DAC75EE1CE4C370009D508B /* MySalesPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySalesPagerController.swift; sourceTree = "<group>"; };
+		3DAC75F01CE4C532009D508B /* MySalesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySalesController.swift; sourceTree = "<group>"; };
 		3DB0FEA81CD77A8F006AD9D5 /* ProfileCreditsForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreditsForm.swift; sourceTree = "<group>"; };
 		3DB0FEAA1CD77AB6006AD9D5 /* ProfileCreditsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCreditsController.swift; sourceTree = "<group>"; };
 		3DC308EB1CD9C9A9001F61F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/AccountRep.storyboard; sourceTree = SOURCE_ROOT; };
@@ -404,6 +418,10 @@
 				3D1CD75B1CE48B5F006A1239 /* HomeController.swift */,
 				3D1CD75F1CE4962E006A1239 /* HomeBaseController.swift */,
 				3D1CD7611CE49716006A1239 /* AccountExecutiveHomeController.swift */,
+				3DAC75EE1CE4C370009D508B /* MySalesPagerController.swift */,
+				3DAC75F01CE4C532009D508B /* MySalesController.swift */,
+				3D4E4E931CE5C20000BD7E0A /* MySalesPaginationController.swift */,
+				3D0AA95B1CE60279007C6BBF /* HelpfulResourcesController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -522,6 +540,9 @@
 				3DE30E4F1CE3148A00B02A7A /* DateController.swift */,
 				3DE30E501CE3148A00B02A7A /* RGPageViewController.swift */,
 				32DB229D1CD33CB3005277B8 /* CommonComponents.storyboard */,
+				3D4E4E951CE5C27600BD7E0A /* PaginationViewBaseController.swift */,
+				3D4E4E971CE5CB4F00BD7E0A /* PaginationContainerController.swift */,
+				3D4E4E991CE5F6CF00BD7E0A /* ViewPagerBaseController.swift */,
 			);
 			path = CommonUIComponents;
 			sourceTree = "<group>";
@@ -713,6 +734,7 @@
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
 				3D6E810D1CE3553700FA161F /* DocumentController.swift in Sources */,
 				3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */,
+				3DAC75F11CE4C532009D508B /* MySalesController.swift in Sources */,
 				3DE30E471CE313C800B02A7A /* DismissKeyboardOnOutsideTap.swift in Sources */,
 				3DD530A51CC79B9D00BEE96D /* PreviewController.swift in Sources */,
 				3D2448631CC8ACCF00B2A83C /* ClosingCostFormBaseCell.swift in Sources */,
@@ -732,8 +754,10 @@
 				3DFE08E31CC5002000101EE3 /* TaxesForm.swift in Sources */,
 				3DCDC34D1CE1F6160092B592 /* ExperienceAndSpecialtiesCell.swift in Sources */,
 				3DD2116B1CDA121B00DFE86C /* RelationshipsController.swift in Sources */,
+				3D4E4E981CE5CB4F00BD7E0A /* PaginationContainerController.swift in Sources */,
 				3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */,
 				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
+				3DAC75EF1CE4C370009D508B /* MySalesPagerController.swift in Sources */,
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
 				3D1CD7601CE4962E006A1239 /* HomeBaseController.swift in Sources */,
 				3D2448591CC89D7F00B2A83C /* AddClosingCostForm.swift in Sources */,
@@ -761,6 +785,7 @@
 				3D0902EF1CCA49E1008910A5 /* MiscellaneousCreditCell.swift in Sources */,
 				3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */,
 				3D9052EF1CC6425A00937E2C /* TitleController.swift in Sources */,
+				3D4E4E961CE5C27600BD7E0A /* PaginationViewBaseController.swift in Sources */,
 				3D42D8D61CDB85E400667B55 /* ProfileController.swift in Sources */,
 				322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */,
 				3DCDC34B1CE1CD6B0092B592 /* SocialAndWeblinkCell.swift in Sources */,
@@ -768,6 +793,7 @@
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */,
 				3DCDC3511CE201210092B592 /* EditImageController.swift in Sources */,
+				3D0AA95C1CE60279007C6BBF /* HelpfulResourcesController.swift in Sources */,
 				3DCDC34F1CE2004B0092B592 /* EditProfileContainerController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
 				3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */,
@@ -776,6 +802,7 @@
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
 				3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */,
 				3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */,
+				3D4E4E941CE5C20000BD7E0A /* MySalesPaginationController.swift in Sources */,
 				3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */,
 				3D6E81071CE3537200FA161F /* CaseCountable.swift in Sources */,
 				3DCDC35B1CE20B7C0092B592 /* AddContactController.swift in Sources */,
@@ -785,6 +812,7 @@
 				3D5F1E0F1CE0A5CA00D1D979 /* AddressCell.swift in Sources */,
 				3DFB41921CBD3B0500995099 /* PreparedForByController.swift in Sources */,
 				3DE15AA81CDCA0DE0034532B /* StatisticsPaginationContentController.swift in Sources */,
+				3D4E4E9A1CE5F6CF00BD7E0A /* ViewPagerBaseController.swift in Sources */,
 				3D5F1E031CE06B7600D1D979 /* StatisticsPaginationContainer.swift in Sources */,
 				3DE30E511CE3148A00B02A7A /* ContactActionsController.swift in Sources */,
 				20109C901CBC43AE0058DA02 /* AppDelegate.swift in Sources */,

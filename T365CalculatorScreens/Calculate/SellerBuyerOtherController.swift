@@ -15,10 +15,7 @@ enum UserType : Int {
     case Other  = 2
 }
 
-class SellerBuyerOtherController: RGPageViewController {
-
-    // declaring variables
-    var tabBarTitles: [String]!
+class SellerBuyerOtherController: ViewPagerBaseController {
     
     // declaring constants
     static let storyboardId = "SellerBuyerOtherController"
@@ -30,9 +27,6 @@ class SellerBuyerOtherController: RGPageViewController {
         title = "Calculate"
         
         tabBarTitles = ["Seller", "Buyer", "Other"]
-        
-        datasource = self
-        delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -122,24 +116,9 @@ extension SellerBuyerOtherController {
 }
 
 // MARK: - RGPageViewController Data Source
-extension SellerBuyerOtherController : RGPageViewControllerDataSource {
-    func numberOfPagesForViewController(pageViewController: RGPageViewController) -> Int {
-        return tabBarTitles.count
-    }
+extension SellerBuyerOtherController {
     
-    func tabViewForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIView {
-        var tabView: UIView!
-        
-        // configuring tabView
-        tabView = UILabel()
-        (tabView as! UILabel).font = UIFont(name:"ProximaNova-Medium", size:16)
-        (tabView as! UILabel).text = tabBarTitles[index]
-        (tabView as! UILabel).sizeToFit()
-        
-        return tabView
-    }
-    
-    func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
+    override func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
         let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
         let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(SellerBuyerOtherContainerController.storyboardId) as! SellerBuyerOtherContainerController
@@ -161,17 +140,8 @@ extension SellerBuyerOtherController : RGPageViewControllerDataSource {
 }
 
 // MARK: - RGPageViewController Delegate
-extension SellerBuyerOtherController: RGPageViewControllerDelegate {
-    func heightForTabAtIndex(index: Int) -> CGFloat {
+extension SellerBuyerOtherController {
+    override func heightForTabAtIndex(index: Int) -> CGFloat {
         return 164.0
-    }
-    
-    func widthForTabAtIndex(index: Int) -> CGFloat {
-        let theTabWidth = UIScreen.mainScreen().bounds.width / 3
-        return theTabWidth
-    }
-    
-    func widthOrHeightForIndicator() -> CGFloat {
-        return 2.0
     }
 }
