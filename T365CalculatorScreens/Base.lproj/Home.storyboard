@@ -310,10 +310,10 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profitIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-l5-XTW">
-                                                    <rect key="frame" x="534" y="149.5" width="15" height="15"/>
+                                                    <rect key="frame" x="534" y="149.5" width="15" height="13"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="MzI-RP-0YA"/>
-                                                        <constraint firstAttribute="height" constant="15" id="WoP-E5-v6g"/>
+                                                        <constraint firstAttribute="height" constant="13" id="WoP-E5-v6g"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days on Market (1 Year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGX-iY-O9P">
@@ -355,7 +355,7 @@
                                                 <constraint firstItem="mZJ-oE-lT6" firstAttribute="centerY" secondItem="GdC-AO-Jp3" secondAttribute="centerY" id="Dp8-Bl-Rh4"/>
                                                 <constraint firstAttribute="bottom" secondItem="pre-zu-fdg" secondAttribute="bottom" id="EHw-EA-CMu"/>
                                                 <constraint firstItem="DiP-gi-eyt" firstAttribute="trailing" secondItem="4u2-gl-BU3" secondAttribute="trailing" id="Ghh-cZ-qAB"/>
-                                                <constraint firstItem="qCB-l5-XTW" firstAttribute="centerY" secondItem="4u2-gl-BU3" secondAttribute="centerY" id="Ipk-dn-i4b"/>
+                                                <constraint firstItem="qCB-l5-XTW" firstAttribute="centerY" secondItem="4u2-gl-BU3" secondAttribute="centerY" constant="-1" id="Ipk-dn-i4b"/>
                                                 <constraint firstItem="liq-7z-PF9" firstAttribute="top" secondItem="aln-1D-6Fc" secondAttribute="bottom" constant="14" id="LWR-zB-SRl"/>
                                                 <constraint firstItem="GdC-AO-Jp3" firstAttribute="leading" secondItem="QIV-Yq-hou" secondAttribute="leading" constant="15" id="Lpq-NU-xUD"/>
                                                 <constraint firstItem="DiP-gi-eyt" firstAttribute="centerY" secondItem="VGX-iY-O9P" secondAttribute="centerY" id="Luy-TD-6ln"/>
