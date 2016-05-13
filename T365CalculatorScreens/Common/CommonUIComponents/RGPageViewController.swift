@@ -137,7 +137,8 @@ class RGPageViewController: UIViewController, UIPageViewControllerDataSource, UI
             tabbar = UIToolbar()
             
             if let bar = tabbar as? UIToolbar {
-                bar.barTintColor = barTintColor
+//              Below color code has been changed as per the Zeplin link
+                bar.barTintColor = UIColor.whiteColor() //barTintColor
                 bar.translucent = true
                 bar.delegate = self
             }
@@ -910,6 +911,7 @@ class RGTabBarItem: UIView {
     var textLabel: UILabel?
     var imageView: UIImageView?
     var normalColor: UIColor? = UIColor(red: 67/255, green: 133/255, blue: 1, alpha: 1)
+    
     
     init(frame: CGRect, text: String?, image: UIImage?, color: UIColor?) {
         super.init(frame: frame)

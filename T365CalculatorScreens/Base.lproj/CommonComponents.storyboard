@@ -58,6 +58,114 @@
             </objects>
             <point key="canvasLocation" x="4377" y="-999"/>
         </scene>
+        <!--Contact Actions Controller-->
+        <scene sceneID="PTu-xl-xE8">
+            <objects>
+                <viewController storyboardIdentifier="ContactActionsController" id="Fxm-wS-2LL" customClass="ContactActionsController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Om-xB-SQJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="DDV-xQ-ovN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSB-6r-Qc0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-HV-j5W">
+                                <rect key="frame" x="500" y="110" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Qw3-rz-xl3"/>
+                                    <constraint firstAttribute="width" constant="60" id="veO-w5-CS0"/>
+                                </constraints>
+                                <state key="normal" image="cancelContact"/>
+                                <connections>
+                                    <action selector="cancel:" destination="Fxm-wS-2LL" eventType="touchUpInside" id="Bu3-T5-Vw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybE-q9-6ju">
+                                <rect key="frame" x="500" y="190" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Qd-Af-vjx"/>
+                                    <constraint firstAttribute="width" constant="60" id="xHT-vf-zQD"/>
+                                </constraints>
+                                <state key="normal" image="callContact"/>
+                                <connections>
+                                    <action selector="call:" destination="Fxm-wS-2LL" eventType="touchUpInside" id="xPj-Yk-eMY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyM-JE-8Is">
+                                <rect key="frame" x="500" y="270" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="sZ6-tq-gkk"/>
+                                    <constraint firstAttribute="height" constant="60" id="t9R-Ba-LWa"/>
+                                </constraints>
+                                <state key="normal" image="textContact"/>
+                                <connections>
+                                    <action selector="text:" destination="Fxm-wS-2LL" eventType="touchUpInside" id="r9P-N1-pLa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFV-6i-jwq">
+                                <rect key="frame" x="500" y="350" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mpj-6B-gi1"/>
+                                    <constraint firstAttribute="width" constant="60" id="usg-o9-VbJ"/>
+                                </constraints>
+                                <state key="normal" image="emailContact"/>
+                                <connections>
+                                    <action selector="email:" destination="Fxm-wS-2LL" eventType="touchUpInside" id="8ln-lC-KJS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xyM-JE-8Is" firstAttribute="centerX" secondItem="ybE-q9-6ju" secondAttribute="centerX" id="68H-Gt-4vV"/>
+                            <constraint firstAttribute="trailing" secondItem="ic2-HV-j5W" secondAttribute="trailing" constant="40" id="AM6-Eq-a1s"/>
+                            <constraint firstItem="xyM-JE-8Is" firstAttribute="top" secondItem="ybE-q9-6ju" secondAttribute="bottom" constant="20" id="RQQ-Bu-y9D"/>
+                            <constraint firstItem="ybE-q9-6ju" firstAttribute="centerX" secondItem="ic2-HV-j5W" secondAttribute="centerX" id="YOj-MU-04G"/>
+                            <constraint firstItem="ybE-q9-6ju" firstAttribute="top" secondItem="ic2-HV-j5W" secondAttribute="bottom" constant="20" id="ZJu-ue-ZI6"/>
+                            <constraint firstItem="VFV-6i-jwq" firstAttribute="centerX" secondItem="xyM-JE-8Is" secondAttribute="centerX" id="f3u-SX-EAB"/>
+                            <constraint firstItem="ic2-HV-j5W" firstAttribute="top" secondItem="5Om-xB-SQJ" secondAttribute="bottom" constant="90" id="l2e-Ic-r9u"/>
+                            <constraint firstItem="VFV-6i-jwq" firstAttribute="top" secondItem="xyM-JE-8Is" secondAttribute="bottom" constant="20" id="rIy-aX-Ra5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsF-Un-RMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="1669"/>
+        </scene>
+        <!--Pagination Container Controller-->
+        <scene sceneID="yxb-0N-45z">
+            <objects>
+                <viewController storyboardIdentifier="PaginationContainerController" id="VTF-n4-i9R" customClass="PaginationContainerController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="beK-bD-tCy"/>
+                        <viewControllerLayoutGuide type="bottom" id="692-1P-b7e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OJo-b2-ERS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pagination Container" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTI-oq-6Ut">
+                                <rect key="frame" x="221" y="252" width="159" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="JCF-Y0-VFl"/>
+                                    <constraint firstAttribute="height" constant="94" id="zCH-EN-vE2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wTI-oq-6Ut" firstAttribute="centerY" secondItem="OJo-b2-ERS" secondAttribute="centerY" id="FHm-rE-ind"/>
+                            <constraint firstItem="wTI-oq-6Ut" firstAttribute="centerX" secondItem="OJo-b2-ERS" secondAttribute="centerX" id="fX4-Hf-TbP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttx-VG-frd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615" y="2164.5"/>
+        </scene>
         <!--Action Sheet Controller-->
         <scene sceneID="SwF-rh-hR3">
             <objects>
@@ -95,7 +203,7 @@
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cell Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-WU-xbL">
-                                                            <rect key="frame" x="84" y="19" width="250" height="21"/>
+                                                            <rect key="frame" x="84" y="19" width="339" height="21"/>
                                                             <fontDescription key="fontDescription" name="ProximaNova-Medium" family="Proxima Nova" pointSize="16"/>
                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -177,4 +285,10 @@
             <point key="canvasLocation" x="5204" y="-999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="callContact" width="64" height="64"/>
+        <image name="cancelContact" width="64" height="64"/>
+        <image name="emailContact" width="64" height="64"/>
+        <image name="textContact" width="64" height="64"/>
+    </resources>
 </document>

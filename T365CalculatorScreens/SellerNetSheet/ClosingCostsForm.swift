@@ -56,7 +56,10 @@ class ClosingCostsForm: UITableViewController, DismissKeyboardOnOutsideTap {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
+
+//MARK:- Private methods
+extension ClosingCostsForm {
     func hideKeyboard() {
         backgroundView.endEditing(true)
     }
@@ -77,7 +80,6 @@ class ClosingCostsForm: UITableViewController, DismissKeyboardOnOutsideTap {
         let repairs = ClosingCost(title: "Repairs")
         closingCosts = [title, escrow, recording, notary, homeWarranty, termiteReport, naturalHazardDisclosureReport, hoaTransfer, hoaProratedDues, reconveyance, taxCertificate, repairs]
     }
-
 }
 
 //MARK:- Implementing table view data source and delegates

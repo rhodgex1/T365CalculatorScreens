@@ -15,16 +15,11 @@ enum UserType : Int {
     case Other  = 2
 }
 
-class SellerBuyerOtherController: RGPageViewController {
-
-    // declaring variables
-    var tabBarTitles: [String]!
+class SellerBuyerOtherController: ViewPagerBaseController {
     
     // declaring constants
-    static let kStoryBoardSellerBuyerOther = "SellerBuyerOther"
-    static let kStoryBoardSellerNetSheet = "SellerNetSheet"
-    static let kStoryBoardCommonComponents = "CommonComponents"
-    let kSellerBuyerOtherContainerController = "SellerBuyerOtherContainerController"
+    static let storyboardId = "SellerBuyerOtherController"
+    static let storyboardName = "SellerBuyerOther"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +27,6 @@ class SellerBuyerOtherController: RGPageViewController {
         title = "Calculate"
         
         tabBarTitles = ["Seller", "Buyer", "Other"]
-        
-        datasource = self
-        delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -51,16 +43,16 @@ extension SellerBuyerOtherController {
     @IBAction func addAction(sender: AnyObject) {
         
         func sellerActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemSellersNetSheet = ActionSheetOption(title: "Seller's Net Sheet", icon: "actionIconEstimate", action: { () -> Void in
+            let actionItemSellersNetSheet = ActionSheetOption(title: "Seller's Net Sheet", icon: UIImage(asset: .ActionIconEstimate), action: { () -> Void in
                 print("Seller's Net Sheet")
                 
-                let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerNetSheet, bundle: nil)
-                let netSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("SellerNetSheetController")
+                let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
+                let netSheetController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(SellerNetSheetController.storyboardId)
                 
                 self.navigationController?.pushViewController(netSheetController, animated: true)
 
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             
@@ -68,13 +60,13 @@ extension SellerBuyerOtherController {
         }
 
         func buyerActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemBuyersEstimate = ActionSheetOption(title: "Buyer's Estimate", icon: "actionIconEstimate", action: { () -> Void in
+            let actionItemBuyersEstimate = ActionSheetOption(title: "Buyer's Estimate", icon: UIImage(asset: .ActionIconEstimate), action: { () -> Void in
                 print("Buyer's Estimate")
             })
-            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: "", action: { () -> Void in
-                print("Cancel")
+            let actionItemMonthlyPaymentAffordability = ActionSheetOption(title: "Monthly Payment Affordability (PITI)", icon: UIImage(asset: .ActionIconPITI), action: { () -> Void in
+                print("Monthly Payment Affordability")
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             
@@ -82,25 +74,25 @@ extension SellerBuyerOtherController {
         }
 
         func otherActionSheetOptions() -> [ActionSheetOption] {
-            let actionItemFeeEstimate = ActionSheetOption(title: "Fee Estimate", icon: "actionIconEstimate",    action: { () -> Void in
+            let actionItemFeeEstimate = ActionSheetOption(title: "Fee Estimate", icon: UIImage(asset: .ActionIconEstimate),    action: { () -> Void in
                 print("Fee Estimate")
             })
-            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: "", action: { () -> Void in
+            let actionItemClosingDisclosureTimeline = ActionSheetOption(title: "Closing Disclosure Timeline (TRID)", icon: UIImage(asset: .ActionIconTRID), action: { () -> Void in
                 print("Closing Disclosure Timeline (TRID)")
                 
-                let purchaseRefinanceController = CDTimelineContainerController()
+                let purchaseRefinanceController = CDTimelineController()
                 self.navigationController?.pushViewController(purchaseRefinanceController, animated: true)
             })
-            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
+            let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
                 print("Cancel")
             })
             
             return [actionItemFeeEstimate, actionItemClosingDisclosureTimeline, actionItemCancel]
         }
 
-        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
-        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
         var theActionSheetItems : [ActionSheetOption]!
@@ -124,27 +116,12 @@ extension SellerBuyerOtherController {
 }
 
 // MARK: - RGPageViewController Data Source
-extension SellerBuyerOtherController : RGPageViewControllerDataSource {
-    func numberOfPagesForViewController(pageViewController: RGPageViewController) -> Int {
-        return tabBarTitles.count
-    }
+extension SellerBuyerOtherController {
     
-    func tabViewForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIView {
-        var tabView: UIView!
+    override func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
         
-        // configuring tabView
-        tabView = UILabel()
-        (tabView as! UILabel).font = UIFont(name:"ProximaNova-Medium", size:16)
-        (tabView as! UILabel).text = tabBarTitles[index]
-        (tabView as! UILabel).sizeToFit()
-        
-        return tabView
-    }
-    
-    func viewControllerForPageAtIndex(pageViewController: RGPageViewController, index: Int) -> UIViewController? {
-        
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerBuyerOther, bundle: nil)
-        let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(kSellerBuyerOtherContainerController) as! SellerBuyerOtherContainerController
+        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
+        let sellerBuyerOtherContainerController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(SellerBuyerOtherContainerController.storyboardId) as! SellerBuyerOtherContainerController
         
         if let userType = UserType(rawValue:index) {
             switch userType {
@@ -163,17 +140,8 @@ extension SellerBuyerOtherController : RGPageViewControllerDataSource {
 }
 
 // MARK: - RGPageViewController Delegate
-extension SellerBuyerOtherController: RGPageViewControllerDelegate {
-    func heightForTabAtIndex(index: Int) -> CGFloat {
+extension SellerBuyerOtherController {
+    override func heightForTabAtIndex(index: Int) -> CGFloat {
         return 164.0
-    }
-    
-    func widthForTabAtIndex(index: Int) -> CGFloat {
-        let theTabWidth = UIScreen.mainScreen().bounds.width / 3
-        return theTabWidth
-    }
-    
-    func widthOrHeightForIndicator() -> CGFloat {
-        return 2.0
     }
 }

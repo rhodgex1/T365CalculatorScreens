@@ -147,9 +147,9 @@ extension SellerNewNetSheetForm: UITextFieldDelegate {
 extension SellerNewNetSheetForm {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 4 {
-            let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+            let commonComponentsStoryboard = UIStoryboard(name: DateController.storyboardName, bundle: nil)
             
-            let dateController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("DateController") as! DateController
+            let dateController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(DateController.storyboardId) as! DateController
             dateController.modalPresentationStyle = .OverCurrentContext
             dateController.selectedDateCallback = { [weak self](selectedDate: String) -> Void in
 

@@ -2,13 +2,44 @@ import UIKit
 
 typealias ActionSheetCallback = () -> Void
 
+//MARK:- Defining struct
 struct ActionSheetOption {
     var title:  String
-    var icon:   String
+    var icon:   UIImage
     var action: ActionSheetCallback?
 }
 
+//MARK:- UIImage extension enlisting all images to be used in action sheet
+//related concept explained here: https://www.natashatherobot.com/non-optional-uiimage-named-swift/
+extension UIImage {
+    enum Asset: String {
+        case ActionCancel = "actionCancel"
+        case ActionIcon = "actionIcon"
+        case ActionIconActivateDeactivate = "actionIconActivateDeactivate"
+        case ActionIconDelete = "actionIcondelete"
+        case ActionIconEstimate = "actionIconEstimate"
+        case ActionIconsDownload = "actionIconsDownload"
+        case ActionIconsshare = "actionIconsshare"
+        case ActionIconsStarContact = "actionIconsStarContact"
+        case ActionIconsRefresh = "actionIconsRefresh"
+        case ActionIconPITI = "actionIconPiti"
+        case ActionIconTRID = "actionIconTRID"
+        
+        var image: UIImage {
+            return UIImage(named: self.rawValue)!
+        }
+    }
+    
+    convenience init!(asset: Asset) {
+        self.init(named: asset.rawValue)
+    }
+}
+
+//MARK:- Defining class
 class ActionSheetController: UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "ActionSheetController"
+    static let storyboardName = "CommonComponents"
     
     @IBOutlet weak var theActionSheetTableView: UITableView!
 
@@ -31,7 +62,7 @@ extension ActionSheetController {
         return CGFloat(yOffset)
     }
     
-    private func configureUIElements() -> Void {
+    private func configureUIElements() {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         view.opaque = false
         

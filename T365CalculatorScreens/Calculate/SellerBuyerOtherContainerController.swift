@@ -8,6 +8,9 @@ struct Estimate {
 // This ViewController will take decision that whether a view with data shall be loaded or an empty view be loaded
 
 class SellerBuyerOtherContainerController : UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "SellerBuyerOtherContainerController"
+    
     var userType : UserType!
     
     override func viewDidLoad() {
@@ -62,15 +65,15 @@ extension SellerBuyerOtherContainerController {
     }
     
     private func viewControllerForSavedEstimates(savedEstimates :[Estimate]?) -> UIViewController {
-        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardSellerBuyerOther, bundle: nil)
+        let sellerBuyerOtherStoryboard = UIStoryboard(name: SellerBuyerOtherController.storyboardName, bundle: nil)
         let calculateViewController :UIViewController
         
         if let dataArray = savedEstimates where dataArray.count != 0 {
-            let calculateDataViewController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("CalculateDataViewController") as! CalculateDataViewController
+            let calculateDataViewController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(CalculateDataViewController.storyboardId) as! CalculateDataViewController
             calculateDataViewController.savedEstimates = savedEstimates
             calculateViewController = calculateDataViewController
         } else {
-            calculateViewController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier("CalculateEmptyViewController")
+            calculateViewController = sellerBuyerOtherStoryboard.instantiateViewControllerWithIdentifier(CalculateEmptyViewController.storyboardId)
         }
         
         return calculateViewController

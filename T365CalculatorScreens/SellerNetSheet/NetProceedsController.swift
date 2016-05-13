@@ -1,6 +1,7 @@
 import UIKit
 
 class NetProceedsController: UIViewController {
+    static let embedSegueIdentifier = "EmbedNetProceeds"
 
     @IBOutlet weak var netProceedsAmount: UILabel!
     override func viewDidLoad() {

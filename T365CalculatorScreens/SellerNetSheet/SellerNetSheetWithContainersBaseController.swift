@@ -9,7 +9,7 @@
 import UIKit
 
 enum ContainerSegueIdentifier : String {
-    case EmbedHeader = "EmbedHeader"
+    case EmbedHeader = "EmbedNetProceeds"
     case EmbedBody = "EmbedBody"
 }
 

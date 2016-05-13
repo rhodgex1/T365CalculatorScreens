@@ -1,6 +1,9 @@
 import UIKit
 
 class DateController: UIViewController {
+    //MARK:- constants declarations
+    static let storyboardId = "DateController"
+    static let storyboardName = "CommonComponents"
     
     @IBOutlet weak var theDatePicker: UIDatePicker!
     typealias SelectedDateCallback = (String) -> Void

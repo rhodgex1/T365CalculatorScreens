@@ -327,6 +327,9 @@
                                                 <constraint firstItem="eyS-oT-Q1a" firstAttribute="leading" secondItem="hkf-DV-o3s" secondAttribute="leading" constant="15" id="wXd-Cr-qpT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wLd-Bz-mXq" kind="show" id="qvr-GP-8UZ"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="qQJ-cD-4mh" userLabel="Version Cell">
                                         <rect key="frame" x="0.0" y="534" width="600" height="55"/>
@@ -375,6 +378,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5IT-9B-Fbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="887" y="310"/>
+        </scene>
+        <!--FeedbackController-->
+        <scene sceneID="llX-oq-WuI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Feedback" referencedIdentifier="FeedbackController" id="wLd-Bz-mXq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jR1-2c-fUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100.5" y="766"/>
         </scene>
         <!--AccountSettingsController-->
         <scene sceneID="AI7-kc-eMr">
@@ -493,7 +504,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="48 Remaining" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="om1-IL-1gW">
-                                                    <rect key="frame" x="506.5" y="15" width="78.5" height="13"/>
+                                                    <rect key="frame" x="506.5" y="15.5" width="78.5" height="13"/>
                                                     <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="13"/>
                                                     <color key="textColor" red="0.2627450980392157" green="0.52156862745098043" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -568,7 +579,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-5Q-dWV">
-                                                    <rect key="frame" x="0.0" y="42.5" width="600" height="1"/>
+                                                    <rect key="frame" x="0.0" y="43" width="600" height="1"/>
                                                     <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="NWF-OK-pf4"/>

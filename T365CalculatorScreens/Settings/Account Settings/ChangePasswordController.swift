@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ChangePasswordController: UITableViewController {
-
+class ChangePasswordController: UITableViewController, DismissKeyboardOnOutsideTap {
+    var backgroundView: UIView!
+    
     //declaring outlets
     @IBOutlet weak var oldPassword: UITextField!
     @IBOutlet weak var newPassword: UITextField!
@@ -19,10 +20,17 @@ class ChangePasswordController: UITableViewController {
         super.viewDidLoad()
         
         title = "Change Password"
+        
+        backgroundView = view
+        configureToDismissKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func hideKeyboard() {
+        backgroundView.endEditing(true)
     }
 }

@@ -200,7 +200,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3ES-4b-KQg" kind="show" identifier="PushScreenshotsScreen" id="zOO-kT-YYk"/>
+                                            <segue destination="3ES-4b-KQg" kind="show" identifier="ShowScreenshotsScreen" id="zOO-kT-YYk"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="50" id="nGc-AP-7kP" userLabel="App and Device Info Title">

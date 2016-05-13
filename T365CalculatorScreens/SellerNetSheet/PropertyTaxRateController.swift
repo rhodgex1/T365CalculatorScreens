@@ -63,7 +63,7 @@ class PropertyTaxRateController: UIViewController, HasHeaderContainer, DismissKe
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let segueIdentifier = segue.identifier {
-            if segueIdentifier == "EmbedHeader" {
+            if segueIdentifier == NetProceedsController.embedSegueIdentifier {
                 netProceedsController = segue.destinationViewController as! NetProceedsController
             }
         }

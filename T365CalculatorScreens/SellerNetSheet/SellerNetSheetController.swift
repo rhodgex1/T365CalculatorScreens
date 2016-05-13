@@ -1,6 +1,10 @@
 import UIKit
 
 class SellerNetSheetController: SellerNetSheetWithContainersBaseController {
+    //MARK:- contant declaration
+    static let storyboardId = "SellerNetSheetController"
+    static let storyboardName = "SellerNetSheet"
+    
     var sellerNewNetSheetFormController : SellerNewNetSheetForm!
     
     override func viewDidLoad() {
@@ -76,22 +80,22 @@ extension SellerNetSheetController {
     func moreAction(sender: UIButton) {
         // more action
         
-        let commonComponentsStoryboard = UIStoryboard(name: SellerBuyerOtherController.kStoryBoardCommonComponents, bundle: nil)
+        let commonComponentsStoryboard = UIStoryboard(name: ActionSheetController.storyboardName, bundle: nil)
         
-        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier("ActionSheetController") as! ActionSheetController
+        let actionSheetController = commonComponentsStoryboard.instantiateViewControllerWithIdentifier(ActionSheetController.storyboardId) as! ActionSheetController
         actionSheetController.modalPresentationStyle = .OverCurrentContext
         
-        let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: "actionIconsRefresh",    action: { () -> Void in
-            NSLog("Create New / Start Over")
+        let actionItemCreate = ActionSheetOption(title: "Create New / Start Over", icon: UIImage(asset: .ActionIconsRefresh),    action: { () -> Void in
+            print("Create New / Start Over")
         })
-        let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: "actionIconsshare", action: { () -> Void in
-            NSLog("Print or Share")
+        let actionItemPrint = ActionSheetOption(title: "Print or Share", icon: UIImage(asset: .ActionIconsshare), action: { () -> Void in
+            print("Print or Share")
         })
-        let actionItemSave = ActionSheetOption(title: "Save", icon: "actionIconsDownload", action: { () -> Void in
-            NSLog("Save")
+        let actionItemSave = ActionSheetOption(title: "Save", icon: UIImage(asset: .ActionIconsDownload), action: { () -> Void in
+            print("Save")
         })
-        let actionItemCancel = ActionSheetOption(title: "Cancel", icon: "actionCancel", action: { () -> Void in
-            NSLog("Cancel")
+        let actionItemCancel = ActionSheetOption(title: "Cancel", icon: UIImage(asset: .ActionCancel), action: { () -> Void in
+            print("Cancel")
         })
         actionSheetController.actionSheetItems = [actionItemCreate, actionItemPrint, actionItemSave, actionItemCancel]
         

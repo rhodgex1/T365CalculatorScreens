@@ -1,6 +1,8 @@
 import UIKit
 
 class CalculateDataViewController : UIViewController {
+    //MARK:- contant declaration
+    static let storyboardId = "CalculateDataViewController"
 
     @IBOutlet weak var calculateDataTableView: UITableView!
 
@@ -13,7 +15,7 @@ class CalculateDataViewController : UIViewController {
 }
 
 // MARK: UITableView Data Source and Delegate Methods
-extension CalculateDataViewController {
+extension CalculateDataViewController: CellFullWidthSeparator {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return savedEstimates.count
     }
@@ -23,29 +25,8 @@ extension CalculateDataViewController {
         let anEstimate = savedEstimates[indexPath.row]
         
         cell.populateWithData(anEstimate)
-        changeCellMargin(cell)
+        adjustCellSeparatorMargin(cell)
         
         return cell
-    }
-}
-
-// MARK: User Action Listener Methods
-extension CalculateDataViewController {
-
-    @IBAction func sortAction(sender: AnyObject) {
-    }
-    
-}
-
-// MARK: Utility Methods
-extension CalculateDataViewController {
-    func changeCellMargin(theTableCell:UITableViewCell) {
-        if(theTableCell.respondsToSelector(Selector("setLayoutMargins:"))){
-            theTableCell.layoutMargins = UIEdgeInsetsZero;
-        }
-        
-        if(theTableCell.respondsToSelector(Selector("setSeparatorInset:"))){
-            theTableCell.separatorInset = UIEdgeInsetsZero
-        }
     }
 }
