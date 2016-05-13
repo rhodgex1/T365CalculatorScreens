@@ -310,10 +310,10 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profitIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-l5-XTW">
-                                                    <rect key="frame" x="534" y="147" width="15" height="20"/>
+                                                    <rect key="frame" x="534" y="149.5" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="15" id="MzI-RP-0YA"/>
-                                                        <constraint firstAttribute="height" constant="20" id="WoP-E5-v6g"/>
+                                                        <constraint firstAttribute="height" constant="15" id="WoP-E5-v6g"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days on Market (1 Year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGX-iY-O9P">
@@ -1309,7 +1309,7 @@
                                                 <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfU-x0-GtZ">
                                                     <rect key="frame" x="0.0" y="48" width="600" height="452"/>
                                                     <connections>
-                                                        <segue destination="409-Zb-11z" kind="embed" id="X4x-5y-rDt"/>
+                                                        <segue destination="409-Zb-11z" kind="embed" identifier="EmbedMySalesPagerController" id="X4x-5y-rDt"/>
                                                     </connections>
                                                 </containerView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Sales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hy-hP-k1p">
@@ -1595,7 +1595,7 @@
         <!--My Sales Pager Controller-->
         <scene sceneID="aJB-cP-moY">
             <objects>
-                <viewController id="409-Zb-11z" customClass="MySalesPagerController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MySalesPagerController" id="409-Zb-11z" customClass="MySalesPagerController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FGF-GX-KgK"/>
                         <viewControllerLayoutGuide type="bottom" id="9EL-Zx-E7e"/>

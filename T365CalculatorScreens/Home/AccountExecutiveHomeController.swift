@@ -18,6 +18,8 @@ class AccountExecutiveHomeController: HomeBaseController {
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    var mySalesPagerController:MySalesPagerController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +31,11 @@ class AccountExecutiveHomeController: HomeBaseController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier where segueIdentifier == MySalesPagerController.embedSegue {
+            mySalesPagerController = segue.destinationViewController as! MySalesPagerController
+        }
+    }
 }
 
 //MARK:- User actions

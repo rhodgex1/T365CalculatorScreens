@@ -11,7 +11,7 @@ import UIKit
 class StatisticsPaginationContainer: PaginationViewBaseController {
     
     //MARK:- Declaring constants
-    static let embedSegue = "EmbedPageViewController"
+    static let embedSegue = "EmbedStatisticsPaginationContainer"
     static let storyboardName = "AccountRep"
     static let storyboardId = "StatisticsPaginationContainer"
     

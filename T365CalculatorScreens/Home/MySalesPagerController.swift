@@ -15,6 +15,8 @@ enum MySalesType : Int {
 }
 
 class MySalesPagerController: ViewPagerBaseController {
+    //MARK:- Declaring constants
+    static let embedSegue = "EmbedMySalesPagerController"
     
     override func viewDidLoad() {
         super.viewDidLoad()
