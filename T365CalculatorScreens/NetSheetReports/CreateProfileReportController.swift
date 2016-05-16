@@ -10,7 +10,6 @@ class CreateProfileReportController: UIViewController {
         super.viewDidLoad()
 
         title = "Create Profile Report"
-        configureFooterView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,14 +25,6 @@ class CreateProfileReportController: UIViewController {
         }
     }
 
-}
-
-//MARK:- private methods
-extension CreateProfileReportController {
-    private func configureFooterView() {
-        footerView.layer.borderWidth = 1.0
-        footerView.layer.borderColor = UIColor(red: 223/255.0, green: 223/255.0, blue: 223/255.0, alpha: 1.0).CGColor
-    }
 }
 
 

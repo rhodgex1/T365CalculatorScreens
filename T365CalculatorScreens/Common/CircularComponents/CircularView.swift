@@ -9,27 +9,7 @@
 import UIKit
 
 @IBDesignable
-class CircularView: UIView {
-    //MARK:- Declaring inspectable properties
-    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
-        didSet {
-            layer.borderColor = borderColor.CGColor
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat = 1.0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    
-    @IBInspectable var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = cornerRadius > 0
-        }
-    }
-
+class CircularView: CustomView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         

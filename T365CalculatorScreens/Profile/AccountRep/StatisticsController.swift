@@ -30,10 +30,6 @@ class StatisticsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        configureTopView()
-        configureResetFarmingCreditsButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,22 +44,6 @@ class StatisticsController: UIViewController {
     }
 
 }
-
-//MARK:- Private methods
-extension StatisticsController {
-    
-    private func configureResetFarmingCreditsButton(){
-        resetFarmingCreditsButton.layer.borderWidth = 1.0
-        resetFarmingCreditsButton.layer.cornerRadius = 5.0
-        resetFarmingCreditsButton.layer.borderColor = UIColor(red:221/255, green:221/255, blue:221/255, alpha:1).CGColor
-    }
-    
-    private func configureTopView() {
-        topView.layer.borderWidth = 1.0
-        topView.layer.borderColor = UIColor(red:200/255, green:200/255, blue:200/255, alpha:1).CGColor
-    }
-}
-
 //MARK:- User actions
 extension StatisticsController {
     

@@ -671,7 +671,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uz-YK-Ac2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095" y="2397"/>
+            <point key="canvasLocation" x="2329" y="2399"/>
         </scene>
         <!--Statistics Controller-->
         <scene sceneID="zbi-PH-fZQ">
@@ -698,7 +698,7 @@
                                                     <constraint firstAttribute="height" constant="3" id="k7Y-XS-AIs"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4s-cf-Nrb" userLabel="Top View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4s-cf-Nrb" userLabel="Top View" customClass="CustomView" customModule="T365CalculatorScreens" customModuleProvider="target">
                                                 <rect key="frame" x="-1" y="-1" width="602" height="339"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMk-k9-NQI">
@@ -743,6 +743,14 @@
                                                     <constraint firstItem="rVL-qN-VP6" firstAttribute="top" secondItem="c4s-cf-Nrb" secondAttribute="top" constant="20" id="uBj-dC-TBR"/>
                                                     <constraint firstAttribute="trailing" secondItem="3O5-pU-7Wp" secondAttribute="trailing" constant="25" id="v1X-8X-7Z1"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-Dh-pXG" userLabel="Bottom View">
                                                 <rect key="frame" x="0.0" y="349" width="600" height="242"/>
@@ -784,15 +792,26 @@
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sff-bb-61u">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sff-bb-61u" customClass="CustomButton" customModule="T365CalculatorScreens" customModuleProvider="target">
                                                         <rect key="frame" x="33" y="166" width="533" height="46"/>
                                                         <color key="backgroundColor" red="0.92156862745098034" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="46" id="WzC-iD-ceb"/>
                                                         </constraints>
-                                                        <state key="normal" title="Reset Farming Credits">
+                                                        <state key="normal" title="Reset Profile Credits">
                                                             <color key="titleColor" red="0.60392156862745094" green="0.6470588235294118" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="resetFarmingCredits:" destination="k6E-5k-RpT" eventType="touchUpInside" id="Mh2-0K-fjd"/>
                                                         </connections>

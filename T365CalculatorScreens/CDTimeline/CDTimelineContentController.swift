@@ -24,7 +24,6 @@ class CDTimelineContentController: UITableViewController {
         super.viewDidLoad()
         
         configureFederalHolidayIndicator()
-        configureAddToCalendarButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,12 +44,6 @@ extension CDTimelineContentController {
     
     private func configureFederalHolidayIndicator() {
         federalHolidayIndicator.layer.cornerRadius =  federalHolidayIndicator.frame.size.height / 2
-    }
-    
-    private func configureAddToCalendarButton() {
-        addToCalendarButton.layer.borderWidth = 2
-        addToCalendarButton.layer.cornerRadius = 5
-        addToCalendarButton.layer.borderColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha:1).CGColor
     }
 }
 

@@ -35,18 +35,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgr-xQ-U65" userLabel="FooterView">
-                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgr-xQ-U65" userLabel="FooterView" customClass="CustomView" customModule="T365CalculatorScreens" customModuleProvider="target">
+                                <rect key="frame" x="-1" y="551" width="602" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8E-7Y-Acc" userLabel="FooterCenterSeparator">
-                                        <rect key="frame" x="299" y="0.0" width="1" height="50"/>
+                                        <rect key="frame" x="300" y="0.0" width="1" height="50"/>
                                         <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="OBX-Jk-gFS"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQR-WZ-DhE">
-                                        <rect key="frame" x="302" y="2" width="295.5" height="46"/>
+                                        <rect key="frame" x="303" y="2" width="296.5" height="46"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Preview"/>
                                         <connections>
@@ -54,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-Sl-f5L">
-                                        <rect key="frame" x="2" y="2" width="295" height="46"/>
+                                        <rect key="frame" x="2" y="2" width="296" height="46"/>
                                         <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,9 +79,17 @@
                                     <constraint firstAttribute="height" constant="50" id="p11-1m-ufo"/>
                                     <constraint firstItem="Z8E-7Y-Acc" firstAttribute="leading" secondItem="Lbk-Sl-f5L" secondAttribute="trailing" constant="2" id="sA4-Yb-RMI"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkL-0c-vzc">
-                                <rect key="frame" x="0.0" y="64" width="600" height="486"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <connections>
                                     <segue destination="6eK-Ie-TTR" kind="embed" identifier="EmbedContent" id="NS0-JQ-GeB"/>
                                 </connections>
@@ -90,12 +98,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xkL-0c-vzc" secondAttribute="trailing" id="2h3-Ey-oLy"/>
-                            <constraint firstItem="Lgr-xQ-U65" firstAttribute="leading" secondItem="YlU-WW-kSq" secondAttribute="leading" id="HmI-Gp-3WV"/>
+                            <constraint firstItem="Lgr-xQ-U65" firstAttribute="leading" secondItem="YlU-WW-kSq" secondAttribute="leading" constant="-1" id="HmI-Gp-3WV"/>
                             <constraint firstItem="Lgr-xQ-U65" firstAttribute="top" secondItem="xkL-0c-vzc" secondAttribute="bottom" id="Pav-1n-25z"/>
-                            <constraint firstAttribute="trailing" secondItem="Lgr-xQ-U65" secondAttribute="trailing" id="Wkx-pa-9pH"/>
+                            <constraint firstAttribute="trailing" secondItem="Lgr-xQ-U65" secondAttribute="trailing" constant="-1" id="Wkx-pa-9pH"/>
                             <constraint firstItem="xkL-0c-vzc" firstAttribute="leading" secondItem="YlU-WW-kSq" secondAttribute="leading" id="fVz-bh-fpO"/>
                             <constraint firstItem="xkL-0c-vzc" firstAttribute="top" secondItem="iDC-1v-w2n" secondAttribute="bottom" id="pHG-Sc-HAH"/>
-                            <constraint firstItem="Q8C-EH-QAZ" firstAttribute="top" secondItem="Lgr-xQ-U65" secondAttribute="bottom" id="u5n-lQ-VwX"/>
+                            <constraint firstItem="Q8C-EH-QAZ" firstAttribute="top" secondItem="Lgr-xQ-U65" secondAttribute="bottom" constant="-1" id="u5n-lQ-VwX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9YV-sI-40j">
@@ -153,9 +161,9 @@
             <objects>
                 <tableViewController id="6eK-Ie-TTR" userLabel="Create Profile Report" customClass="CreateProfileReportFormController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="aBp-NF-kc8">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="486"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="NUL-y4-xs9">
                                 <cells>
