@@ -76,7 +76,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LB7-yi-llQ">
                                 <rect key="frame" x="0.0" y="209" width="600" height="345"/>
                                 <connections>
-                                    <segue destination="Gqe-Zx-gSe" kind="embed" id="06k-cv-Ap8"/>
+                                    <segue destination="Gqe-Zx-gSe" kind="embed" identifier="EmbedMoreOptions" id="06k-cv-Ap8"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-9x-LDK">
@@ -130,7 +130,7 @@
                         <sections>
                             <tableViewSection id="Ut6-z9-Eta">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="7xm-DJ-biJ" userLabel="Contacts Cell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ContactsCell" rowHeight="55" id="7xm-DJ-biJ" userLabel="Contacts Cell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7xm-DJ-biJ" id="Ug9-DU-Xwe">

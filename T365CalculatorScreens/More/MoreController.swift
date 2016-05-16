@@ -24,6 +24,7 @@ class MoreController: UIViewController {
     
     //MARK:- Declare variable
     var moreScreenType: MoreScreenType!
+    var moreOptionsController: MoreOptionsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,7 @@ class MoreController: UIViewController {
         
         //TODO: this should be set from parentview controller
         moreScreenType = .AcccountRepMore
+        moreOptionsController.moreScreenType = moreScreenType
         refreshMoreOptionsTopConstraint ()
     }
 
@@ -44,6 +46,13 @@ class MoreController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let segueIdentifier = segue.identifier {
+            if segueIdentifier == MoreOptionsController.embedSegueIdentifier {
+                moreOptionsController = segue.destinationViewController as! MoreOptionsController
+            }
+        }
+    }
 }
 
 //MARK:- Declaring user actions

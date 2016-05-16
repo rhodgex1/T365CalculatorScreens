@@ -26,6 +26,8 @@
 		32DB229F1CD33CB3005277B8 /* CommonComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DB229D1CD33CB3005277B8 /* CommonComponents.storyboard */; };
 		32F127001CD2203A00644467 /* CDTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FF1CD2203A00644467 /* CDTimelineController.swift */; };
 		32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F127011CD2469C00644467 /* CDTimeline.storyboard */; };
+		3D00F1531CE9B232005CEB3E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00F1521CE9B232005CEB3E /* CustomButton.swift */; };
+		3D00F1551CE9B56E005CEB3E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00F1541CE9B56E005CEB3E /* CustomView.swift */; };
 		3D05200F1CD8749F006D8D32 /* Feedback.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D05200D1CD8749F006D8D32 /* Feedback.storyboard */; };
 		3D0520111CD874AB006D8D32 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520101CD874AB006D8D32 /* FeedbackController.swift */; };
 		3D0520131CD874BB006D8D32 /* FeedbackForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0520121CD874BB006D8D32 /* FeedbackForm.swift */; };
@@ -168,6 +170,8 @@
 		32DB229E1CD33CB3005277B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CommonComponents.storyboard; sourceTree = SOURCE_ROOT; };
 		32F126FF1CD2203A00644467 /* CDTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineController.swift; sourceTree = "<group>"; };
 		32F127021CD2469C00644467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CDTimeline.storyboard; sourceTree = SOURCE_ROOT; };
+		3D00F1521CE9B232005CEB3E /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3D00F1541CE9B56E005CEB3E /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		3D05200E1CD8749F006D8D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/Feedback.storyboard; sourceTree = SOURCE_ROOT; };
 		3D0520101CD874AB006D8D32 /* FeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackController.swift; sourceTree = "<group>"; };
 		3D0520121CD874BB006D8D32 /* FeedbackForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackForm.swift; sourceTree = "<group>"; };
@@ -529,6 +533,8 @@
 			children = (
 				3DE30E491CE3140A00B02A7A /* CircularImageView.swift */,
 				3DE30E4A1CE3140A00B02A7A /* CircularView.swift */,
+				3D00F1521CE9B232005CEB3E /* CustomButton.swift */,
+				3D00F1541CE9B56E005CEB3E /* CustomView.swift */,
 			);
 			path = CircularComponents;
 			sourceTree = "<group>";
@@ -745,6 +751,7 @@
 				3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */,
 				3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */,
 				3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */,
+				3D00F1531CE9B232005CEB3E /* CustomButton.swift in Sources */,
 				3DB0FEA91CD77A8F006AD9D5 /* ProfileCreditsForm.swift in Sources */,
 				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
 				3D9052EB1CC6183400937E2C /* ClosingCostsForm.swift in Sources */,
@@ -819,6 +826,7 @@
 				32F127001CD2203A00644467 /* CDTimelineController.swift in Sources */,
 				3DFB418C1CBD3AFF00995099 /* CreateNetSheetReportController.swift in Sources */,
 				3228728C1CC8F1450058FA6C /* EstimateCell.swift in Sources */,
+				3D00F1551CE9B56E005CEB3E /* CustomView.swift in Sources */,
 				3DE30E4C1CE3140A00B02A7A /* CircularView.swift in Sources */,
 				3D0520111CD874AB006D8D32 /* FeedbackController.swift in Sources */,
 				3228728B1CC8F1450058FA6C /* SellerBuyerOtherContainerController.swift in Sources */,
