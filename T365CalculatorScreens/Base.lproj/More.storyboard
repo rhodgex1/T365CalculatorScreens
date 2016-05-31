@@ -412,6 +412,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="zqL-4s-Ecu" kind="showDetail" id="doR-ge-Otj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -425,6 +428,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bij-oM-L9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="881" y="185.5"/>
+        </scene>
+        <!--SettingsController-->
+        <scene sceneID="xTT-RL-01j">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsController" id="zqL-4s-Ecu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Kf-Q9-Cxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030.5" y="415"/>
         </scene>
     </scenes>
     <resources>

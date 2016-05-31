@@ -36,7 +36,7 @@ class ProfileController: UIViewController, EmbedUserInfo, EmbedContact{
         // Do any additional setup after loading the view.
         
         //FIXME: remove below hardcoded profileType this shall be passed from previous view controller
-        profileType = .MyAccountExecutive
+        profileType = .MyProfile
         
         configureLayoutAsPerProfileType()
     }

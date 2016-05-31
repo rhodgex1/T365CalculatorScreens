@@ -14,22 +14,31 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dPP-h0-T2q" kind="relationship" relationship="rootViewController" id="oIv-Jd-0Uq"/>
+                        <segue destination="Pcm-wH-QqZ" kind="relationship" relationship="rootViewController" id="0FF-IQ-rVR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMk-9c-QwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-532" y="445"/>
         </scene>
-        <!--CreateProfileReportController-->
-        <scene sceneID="DOo-Eg-dBt">
+        <!--Edit Profile Table View Controller-->
+        <scene sceneID="aht-ad-R7k">
             <objects>
-                <viewControllerPlaceholder storyboardName="CreateProfileReport" referencedIdentifier="CreateProfileReportController" id="dPP-h0-T2q" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="tTL-GS-3Wb"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vIJ-bD-PhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="EditProfileTableViewController" id="Pcm-wH-QqZ" customClass="EditProfileTableViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Xh-qz-gVm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Pcm-wH-QqZ" id="llb-H6-mtS"/>
+                            <outlet property="delegate" destination="Pcm-wH-QqZ" id="zir-Ke-8jV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AVf-0t-zMA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiZ-zH-3O1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.5" y="242"/>
+            <point key="canvasLocation" x="266" y="419"/>
         </scene>
     </scenes>
 </document>

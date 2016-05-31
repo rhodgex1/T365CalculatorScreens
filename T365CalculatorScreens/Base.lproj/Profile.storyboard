@@ -919,7 +919,7 @@
                 <viewControllerPlaceholder storyboardName="AccountRep" referencedIdentifier="ProfileContactDetailController" id="gxf-Y8-Ddr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcs-hB-xmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1054" y="715"/>
+            <point key="canvasLocation" x="-884" y="781"/>
         </scene>
     </scenes>
 </document>

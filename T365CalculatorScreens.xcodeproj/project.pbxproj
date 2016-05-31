@@ -133,6 +133,9 @@
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
 		3DE8A0A51CD76EBE006E6EF5 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */; };
 		3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A61CD7752B006E6EF5 /* MobileNotificationsController.swift */; };
+		3DEE576A1CFDC04D003F93FF /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE57691CFDC04D003F93FF /* EditProfileTableViewController.swift */; };
+		3DEE576C1CFDD8B4003F93FF /* SocialLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE576B1CFDD8B4003F93FF /* SocialLinkCell.swift */; };
+		3DEE576E1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE576D1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift */; };
 		3DEF63441CBE6EC400C7CFA1 /* SellerNetSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEF63421CBE6EC400C7CFA1 /* SellerNetSheet.storyboard */; };
 		3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */; };
 		3DFA4AB51CBFB50C0011747A /* CreateProfileReportFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */; };
@@ -277,6 +280,9 @@
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
 		3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3DE8A0A61CD7752B006E6EF5 /* MobileNotificationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileNotificationsController.swift; sourceTree = "<group>"; };
+		3DEE57691CFDC04D003F93FF /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		3DEE576B1CFDD8B4003F93FF /* SocialLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialLinkCell.swift; sourceTree = "<group>"; };
+		3DEE576D1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3DEF63431CBE6EC400C7CFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/SellerNetSheet.storyboard; sourceTree = SOURCE_ROOT; };
 		3DFA4AB21CBF771B0011747A /* CreateProfileReportController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportController.swift; sourceTree = "<group>"; };
 		3DFA4AB41CBFB50C0011747A /* CreateProfileReportFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileReportFormController.swift; sourceTree = "<group>"; };
@@ -324,6 +330,7 @@
 		20109C8E1CBC43AE0058DA02 /* T365CalculatorScreens */ = {
 			isa = PBXGroup;
 			children = (
+				3DEE57681CFDC033003F93FF /* EditProfile */,
 				3D1CD7571CE48AF2006A1239 /* Home */,
 				3D6E81081CE354E200FA161F /* Document */,
 				3DE30E541CE317BB00B02A7A /* More */,
@@ -563,6 +570,16 @@
 			path = More;
 			sourceTree = "<group>";
 		};
+		3DEE57681CFDC033003F93FF /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				3DEE57691CFDC04D003F93FF /* EditProfileTableViewController.swift */,
+				3DEE576B1CFDD8B4003F93FF /* SocialLinkCell.swift */,
+				3DEE576D1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 		3DEF63411CBE6E7900C7CFA1 /* SellerNetSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,6 +754,7 @@
 				3D1BE5BB1CD7250000890BE4 /* SettingsController.swift in Sources */,
 				3DD211691CDA120B00DFE86C /* StatisticsController.swift in Sources */,
 				3DFA4AB31CBF771B0011747A /* CreateProfileReportController.swift in Sources */,
+				3DEE576A1CFDC04D003F93FF /* EditProfileTableViewController.swift in Sources */,
 				3D5D90571CC211E300293486 /* SellerNetSheetController.swift in Sources */,
 				3D6E810D1CE3553700FA161F /* DocumentController.swift in Sources */,
 				3D5F1E0B1CE0A5A800D1D979 /* ContactDetailsCell.swift in Sources */,
@@ -764,6 +782,7 @@
 				3D4E4E981CE5CB4F00BD7E0A /* PaginationContainerController.swift in Sources */,
 				3D9052F11CC6426800937E2C /* TitleForm.swift in Sources */,
 				3D5D90591CC2130200293486 /* SellerNewNetSheetForm.swift in Sources */,
+				3DEE576C1CFDD8B4003F93FF /* SocialLinkCell.swift in Sources */,
 				3DAC75EF1CE4C370009D508B /* MySalesPagerController.swift in Sources */,
 				3DFB41931CBD3B0500995099 /* LogoController.swift in Sources */,
 				3D1CD7601CE4962E006A1239 /* HomeBaseController.swift in Sources */,
@@ -810,6 +829,7 @@
 				3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */,
 				3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */,
 				3D4E4E941CE5C20000BD7E0A /* MySalesPaginationController.swift in Sources */,
+				3DEE576E1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift in Sources */,
 				3DE30E531CE3148A00B02A7A /* RGPageViewController.swift in Sources */,
 				3D6E81071CE3537200FA161F /* CaseCountable.swift in Sources */,
 				3DCDC35B1CE20B7C0092B592 /* AddContactController.swift in Sources */,
