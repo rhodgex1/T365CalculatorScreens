@@ -11,7 +11,7 @@ import UIKit
 typealias DeleteSocialAndWeblink = () -> Void
 typealias AddSocialAndWeblink = () -> Void
 
-class SocialLinkTitleCell: UITableViewCell, CellPlotsAndPopulates {
+class SocialLinkTitleCell: UITableViewCell, CellPlotsAndPopulates, CellLogsValues {
     static let cellHeight: CGFloat = 59.0
     
     var sectionTitle: UILabel!
@@ -35,9 +35,13 @@ class SocialLinkTitleCell: UITableViewCell, CellPlotsAndPopulates {
         NSLayoutConstraint(item: sectionTitle, attribute: .Left, relatedBy: .Equal, toItem: contentView, attribute: .Left, multiplier: 1.0, constant: 15.0).active = true
         NSLayoutConstraint(item: sectionTitle, attribute: .Top, relatedBy: .Equal, toItem: contentView, attribute: .Top, multiplier: 1.0, constant: 25.0).active = true
     }
+    
+    func cellLog(){
+        print("This is SocialLinkTitleCell!")
+    }
 }
 
-class SocialLinkAddCell: UITableViewCell, CellPlotsAndPopulates {
+class SocialLinkAddCell: UITableViewCell, CellPlotsAndPopulates, CellLogsValues {
     static let cellHeight: CGFloat = 56.0
     
     //MARK:- User components declarations
@@ -68,9 +72,13 @@ class SocialLinkAddCell: UITableViewCell, CellPlotsAndPopulates {
     
     func addWeblink(button: UIButton){
     }
+    
+    func cellLog(){
+        print("This is SocialLinkAddCell!")
+    }
 }
 
-class SocialLinkCell: UITableViewCell, CellPlotsAndPopulates {
+class SocialLinkCell: UITableViewCell, CellPlotsAndPopulates, CellLogsValues {
     static let cellHeight: CGFloat = 86.0
     
     //MARK:- User components declarations
@@ -98,6 +106,10 @@ class SocialLinkCell: UITableViewCell, CellPlotsAndPopulates {
     
     func deleteWeblink(button: UIButton){
 //        deleteSocialAndWeblink()
+    }
+    
+    func cellLog(){
+        print("This is SocialLinkCell! nameValueField: \(nameValueField.text), urlValueField: \(urlValueField.text)")
     }
     
     private func initViews() {

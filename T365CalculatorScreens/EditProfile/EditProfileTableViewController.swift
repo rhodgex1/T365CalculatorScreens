@@ -11,9 +11,9 @@ import CoreData
 
 enum EditProfileTableViewSection : Int, CaseCountable {
     case PersonalInfo = 0
-    case ContactDetails = 3
+    case ContactDetails = 1
     case Address = 2
-    case SocialAndWeblink = 1
+    case SocialAndWeblink = 3
     case Profile = 4
     
     static let caseCount = TableViewSection.countCases()
@@ -29,6 +29,17 @@ protocol CellPlotsAndPopulates {
     func populate(mo: NSManagedObject?)
 }
 
+protocol CellLogsValues {
+    func cellLog()
+}
+
+extension CellLogsValues {
+    func cellLog() {
+        // printing empty description
+        print("")
+    }
+}
+
 extension CellPlotsAndPopulates {
     func populate(mo: NSManagedObject?) {
         // empty definition for optional method
@@ -36,8 +47,10 @@ extension CellPlotsAndPopulates {
 }
 
 class EditProfileTableViewController: UITableViewController {
+    static let embedSegue = "EmbedEditProfileViewController"
     var cellsMetaDict = [EditProfileTableViewSection: [EditProfileCellMeta]]()
     
+    @IBOutlet var editProfileTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateCellsMetaDict()
@@ -56,6 +69,12 @@ extension EditProfileTableViewController{
     private func updateCellsMetaDict() {
         // add personal info cell
         cellsMetaDict[.PersonalInfo] = [getPersonalInfoTableViewCellMeta()]
+        
+        // add contact details cell
+        cellsMetaDict[.ContactDetails] = [getContactDetailsTableViewCellMeta()]
+        
+        // add contact details cell
+        cellsMetaDict[.Address] = [getBusinessAddressCellMeta()]
         
         // add social cells
         //Note: add in order
@@ -88,6 +107,20 @@ extension EditProfileTableViewController{
         personalInfoTableViewCell.plot()
         let personalInfoTableViewCellMeta = EditProfileCellMeta(cell: personalInfoTableViewCell, cellHeight: PersonalInfoTableViewCell.cellHeight)
         return personalInfoTableViewCellMeta
+    }
+    
+    private func getContactDetailsTableViewCellMeta() ->  EditProfileCellMeta {
+        let contactDetailsTableViewCell = ContactDetailsTableViewCell()
+        contactDetailsTableViewCell.plot()
+        let contactDetailsTableViewCellMeta = EditProfileCellMeta(cell: contactDetailsTableViewCell, cellHeight: ContactDetailsTableViewCell.cellHeight)
+        return contactDetailsTableViewCellMeta
+    }
+    
+    private func getBusinessAddressCellMeta() ->  EditProfileCellMeta {
+        let businessAddressCell = BusinessAddressCell()
+        businessAddressCell.plot()
+        let businessAddressCellMeta = EditProfileCellMeta(cell: businessAddressCell, cellHeight: BusinessAddressCell.cellHeight)
+        return businessAddressCellMeta
     }
 }
 

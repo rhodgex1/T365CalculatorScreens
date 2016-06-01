@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -14,19 +15,61 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Pcm-wH-QqZ" kind="relationship" relationship="rootViewController" id="0FF-IQ-rVR"/>
+                        <segue destination="XDA-z4-Dko" kind="relationship" relationship="rootViewController" id="wwn-Gx-lof"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMk-9c-QwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="445"/>
+            <point key="canvasLocation" x="-798" y="457"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="cdm-Tn-c8F">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileViewController" id="XDA-z4-Dko" customClass="EditProfileViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q2g-28-Qe9"/>
+                        <viewControllerLayoutGuide type="bottom" id="4P1-qF-C0U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bUQ-Ea-XeW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDS-Vg-wRk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="544"/>
+                                <connections>
+                                    <segue destination="Pcm-wH-QqZ" kind="embed" identifier="EmbedEditProfileViewController" id="KeX-oM-qR4"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1L-oC-ClP">
+                                <rect key="frame" x="277" y="562" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveAction:" destination="XDA-z4-Dko" eventType="touchUpInside" id="VDN-Sw-m5a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eDS-Vg-wRk" firstAttribute="leading" secondItem="bUQ-Ea-XeW" secondAttribute="leading" id="2P7-w8-vYI"/>
+                            <constraint firstItem="eDS-Vg-wRk" firstAttribute="top" secondItem="bUQ-Ea-XeW" secondAttribute="top" id="FG6-TF-u1i"/>
+                            <constraint firstAttribute="trailing" secondItem="eDS-Vg-wRk" secondAttribute="trailing" id="LRX-BX-yrX"/>
+                            <constraint firstItem="4P1-qF-C0U" firstAttribute="top" secondItem="eDS-Vg-wRk" secondAttribute="bottom" constant="56" id="pCu-BM-15r"/>
+                            <constraint firstItem="i1L-oC-ClP" firstAttribute="centerX" secondItem="bUQ-Ea-XeW" secondAttribute="centerX" id="q4O-Dq-QjH"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="i1L-oC-ClP" secondAttribute="bottom" constant="8" id="r0s-sY-e4L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iUh-76-BFd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfx-iv-yhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-179" y="624"/>
         </scene>
         <!--Edit Profile Table View Controller-->
         <scene sceneID="aht-ad-R7k">
             <objects>
                 <tableViewController storyboardIdentifier="EditProfileTableViewController" id="Pcm-wH-QqZ" customClass="EditProfileTableViewController" customModule="T365CalculatorScreens" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="4Xh-qz-gVm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="544"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <connections>
@@ -35,10 +78,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="AVf-0t-zMA"/>
+                    <connections>
+                        <outlet property="editProfileTable" destination="4Xh-qz-gVm" id="ika-be-xqn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiZ-zH-3O1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266" y="419"/>
+            <point key="canvasLocation" x="364" y="392"/>
         </scene>
     </scenes>
 </document>

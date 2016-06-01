@@ -130,6 +130,9 @@
 		3DE30E611CE3234500B02A7A /* MoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE30E601CE3234500B02A7A /* MoreController.swift */; };
 		3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */; };
 		3DE6DD3C1CC51D420057224B /* TaxRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */; };
+		3DE70DF41CFEB417005D8A16 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE70DF31CFEB417005D8A16 /* EditProfileViewController.swift */; };
+		3DE70DF61CFEBA52005D8A16 /* ContactDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE70DF51CFEBA52005D8A16 /* ContactDetailsTableViewCell.swift */; };
+		3DE70DF81CFEC16D005D8A16 /* BusinessAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE70DF71CFEC16D005D8A16 /* BusinessAddressCell.swift */; };
 		3DE8A0A31CD76EB1006E6EF5 /* TouchIdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */; };
 		3DE8A0A51CD76EBE006E6EF5 /* PasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */; };
 		3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8A0A61CD7752B006E6EF5 /* MobileNotificationsController.swift */; };
@@ -277,6 +280,9 @@
 		3DE30E601CE3234500B02A7A /* MoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreController.swift; sourceTree = "<group>"; };
 		3DE6DD391CC50D8B0057224B /* PropertyTaxRateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTaxRateController.swift; sourceTree = "<group>"; };
 		3DE6DD3B1CC51D420057224B /* TaxRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxRateCell.swift; sourceTree = "<group>"; };
+		3DE70DF31CFEB417005D8A16 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		3DE70DF51CFEBA52005D8A16 /* ContactDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		3DE70DF71CFEC16D005D8A16 /* BusinessAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessAddressCell.swift; sourceTree = "<group>"; };
 		3DE8A0A21CD76EB1006E6EF5 /* TouchIdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIdController.swift; sourceTree = "<group>"; };
 		3DE8A0A41CD76EBE006E6EF5 /* PasscodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeController.swift; sourceTree = "<group>"; };
 		3DE8A0A61CD7752B006E6EF5 /* MobileNotificationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileNotificationsController.swift; sourceTree = "<group>"; };
@@ -576,6 +582,9 @@
 				3DEE57691CFDC04D003F93FF /* EditProfileTableViewController.swift */,
 				3DEE576B1CFDD8B4003F93FF /* SocialLinkCell.swift */,
 				3DEE576D1CFE06F3003F93FF /* PersonalInfoTableViewCell.swift */,
+				3DE70DF31CFEB417005D8A16 /* EditProfileViewController.swift */,
+				3DE70DF51CFEBA52005D8A16 /* ContactDetailsTableViewCell.swift */,
+				3DE70DF71CFEC16D005D8A16 /* BusinessAddressCell.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -769,6 +778,7 @@
 				3DD530A11CC75D5B00BEE96D /* SellerNetSheetWithContainersBaseController.swift in Sources */,
 				3DFB418D1CBD3AFF00995099 /* CustomizeReportOptionsController.swift in Sources */,
 				3DFE08E11CC4FBAC00101EE3 /* BrokerFeeForm.swift in Sources */,
+				3DE70DF61CFEBA52005D8A16 /* ContactDetailsTableViewCell.swift in Sources */,
 				3D00F1531CE9B232005CEB3E /* CustomButton.swift in Sources */,
 				3DB0FEA91CD77A8F006AD9D5 /* ProfileCreditsForm.swift in Sources */,
 				3D9052ED1CC6184600937E2C /* ClosingCostsController.swift in Sources */,
@@ -819,6 +829,7 @@
 				3DFE08E51CC5004100101EE3 /* TaxesController.swift in Sources */,
 				3D1BE5B91CD724EA00890BE4 /* AccountSettingsController.swift in Sources */,
 				3DCDC3511CE201210092B592 /* EditImageController.swift in Sources */,
+				3DE70DF81CFEC16D005D8A16 /* BusinessAddressCell.swift in Sources */,
 				3D0AA95C1CE60279007C6BBF /* HelpfulResourcesController.swift in Sources */,
 				3DCDC34F1CE2004B0092B592 /* EditProfileContainerController.swift in Sources */,
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
@@ -826,6 +837,7 @@
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
+				3DE70DF41CFEB417005D8A16 /* EditProfileViewController.swift in Sources */,
 				3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */,
 				3DE30E5A1CE31C0900B02A7A /* MoreOptionsController.swift in Sources */,
 				3D4E4E941CE5C20000BD7E0A /* MySalesPaginationController.swift in Sources */,

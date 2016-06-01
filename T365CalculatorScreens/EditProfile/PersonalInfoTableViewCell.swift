@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonalInfoTableViewCell: UITableViewCell, CellPlotsAndPopulates {
+class PersonalInfoTableViewCell: UITableViewCell, CellPlotsAndPopulates, CellLogsValues {
     static let cellHeight: CGFloat = 209.0
     
     //MARK:- User components declarations
@@ -161,6 +161,10 @@ class PersonalInfoTableViewCell: UITableViewCell, CellPlotsAndPopulates {
         NSLayoutConstraint(item: titleValueField, attribute: .Baseline, relatedBy: .Equal, toItem: companyValueField, attribute: .Baseline, multiplier: 1.0, constant: 0).active = true
         NSLayoutConstraint(item: titleValueField, attribute: .Right, relatedBy: .Equal, toItem: contentView, attribute: .Right, multiplier: 1.0, constant: -15.0).active = true
         NSLayoutConstraint(item: titleValueField, attribute: .Height, relatedBy: .Equal, toItem: companyValueField, attribute: .Height, multiplier: 1.0, constant: 0).active = true
+    }
+    
+    func cellLog(){
+        print("This is PersonalInfoTableViewCell! firstNameValueField: \(firstNameValueField.text), lastNameValueField: \(lastNameValueField.text), companyValueField: \(companyValueField.text), titleValueField: \(titleValueField.text)")
     }
 
 }
