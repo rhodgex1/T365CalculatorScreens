@@ -176,4 +176,8 @@ class BusinessAddressCell: UITableViewCell, CellPlotsAndPopulates, CellLogsValue
         NSLayoutConstraint(item: cityValueField, attribute: .Right, relatedBy: .Equal, toItem: stateValueField, attribute: .Right, multiplier: 1.0, constant: -15.0).active = true
         NSLayoutConstraint(item: cityValueField, attribute: .Height, relatedBy: .Equal, toItem: address1ValueField, attribute: .Height, multiplier: 1.0, constant: 0).active = true
     }
+    
+    func cellLog(){
+        print("This is BusinessAddressCell! address1ValueField: \(address1ValueField.text), address2ValueField: \(address2ValueField.text), cityValueField: \(cityValueField.text), zipValueField: \(zipValueField.text)")
+    }
 }

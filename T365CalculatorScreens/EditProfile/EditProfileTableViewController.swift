@@ -73,12 +73,15 @@ extension EditProfileTableViewController{
         // add contact details cell
         cellsMetaDict[.ContactDetails] = [getContactDetailsTableViewCellMeta()]
         
-        // add contact details cell
+        // add business address cell
         cellsMetaDict[.Address] = [getBusinessAddressCellMeta()]
         
         // add social cells
         //Note: add in order
         cellsMetaDict[.SocialAndWeblink] = [getSocialLinkTitleCellMeta(), getSocialLinkCellMeta(0), getSocialLinkAddCellMeta()]
+        
+        // add profile cells
+        cellsMetaDict[.Profile] = [getProfileTableViewCellMeta()]
     }
     
     private func getSocialLinkCellMeta(row: Int) -> EditProfileCellMeta {
@@ -121,6 +124,13 @@ extension EditProfileTableViewController{
         businessAddressCell.plot()
         let businessAddressCellMeta = EditProfileCellMeta(cell: businessAddressCell, cellHeight: BusinessAddressCell.cellHeight)
         return businessAddressCellMeta
+    }
+    
+    private func getProfileTableViewCellMeta() ->  EditProfileCellMeta {
+        let profileTableViewCell = ProfileTableViewCell()
+        profileTableViewCell.plot()
+        let profileTableViewCellMeta = EditProfileCellMeta(cell: profileTableViewCell, cellHeight: ProfileTableViewCell.cellHeight)
+        return profileTableViewCellMeta
     }
 }
 

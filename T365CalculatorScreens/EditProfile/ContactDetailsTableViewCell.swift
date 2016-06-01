@@ -25,7 +25,7 @@ class ContactDetailsTableViewCell: UITableViewCell, CellPlotsAndPopulates, CellL
         initConstraints()
         backgroundColor = UIColor.greenColor()
     }
-    
+
     private func initViews(){
         //TODO: code to plot section is repetitive, in other classes shall be move to a common or base class
         sectionTitle = UILabel()
@@ -132,6 +132,6 @@ class ContactDetailsTableViewCell: UITableViewCell, CellPlotsAndPopulates, CellL
     }
     
     func cellLog(){
-        print("This is SocialLinkTitleCell!")
+        print("This is ContactDetailsTableViewCell! mobilePhoneValueField: \(mobilePhoneValueField.text), secondaryPhoneValueField: \(secondaryPhoneValueField.text), emailValueField: \(emailValueField.text)")
     }
 }
