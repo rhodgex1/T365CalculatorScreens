@@ -23,6 +23,7 @@
 		322D38691CCFAF27006AA163 /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D38651CCFAF27006AA163 /* ActionSheetCell.swift */; };
 		322D386A1CCFAF27006AA163 /* ActionSheetOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D38661CCFAF27006AA163 /* ActionSheetOptionCell.swift */; };
 		322D386B1CCFAF27006AA163 /* ActionSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D38671CCFAF27006AA163 /* ActionSheetController.swift */; };
+		3265111A1D1940F70062BE06 /* HomeContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326511191D1940F70062BE06 /* HomeContainerController.swift */; };
 		32DB229F1CD33CB3005277B8 /* CommonComponents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DB229D1CD33CB3005277B8 /* CommonComponents.storyboard */; };
 		32F127001CD2203A00644467 /* CDTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F126FF1CD2203A00644467 /* CDTimelineController.swift */; };
 		32F127031CD2469C00644467 /* CDTimeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F127011CD2469C00644467 /* CDTimeline.storyboard */; };
@@ -167,6 +168,7 @@
 		322D38651CCFAF27006AA163 /* ActionSheetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
 		322D38661CCFAF27006AA163 /* ActionSheetOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetOptionCell.swift; sourceTree = "<group>"; };
 		322D38671CCFAF27006AA163 /* ActionSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSheetController.swift; sourceTree = "<group>"; };
+		326511191D1940F70062BE06 /* HomeContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContainerController.swift; sourceTree = "<group>"; };
 		32DB229E1CD33CB3005277B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CommonComponents.storyboard; sourceTree = SOURCE_ROOT; };
 		32F126FF1CD2203A00644467 /* CDTimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDTimelineController.swift; sourceTree = "<group>"; };
 		32F127021CD2469C00644467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = T365CalculatorScreens/Base.lproj/CDTimeline.storyboard; sourceTree = SOURCE_ROOT; };
@@ -426,6 +428,7 @@
 				3DAC75F01CE4C532009D508B /* MySalesController.swift */,
 				3D4E4E931CE5C20000BD7E0A /* MySalesPaginationController.swift */,
 				3D0AA95B1CE60279007C6BBF /* HelpfulResourcesController.swift */,
+				326511191D1940F70062BE06 /* HomeContainerController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				3DE6DD3A1CC50D8B0057224B /* PropertyTaxRateController.swift in Sources */,
 				3DE8A0A71CD7752B006E6EF5 /* MobileNotificationsController.swift in Sources */,
 				3228728D1CC8F1450058FA6C /* CalculateEmptyViewController.swift in Sources */,
+				3265111A1D1940F70062BE06 /* HomeContainerController.swift in Sources */,
 				3DB0FEAB1CD77AB6006AD9D5 /* ProfileCreditsController.swift in Sources */,
 				3D9052F51CC6464B00937E2C /* EscrowController.swift in Sources */,
 				3D6E810F1CE3559500FA161F /* ContactCell.swift in Sources */,

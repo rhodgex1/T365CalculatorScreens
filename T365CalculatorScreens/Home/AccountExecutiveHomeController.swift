@@ -10,6 +10,8 @@ import UIKit
 
 class AccountExecutiveHomeController: HomeBaseController {
 
+    static var storyboardIdentifier = "AccountExecutiveHomeController"
+
     //MARK:- Binding outlets
     @IBOutlet weak var projectedPremiumsAmount: UILabel!
     @IBOutlet weak var closingsCount: UILabel!
@@ -18,12 +20,15 @@ class AccountExecutiveHomeController: HomeBaseController {
     
     @IBOutlet weak var dateLabel: UILabel!
     
+    @IBOutlet weak var collapseViewTopOffset: NSLayoutConstraint!
     var mySalesPagerController:MySalesPagerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        kTargetIndexPath = 7
     }
 
     override func didReceiveMemoryWarning() {

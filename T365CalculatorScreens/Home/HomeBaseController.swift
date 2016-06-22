@@ -12,6 +12,12 @@ import MapKit
 // This is the base class for HomeController, AccountExecutiveHomeController
 class HomeBaseController: UITableViewController {
 
+    var isCardVisible = false
+    var kTargetIndexPath = 0
+    var kExpandedCardHeight:CGFloat = 242.0
+    var kCollapsedCardHeight:CGFloat = 50.0
+    var kZeroHeight:CGFloat = 0.0
+
     //MARK:- Binding outlets
     @IBOutlet weak var graphView: UIView!
     @IBOutlet weak var medianDataDate: UILabel!
@@ -26,6 +32,7 @@ class HomeBaseController: UITableViewController {
     @IBOutlet weak var medianHomeValue: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var collapseView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +44,6 @@ class HomeBaseController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
 //MARK:- User actions
@@ -53,5 +59,41 @@ extension HomeBaseController {
     }
     @IBAction func saveLocation(sender: UIButton) {
         enterNewZipCodeView.hidden = true
+    }
+}
+
+//MARK:- UITableView Delegate Methods
+extension HomeBaseController {
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (indexPath.row == kTargetIndexPath) {
+            isCardVisible = !isCardVisible
+            tableView.reloadData()
+        }
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        var cellHeight:CGFloat = kZeroHeight
+        var mySalesHeight:CGFloat = kExpandedCardHeight
+        
+        if (indexPath.row == kTargetIndexPath) {
+            if (isCardVisible) {
+                mySalesHeight = kCollapsedCardHeight
+                collapseView.hidden = false
+            } else {
+                collapseView.hidden = true
+            }
+        }
+        
+        switch indexPath.row {
+        case kTargetIndexPath:
+            cellHeight = mySalesHeight
+        default:
+            cellHeight = super.tableView(tableView, heightForRowAtIndexPath: indexPath)
+        }
+        
+        return cellHeight
     }
 }

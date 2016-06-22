@@ -11,21 +11,25 @@ import UIKit
 
 class HomeController: HomeBaseController {
 
+    static var storyboardIdentifier = "HomeController"
+
     //MARK:- Outlets declarations
     @IBOutlet weak var accountExecutiveName: UILabel!
     @IBOutlet weak var executiveProfile: UILabel!
     @IBOutlet weak var executiveImage: CircularImageView!
     @IBOutlet weak var numberOfPropertiesViewed: UILabel!
     
+    @IBOutlet weak var collapseViewTopOffset: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        kTargetIndexPath = 12
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
 //MARK:- User actions
